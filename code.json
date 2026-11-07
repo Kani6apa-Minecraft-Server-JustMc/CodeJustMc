@@ -1,0 +1,20 @@
+{
+  "blocks": [
+    {
+      "id": "block",
+      "block": "event",
+      "action": "Join",
+      "args": {}
+    },
+    {
+      "id": "block",
+      "block": "player_action",
+      "action": "SendMessage",
+      "args": {
+        "messages": [
+          "&aДобро пожаловать на плот!"
+        ]
+      }
+    }
+  ]
+}
