@@ -1,20 +1,61 @@
 {
-  "code": [
+  "module_name": "random_starter_drops",
+  "version": "1.0",
+  "events": [
     {
-      "id": "block",
-      "block": "event",
-      "action": "Join",
-      "args": {}
-    },
-    {
-      "id": "block",
-      "block": "player_action",
-      "action": "SendMessage",
-      "args": {
-        "messages": [
-          "&aДобро пожаловать на плот!"
-        ]
-      }
+      "trigger": "player_break_block",
+      "actions": [
+        {
+          "type": "random_switch",
+          "cases": [
+            {
+              "weight": 1,
+              "action": "spawn_item_entity",
+              "item": "minecraft:stick",
+              "count": 1,
+              "offset_x": 0.5,
+              "offset_y": 0.0,
+              "offset_z": 0.5
+            },
+            {
+              "weight": 1,
+              "action": "spawn_item_entity",
+              "item": "minecraft:cobblestone",
+              "count": 1,
+              "offset_x": 0.5,
+              "offset_y": 0.0,
+              "offset_z": 0.5
+            },
+            {
+              "weight": 1,
+              "action": "spawn_item_entity",
+              "item": "minecraft:apple",
+              "count": 1,
+              "offset_x": 0.5,
+              "offset_y": 0.0,
+              "offset_z": 0.5
+            },
+            {
+              "weight": 1,
+              "action": "spawn_item_entity",
+              "item": "minecraft:wooden_shovel",
+              "count": 1,
+              "offset_x": 0.5,
+              "offset_y": 0.0,
+              "offset_z": 0.5
+            },
+            {
+              "weight": 1,
+              "action": "spawn_item_entity",
+              "item": "minecraft:string",
+              "count": 1,
+              "offset_x": 0.5,
+              "offset_y": 0.0,
+              "offset_z": 0.5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
