@@ -1,68 +1,2721 @@
 {
   "handlers": [
     {
-      "type": "event", "position": 0, "event": "player_chat",
+      "type": "event",
+      "position": 0,
+      "event": "world_start",
       "operations": [
-        { "action": "game_cancel_event", "values": [] },
-        { "action": "set_variable_value", "values": [
-          { "name": "variable", "value": { "type": "variable", "variable": "chat_sender_name", "scope": "save" } },
-          { "name": "value", "value": { "type": "game_value", "game_value": "name", "selection": "{\"type\":\"default\"}" } }
-        ] },
-        { "action": "set_variable_value", "values": [
-          { "name": "variable", "value": { "type": "variable", "variable": "chat_msg", "scope": "save" } },
-          { "name": "value", "value": { "type": "game_value", "game_value": "event_chat_message", "selection": "{\"type\":\"default\"}" } }
-        ] },
-        { "action": "player_send_minimessage", "selection": { "type": "all_players" }, "values": [
-          { "name": "minimessage", "value": { "type": "text", "text": "<hover:show_text:'<gray>Игрок сервера</gray>'><gradient:#00e5ff:#a855f7><bold>%var_save(chat_sender_name)</bold></gradient></hover> <dark_gray>»</dark_gray> <white>%var_save(chat_msg)</white>" } }
-        ] }
+        {
+          "action": "set_variable_value",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "ob_loc",
+                "scope": "save"
+              }
+            },
+            {
+              "name": "value",
+              "value": {
+                "type": "location",
+                "x": 0,
+                "y": 64,
+                "z": 0,
+                "yaw": 90,
+                "pitch": 0
+              }
+            }
+          ]
+        },
+        {
+          "action": "set_variable_value",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "ob_phase_name",
+                "scope": "save"
+              }
+            },
+            {
+              "name": "value",
+              "value": {
+                "type": "text",
+                "text": "⛏ Этап 1: Луга"
+              }
+            }
+          ]
+        },
+        {
+          "action": "set_variable_value",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "ob_in_phase",
+                "scope": "save"
+              }
+            },
+            {
+              "name": "value",
+              "value": {
+                "type": "number",
+                "number": 0
+              }
+            }
+          ]
+        },
+        {
+          "action": "set_variable_value",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "ob_progress",
+                "scope": "save"
+              }
+            },
+            {
+              "name": "value",
+              "value": {
+                "type": "number",
+                "number": 0
+              }
+            }
+          ]
+        },
+        {
+          "action": "if_variable_exists",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "ob_breaks",
+                "scope": "save"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "set_variable_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_breaks",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "number",
+                    "number": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "set_variable_create_list",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "ob_p1",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "values",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"grass_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"grass_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"grass_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"grass_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"grass_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"dirt\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"dirt\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"dirt\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"dirt\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"oak_log\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"oak_log\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"oak_log\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"oak_leaves\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"oak_leaves\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"oak_leaves\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"stone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"stone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gravel\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gravel\",\"Count\":1}"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "action": "set_variable_create_list",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "ob_p2",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "values",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"cobblestone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"cobblestone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"cobblestone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"cobblestone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"stone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"stone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"stone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"coal_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"coal_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"coal_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"iron_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"iron_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"iron_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"copper_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"copper_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"copper_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"granite\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"granite\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gravel\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gravel\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"obsidian\",\"Count\":1}"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "action": "set_variable_create_list",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "ob_p3",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "values",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gravel\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gravel\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gravel\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"clay\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"clay\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"clay\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"prismarine\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"prismarine\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sea_lantern\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sea_lantern\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sponge\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"andesite\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"andesite\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"magma_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"dirt\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"tnt\",\"Count\":1}"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "action": "set_variable_create_list",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "ob_p4",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "values",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"snow_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"snow_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"snow_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"snow_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"spruce_log\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"spruce_log\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"spruce_log\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"spruce_leaves\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"spruce_leaves\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"spruce_leaves\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"packed_ice\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"packed_ice\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"packed_ice\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"white_terracotta\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"white_terracotta\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"stone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"stone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"stone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"blue_ice\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gravel\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gravel\",\"Count\":1}"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "action": "set_variable_create_list",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "ob_p5",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "values",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"jungle_log\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"jungle_log\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"jungle_log\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"jungle_log\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"jungle_leaves\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"jungle_leaves\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"jungle_leaves\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"jungle_leaves\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"moss_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"moss_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"moss_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"melon\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"melon\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"melon\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"mud\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"mud\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"clay\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"clay\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"oak_log\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"oak_log\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"oak_log\",\"Count\":1}"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "action": "set_variable_create_list",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "ob_p6",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "values",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sandstone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sandstone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sandstone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sandstone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"red_sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"red_sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"red_sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"red_sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"cactus\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"cactus\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"cactus\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"terracotta\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"terracotta\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"orange_terracotta\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"orange_terracotta\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"cut_sandstone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"cut_sandstone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"tnt\",\"Count\":1}"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "action": "set_variable_create_list",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "ob_p7",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "values",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"netherrack\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"netherrack\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"netherrack\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"netherrack\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"soul_sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"soul_sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"soul_sand\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"glowstone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"glowstone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"glowstone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"nether_quartz_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"nether_quartz_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"magma_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"magma_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"blackstone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"blackstone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"blackstone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"basalt\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"basalt\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"obsidian\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"obsidian\",\"Count\":1}"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "action": "set_variable_create_list",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "ob_p8",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "values",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"end_stone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"end_stone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"end_stone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"end_stone\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"purpur_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"purpur_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"purpur_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"emerald_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"emerald_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"ancient_debris\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"obsidian\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"obsidian\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"end_stone_bricks\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"end_stone_bricks\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_ore\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_block\",\"Count\":1}"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "action": "game_set_block",
+          "values": [
+            {
+              "name": "block",
+              "value": {
+                "type": "item",
+                "item": "{\"id\":\"grass_block\",\"Count\":1}"
+              }
+            },
+            {
+              "name": "locations",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "location",
+                    "x": 0,
+                    "y": 64,
+                    "z": 0,
+                    "yaw": 90,
+                    "pitch": 0
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            }
+          ]
+        }
       ]
     },
     {
-      "type": "event", "position": 1, "event": "player_join",
+      "type": "event",
+      "position": 1,
+      "event": "player_join",
       "operations": [
-        { "action": "set_variable_value", "values": [
-          { "name": "variable", "value": { "type": "variable", "variable": "join_name", "scope": "save" } },
-          { "name": "value", "value": { "type": "game_value", "game_value": "name", "selection": "{\"type\":\"default\"}" } }
-        ] },
-        { "action": "player_send_minimessage", "selection": { "type": "all_players" }, "values": [
-          { "name": "minimessage", "value": { "type": "text", "text": "<gradient:#00ff88:#00e5ff><bold>➕</bold></gradient> <gray>%var_save(join_name) <dark_gray>зашёл на сервер</dark_gray>" } }
-        ] },
-        { "action": "player_send_title", "values": [
-          { "name": "title", "value": { "type": "text", "text": "Добро пожаловать!" } },
-          { "name": "subtitle", "value": { "type": "text", "text": "Приятной игры :)" } },
-          { "name": "fade_in", "value": { "type": "number", "number": 10 } },
-          { "name": "stay", "value": { "type": "number", "number": 60 } },
-          { "name": "fade_out", "value": { "type": "number", "number": 20 } }
-        ] },
-        { "action": "player_send_action_bar", "values": [ { "name": "text", "value": { "type": "text", "text": "Ты на сервере! Общайся в чате :)" } } ] },
-        { "action": "player_play_sound", "values": [ { "name": "sound", "value": { "type": "sound", "sound": "entity.player.levelup", "volume": 1, "pitch": 1 } } ] }
+        {
+          "action": "player_set_boss_bar",
+          "values": [
+            {
+              "name": "id",
+              "value": {
+                "type": "text",
+                "text": "oneblock"
+              }
+            },
+            {
+              "name": "title",
+              "value": {
+                "type": "text",
+                "text": "%var_save(ob_phase_name)"
+              }
+            },
+            {
+              "name": "progress",
+              "value": {
+                "type": "variable",
+                "variable": "ob_progress",
+                "scope": "save"
+              }
+            },
+            {
+              "name": "color",
+              "value": {
+                "type": "enum",
+                "enum": "YELLOW"
+              }
+            },
+            {
+              "name": "style",
+              "value": {
+                "type": "enum",
+                "enum": "PROGRESS"
+              }
+            },
+            {
+              "name": "sky_effect",
+              "value": {
+                "type": "enum",
+                "enum": "NONE"
+              }
+            }
+          ]
+        },
+        {
+          "action": "if_variable_exists",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "%player%_ob_hi",
+                "scope": "save"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_teleport",
+              "values": [
+                {
+                  "name": "location",
+                  "value": {
+                    "type": "location",
+                    "x": 0.5,
+                    "y": 65,
+                    "z": 0.5,
+                    "yaw": 90,
+                    "pitch": 0
+                  }
+                },
+                {
+                  "name": "keep_rotation",
+                  "value": {
+                    "type": "enum",
+                    "enum": "FALSE"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "player_send_message",
+              "values": [
+                {
+                  "name": "messages",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "text",
+                        "text": "⛏ Добро пожаловать на ONEBLOCK! Центральный блок на (0; 64; 0) бесконечен: ломай его и прогрессируй по этапам. Не упади в пустоту!"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "merging",
+                  "value": {
+                    "type": "enum",
+                    "enum": "SPACES"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "player_send_title",
+              "values": [
+                {
+                  "name": "title",
+                  "value": {
+                    "type": "text",
+                    "text": "⛏ ONEBLOCK"
+                  }
+                },
+                {
+                  "name": "subtitle",
+                  "value": {
+                    "type": "text",
+                    "text": "Ломай блок — создавай мир"
+                  }
+                },
+                {
+                  "name": "fade_in",
+                  "value": {
+                    "type": "number",
+                    "number": 10
+                  }
+                },
+                {
+                  "name": "stay",
+                  "value": {
+                    "type": "number",
+                    "number": 60
+                  }
+                },
+                {
+                  "name": "fade_out",
+                  "value": {
+                    "type": "number",
+                    "number": 20
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "%player%_ob_hi",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "number",
+                    "number": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_variable_exists",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "%player%_ob_hi",
+                "scope": "save"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_send_message",
+              "values": [
+                {
+                  "name": "messages",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "text",
+                        "text": "⛏ %var_save(ob_phase_name) • Разбито блоков: %var_save(ob_breaks)"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "merging",
+                  "value": {
+                    "type": "enum",
+                    "enum": "SPACES"
+                  }
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
     {
-      "type": "event", "position": 2, "event": "player_quit",
+      "type": "event",
+      "position": 2,
+      "event": "player_respawn",
       "operations": [
-        { "action": "set_variable_value", "values": [
-          { "name": "variable", "value": { "type": "variable", "variable": "quit_name", "scope": "save" } },
-          { "name": "value", "value": { "type": "game_value", "game_value": "name", "selection": "{\"type\":\"default\"}" } }
-        ] },
-        { "action": "player_send_minimessage", "selection": { "type": "all_players" }, "values": [
-          { "name": "minimessage", "value": { "type": "text", "text": "<gradient:#ff5555:#ffaa00><bold>➖</bold></gradient> <gray>%var_save(quit_name) <dark_gray>покинул сервер</dark_gray>" } }
-        ] }
+        {
+          "action": "player_teleport",
+          "values": [
+            {
+              "name": "location",
+              "value": {
+                "type": "location",
+                "x": 0.5,
+                "y": 65,
+                "z": 0.5,
+                "yaw": 90,
+                "pitch": 0
+              }
+            },
+            {
+              "name": "keep_rotation",
+              "value": {
+                "type": "enum",
+                "enum": "FALSE"
+              }
+            }
+          ]
+        }
       ]
     },
     {
-      "type": "event", "position": 3, "event": "player_death",
+      "type": "event",
+      "position": 3,
+      "event": "player_break_block",
       "operations": [
-        { "action": "set_variable_value", "values": [
-          { "name": "variable", "value": { "type": "variable", "variable": "death_name", "scope": "save" } },
-          { "name": "value", "value": { "type": "game_value", "game_value": "name", "selection": "{\"type\":\"default\"}" } }
-        ] },
-        { "action": "player_send_minimessage", "selection": { "type": "all_players" }, "values": [
-          { "name": "minimessage", "value": { "type": "text", "text": "<red><bold>☠</bold></red> <gray>%var_save(death_name) <dark_gray>погиб...</dark_gray>" } }
-        ] },
-        { "action": "player_play_sound", "selection": { "type": "all_players" }, "values": [
-          { "name": "sound", "value": { "type": "sound", "sound": "entity.player.hurt", "volume": 1, "pitch": 1 } }
-        ] }
+        {
+          "action": "set_variable_value",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "ob_broken_at",
+                "scope": "local"
+              }
+            },
+            {
+              "name": "value",
+              "value": {
+                "type": "game_value",
+                "game_value": "event_block_location",
+                "selection": "{\"type\":\"default\"}"
+              }
+            }
+          ]
+        },
+        {
+          "action": "if_variable_equals",
+          "values": [
+            {
+              "name": "value",
+              "value": {
+                "type": "variable",
+                "variable": "ob_broken_at",
+                "scope": "local"
+              }
+            },
+            {
+              "name": "compare",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "variable",
+                    "variable": "ob_loc",
+                    "scope": "save"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "set_variable_increment",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_breaks",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "number",
+                  "value": {
+                    "type": "number",
+                    "number": 1
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_remainder",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_in_phase",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "dividend",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_breaks",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "divisor",
+                  "value": {
+                    "type": "number",
+                    "number": 25
+                  }
+                },
+                {
+                  "name": "remainder_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "REMAINDER"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_divide",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_progress",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "variable",
+                        "variable": "ob_in_phase",
+                        "scope": "save"
+                      },
+                      {
+                        "type": "number",
+                        "number": 25
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "division_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "DEFAULT"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "call_function",
+              "values": [
+                {
+                  "name": "function_name",
+                  "value": {
+                    "type": "text",
+                    "text": "jmcc.f0"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "player_send_action_bar",
+              "selection": {
+                "type": "all_players"
+              },
+              "values": [
+                {
+                  "name": "text",
+                  "value": {
+                    "type": "text",
+                    "text": "⛏ %var_save(ob_phase_name) • Разбито блоков: %var_save(ob_breaks)"
+                  }
+                }
+              ]
+            },
+            {
+              "selection": {
+                "type": "all_players"
+              },
+              "action": "player_set_boss_bar",
+              "values": [
+                {
+                  "name": "id",
+                  "value": {
+                    "type": "text",
+                    "text": "oneblock"
+                  }
+                },
+                {
+                  "name": "title",
+                  "value": {
+                    "type": "text",
+                    "text": "%var_save(ob_phase_name)"
+                  }
+                },
+                {
+                  "name": "progress",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_progress",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "color",
+                  "value": {
+                    "type": "enum",
+                    "enum": "YELLOW"
+                  }
+                },
+                {
+                  "name": "style",
+                  "value": {
+                    "type": "enum",
+                    "enum": "PROGRESS"
+                  }
+                },
+                {
+                  "name": "sky_effect",
+                  "value": {
+                    "type": "enum",
+                    "enum": "NONE"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "if_variable_equals",
+              "values": [
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_in_phase",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "compare",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "number",
+                        "number": 0
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ],
+              "operations": [
+                {
+                  "selection": {
+                    "type": "all_players"
+                  },
+                  "action": "player_send_message",
+                  "values": [
+                    {
+                      "name": "messages",
+                      "value": {
+                        "type": "array",
+                        "values": [
+                          {
+                            "type": "text",
+                            "text": "🎉 Новый этап: %var_save(ob_phase_name)!"
+                          },
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {}
+                        ]
+                      }
+                    },
+                    {
+                      "name": "merging",
+                      "value": {
+                        "type": "enum",
+                        "enum": "SPACES"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "action": "player_play_sound",
+                  "selection": {
+                    "type": "all_players"
+                  },
+                  "values": [
+                    {
+                      "name": "sound",
+                      "value": {
+                        "type": "sound",
+                        "sound": "entity.player.levelup",
+                        "volume": 1,
+                        "pitch": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "action": "set_variable_random_number",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_roll",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "min",
+                  "value": {
+                    "type": "number",
+                    "number": 1
+                  }
+                },
+                {
+                  "name": "max",
+                  "value": {
+                    "type": "number",
+                    "number": 40
+                  }
+                },
+                {
+                  "name": "integer",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "if_variable_equals",
+              "values": [
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_roll",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "compare",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "number",
+                        "number": 1
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ],
+              "operations": [
+                {
+                  "action": "game_spawn_mob",
+                  "values": [
+                    {
+                      "name": "mob",
+                      "value": {
+                        "type": "item",
+                        "item": "{\"id\":\"zombie_spawn_egg\",\"Count\":1}"
+                      }
+                    },
+                    {
+                      "name": "location",
+                      "value": {
+                        "type": "game_value",
+                        "game_value": "location",
+                        "selection": "{\"type\":\"default\"}"
+                      }
+                    },
+                    {
+                      "name": "health",
+                      "value": {
+                        "type": "number",
+                        "number": 20
+                      }
+                    },
+                    {
+                      "name": "custom_name",
+                      "value": {
+                        "type": "text",
+                        "text": "🧟 Разъярённый зомби"
+                      }
+                    },
+                    {
+                      "name": "potion_effects",
+                      "value": {
+                        "type": "array",
+                        "values": [
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {}
+                        ]
+                      }
+                    },
+                    {
+                      "name": "main_hand",
+                      "value": {}
+                    },
+                    {
+                      "name": "helmet",
+                      "value": {}
+                    },
+                    {
+                      "name": "chestplate",
+                      "value": {}
+                    },
+                    {
+                      "name": "leggings",
+                      "value": {}
+                    },
+                    {
+                      "name": "boots",
+                      "value": {}
+                    },
+                    {
+                      "name": "off_hand",
+                      "value": {}
+                    },
+                    {
+                      "name": "natural_equipment",
+                      "value": {
+                        "type": "enum",
+                        "enum": "TRUE"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "action": "player_send_message",
+                  "values": [
+                    {
+                      "name": "messages",
+                      "value": {
+                        "type": "array",
+                        "values": [
+                          {
+                            "type": "text",
+                            "text": "🧟 Из блока вылез зомби!"
+                          },
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {}
+                        ]
+                      }
+                    },
+                    {
+                      "name": "merging",
+                      "value": {
+                        "type": "enum",
+                        "enum": "SPACES"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "position": 4,
+      "event": {
+        "is_hidden": true,
+        "name": "jmcc.f0"
+      },
+      "operations": [
+        {
+          "action": "if_variable_greater_or_equals",
+          "is_inverted": false,
+          "values": [
+            {
+              "name": "value",
+              "value": {
+                "type": "variable",
+                "variable": "ob_breaks",
+                "scope": "save"
+              }
+            },
+            {
+              "name": "compare",
+              "value": {
+                "type": "number",
+                "number": 175
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "set_variable_get_list_random_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_p8",
+                    "scope": "game"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_phase_name",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "text",
+                    "text": "⛏ Этап 8: Энд и сокровища"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "game_set_block",
+              "values": [
+                {
+                  "name": "block",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "locations",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "variable",
+                        "variable": "ob_loc",
+                        "scope": "save"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_variable_greater_or_equals",
+          "is_inverted": false,
+          "values": [
+            {
+              "name": "value",
+              "value": {
+                "type": "variable",
+                "variable": "ob_breaks",
+                "scope": "save"
+              }
+            },
+            {
+              "name": "compare",
+              "value": {
+                "type": "number",
+                "number": 150
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "set_variable_get_list_random_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_p7",
+                    "scope": "game"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_phase_name",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "text",
+                    "text": "⛏ Этап 7: Ад"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "game_set_block",
+              "values": [
+                {
+                  "name": "block",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "locations",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "variable",
+                        "variable": "ob_loc",
+                        "scope": "save"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_variable_greater_or_equals",
+          "is_inverted": false,
+          "values": [
+            {
+              "name": "value",
+              "value": {
+                "type": "variable",
+                "variable": "ob_breaks",
+                "scope": "save"
+              }
+            },
+            {
+              "name": "compare",
+              "value": {
+                "type": "number",
+                "number": 125
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "set_variable_get_list_random_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_p6",
+                    "scope": "game"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_phase_name",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "text",
+                    "text": "⛏ Этап 6: Пустыня"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "game_set_block",
+              "values": [
+                {
+                  "name": "block",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "locations",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "variable",
+                        "variable": "ob_loc",
+                        "scope": "save"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_variable_greater_or_equals",
+          "is_inverted": false,
+          "values": [
+            {
+              "name": "value",
+              "value": {
+                "type": "variable",
+                "variable": "ob_breaks",
+                "scope": "save"
+              }
+            },
+            {
+              "name": "compare",
+              "value": {
+                "type": "number",
+                "number": 100
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "set_variable_get_list_random_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_p5",
+                    "scope": "game"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_phase_name",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "text",
+                    "text": "⛏ Этап 5: Джунгли"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "game_set_block",
+              "values": [
+                {
+                  "name": "block",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "locations",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "variable",
+                        "variable": "ob_loc",
+                        "scope": "save"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_variable_greater_or_equals",
+          "is_inverted": false,
+          "values": [
+            {
+              "name": "value",
+              "value": {
+                "type": "variable",
+                "variable": "ob_breaks",
+                "scope": "save"
+              }
+            },
+            {
+              "name": "compare",
+              "value": {
+                "type": "number",
+                "number": 75
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "set_variable_get_list_random_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_p4",
+                    "scope": "game"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_phase_name",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "text",
+                    "text": "⛏ Этап 4: Зимний лес"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "game_set_block",
+              "values": [
+                {
+                  "name": "block",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "locations",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "variable",
+                        "variable": "ob_loc",
+                        "scope": "save"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_variable_greater_or_equals",
+          "is_inverted": false,
+          "values": [
+            {
+              "name": "value",
+              "value": {
+                "type": "variable",
+                "variable": "ob_breaks",
+                "scope": "save"
+              }
+            },
+            {
+              "name": "compare",
+              "value": {
+                "type": "number",
+                "number": 50
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "set_variable_get_list_random_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_p3",
+                    "scope": "game"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_phase_name",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "text",
+                    "text": "⛏ Этап 3: Океан"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "game_set_block",
+              "values": [
+                {
+                  "name": "block",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "locations",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "variable",
+                        "variable": "ob_loc",
+                        "scope": "save"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_variable_greater_or_equals",
+          "is_inverted": false,
+          "values": [
+            {
+              "name": "value",
+              "value": {
+                "type": "variable",
+                "variable": "ob_breaks",
+                "scope": "save"
+              }
+            },
+            {
+              "name": "compare",
+              "value": {
+                "type": "number",
+                "number": 25
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "set_variable_get_list_random_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_p2",
+                    "scope": "game"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_phase_name",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "text",
+                    "text": "⛏ Этап 2: Пещеры"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "game_set_block",
+              "values": [
+                {
+                  "name": "block",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "locations",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "variable",
+                        "variable": "ob_loc",
+                        "scope": "save"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_variable_greater_or_equals",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "value",
+              "value": {
+                "type": "variable",
+                "variable": "ob_breaks",
+                "scope": "save"
+              }
+            },
+            {
+              "name": "compare",
+              "value": {
+                "type": "number",
+                "number": 25
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "set_variable_get_list_random_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_p1",
+                    "scope": "game"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_phase_name",
+                    "scope": "save"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "text",
+                    "text": "⛏ Этап 1: Луга"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "game_set_block",
+              "values": [
+                {
+                  "name": "block",
+                  "value": {
+                    "type": "variable",
+                    "variable": "ob_next",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "locations",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "variable",
+                        "variable": "ob_loc",
+                        "scope": "save"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
       ]
     }
   ]
