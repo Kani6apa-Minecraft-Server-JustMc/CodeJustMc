@@ -1,371 +1,60 @@
-// ============================================
-//  АНАРХИЯ v2 — режим для JustMC (JustCode)
-//  Дроп с блоков, кейсы, кастомные предметы,
-//  босс «Блюститель Анархии»
-// ============================================
-
-event<world_start> {
-    // --- Общий дроп (все прочие блоки) ---
-    game var an_drops_general = [
-        item("oak_planks", count=2), item("oak_planks", count=2), item("oak_planks", count=2),
-        item("dirt", count=2), item("dirt", count=2),
-        item("cobblestone", count=2), item("cobblestone", count=2),
-        item("raw_copper"), item("raw_copper"),
-        item("iron_nugget"), item("stick", count=4)
-    ];
-
-    // --- Особые блоки (10 штук) ---
-    game var an_grass = [
-        item("wheat_seeds", count=2), item("wheat_seeds", count=2), item("wheat_seeds", count=2),
-        item("oak_sapling"), item("oak_sapling"),
-        item("poppy"), item("dandelion"),
-        item("pumpkin_seeds"), item("melon_seeds"),
-        item("bone_meal"), item("bone_meal"),
-        item("sweet_berries"),
-        item("oak_planks", count=2)   // редкие доски!
-    ];
-    game var an_dirt = [
-        item("dirt", count=2), item("dirt", count=2), item("dirt", count=2),
-        item("wheat_seeds"), item("bone_meal"), item("bone_meal"),
-        item("iron_nugget"), item("grass_block"),
-        item("oak_planks", count=2)   // редкие доски!
-    ];
-    game var an_cobble = [
-        item("raw_copper"), item("raw_copper"), item("raw_copper"),
-        item("raw_iron"), item("raw_iron"),
-        item("coal"), item("raw_gold"),
-        item("redstone"), item("lapis_lazuli"),
-        item("diamond")
-    ];
-    game var an_log = [
-        item("stick", count=4), item("stick", count=4), item("stick", count=4),
-        item("oak_sapling"), item("oak_sapling"),
-        item("apple"), item("apple"),
-        item("oak_planks", count=2), item("oak_planks", count=2)
-    ];
-    game var an_leaves = [
-        item("apple"), item("apple"), item("apple"),
-        item("oak_sapling"), item("oak_sapling"),
-        item("stick", count=2), item("stick", count=2)
-    ];
-    game var an_planks = [
-        item("stick", count=4), item("stick", count=4),
-        item("iron_nugget"), item("oak_sapling"), item("apple")
-    ];
-    game var an_wheat = [
-        item("wheat", count=2), item("wheat", count=2), item("wheat", count=2),
-        item("wheat_seeds", count=2), item("wheat_seeds", count=2),
-        item("bone_meal")
-    ];
-    game var an_pumpkin = [
-        item("pumpkin"), item("pumpkin"),
-        item("pumpkin_seeds", count=2), item("pumpkin_seeds", count=2),
-        item("iron_nugget")
-    ];
-    game var an_melon = [
-        item("melon_slice", count=3), item("melon_slice", count=3),
-        item("melon_seeds", count=2), item("melon_seeds", count=2),
-        item("sugar")
-    ];
-    game var an_ironblock = [
-        item("raw_iron"), item("raw_iron"),
-        item("iron_ingot"), item("iron_ingot"),
-        item("iron_nugget", count=4), item("iron_block")
-    ];
-
-    // --- Лут кейсов (улучшенный) ---
-    game var an_case1 = [
-        item("oak_log", count=4), item("oak_log", count=4),
-        item("apple", count=2), item("apple", count=2), item("apple", count=2),
-        item("oak_sapling"), item("oak_sapling"),
-        item("wheat_seeds", count=4),
-        item("raw_copper", count=2), item("raw_copper", count=2),
-        item("iron_ingot", count=3), item("iron_ingot", count=3),
-        item("bone_meal", count=4), item("bone_meal", count=4),
-        item("book", name="&5📖 Книга мега-дропа", lore=["&7Надписи пахнут удачей", "&7ПКМ — 5 случайных дропов"])
-    ];
-    game var an_case2 = [
-        item("sand", count=16),
-        item("gunpowder", count=4), item("gunpowder", count=4), item("gunpowder", count=4),
-        item("cactus", count=4), item("cactus", count=4),
-        item("sugar_cane", count=4), item("sugar_cane", count=4),
-        item("gold_ingot", count=2), item("gold_ingot", count=2),
-        item("emerald", count=2), item("emerald", count=2),
-        item("dead_bush"), item("tnt", count=2),
-        item("tnt", name="&c🧨 Динамит Анархии", lore=["&7Одноразовый сюрприз", "&7ПКМ — взрыв в точке взгляда"])
-    ];
-    game var an_case3 = [
-        item("packed_ice", count=4), item("packed_ice", count=4),
-        item("snowball", count=16), item("snowball", count=16),
-        item("blue_ice"),
-        item("diamond"), item("diamond"), item("diamond"),
-        item("iron_ingot", count=4), item("iron_ingot", count=4),
-        item("golden_carrot", count=4), item("golden_carrot", count=4),
-        item("lightning_rod", name="&e⚡ Жезл Молний", lore=["&7Заряжен грозой", "&7ПКМ — молния (кулдаун 3 сек)"])
-    ];
-    game var an_case4 = [
-        item("netherite_scrap", count=2),
-        item("blaze_rod", count=4), item("blaze_rod", count=4),
-        item("quartz", count=8), item("quartz", count=8),
-        item("ghast_tear"), item("ghast_tear"),
-        item("gold_block"), item("gold_block"),
-        item("diamond", count=3), item("diamond", count=3),
-        item("golden_apple"), item("enchanted_golden_apple"),
-        item("obsidian", count=8), item("obsidian", count=8),
-        item("paper", name="&d📜 Свиток удачи", lore=["&7Судьба всё решит", "&7ПКМ — случайный кейс"]),
-        item("totem_of_undying", name="&6👑 Идол Анархии", lore=["&7Ключ к древнему хаосу", "&7ПКМ — призвать Блюстителя Анархии"])
-    ];
-    game var an_boss = [
-        item("diamond", count=4), item("diamond", count=4), item("diamond", count=4),
-        item("netherite_ingot"), item("netherite_ingot"),
-        item("enchanted_golden_apple"), item("enchanted_golden_apple"),
-        item("totem_of_undying"), item("totem_of_undying"),
-        item("gold_block"), item("gold_block"),
-        item("emerald", count=8),
-        item("netherite_scrap", count=4)
-    ];
-    // Взвешенный список кейсов для «Свитка удачи»
-    game var an_case_items = [];
-    an_case_items.list_append_value([item("chest", name="&a🌿 Лесной кейс", lore=["&7Сокровище дремучей чащи", "&7ПКМ — открыть"])]);
-    an_case_items.list_append_value([item("barrel", name="&6🏜 Пустынный кейс", lore=["&7Сокровище раскалённых барханов", "&7ПКМ — открыть"])]);
-    an_case_items.list_append_value([item("white_shulker_box", name="&b❄ Ледяной кейс", lore=["&7Древний лёд хранит тайны", "&7ПКМ — открыть"])]);
-    an_case_items.list_append_value([item("nether_star", name="&c🔥 Адский кейс", lore=["&7Добыча из самой преисподней", "&7ПКМ — открыть"])]);
-
-    game var an_rage = 0;
-    game var an_desp = 0;
-}
-
-event<player_join> {
-    player::set_gamemode("SURVIVAL");
-    save var `%player%_played`;
-    save var `%player%_blocks`;
-    save var `%player%_cases`;
-    if not (variable::exists(`%player%_played`)) {
-        save var `%player%_blocks` = 0;
-        save var `%player%_cases` = 0;
-        player::give_items([item("bread", count=8), item("chest", name="&a🌿 Лесной кейс", lore=["&7Сокровище дремучей чащи", "&7ПКМ — открыть"])], 1);
-        player::title("АНАРХИЯ", "Ломай блоки — собирай кейсы!", 10, 80, 20);
-        player::message("Добро пожаловать в АНАРХИЮ! Ломай любые блоки — получай дроп и кейсы.");
-        save var `%player%_played` = 1;
-    } else {
-        player::message("С возвращением! Сломано блоков: %var_save(%player%_blocks) | Кейсов открыто: %var_save(%player%_cases)");
-    }
-}
-
-event<player_quit> {
-    save var `%player%_last_seen` = "%time%";
-}
-
-event<player_break_block> {
-    var an_block = variable::get_block_material(value::event_block_location, "ITEM");
-    save var `%player%_blocks` = `%player%_blocks` + 1;
-    code::call_function(f0);
-    code::call_function(f1);
-    code::call_function(f2);
-    code::call_function(f3);
-}
-
-event<player_right_click> {
-    code::call_function(f4);
-    code::call_function(f5);
-    code::call_function(f6);
-    code::call_function(f7);
-    code::call_function(f8);
-}
-
-// ===== Фазы босса: обновление боссбара, ярость и отчаяние =====
-event<entity_take_damage> {
-    if (entity::name_equals(["👹 Блюститель Анархии"])) {
-        var an_hp = value::current_health;
-        var an_frac = an_hp / 200;
-        player<all_players>::set_boss_bar("an_boss", "👹 Блюститель Анархии", an_frac, "RED", "NOTCHED_10", "FOG_AND_DARK_SKY");
-        if (an_hp.less_or_equals(100)) {
-            if (an_rage.equals(0)) {
-                entity::give_potion_effects([potion("speed", amplifier=2), potion("strength", amplifier=2), potion("fire_resistance"), potion("resistance")], "TRUE", "TRUE", "AMBIENT");
-                game var an_rage = 1;
-                player<all_players>::message("👹 Блюститель В ЯРОСТИ: он ускорился и стал бить сильнее!");
-                player<all_players>::play_sound(sound("entity.ravager.roar"));
-            }
+{
+  "handlers": [
+    {
+      "type": "event",
+      "position": 0,
+      "event": "player_right_click",
+      "operations": [
+        {
+          "action": "if_player_is_holding",
+          "is_inverted": false,
+          "values": [
+            { "name": "items", "value": { "type": "array", "values": [ { "type": "item", "item": "{\"id\":\"blaze_rod\",\"Count\":1}" }, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {} ] } },
+            { "name": "hand_slot", "value": { "type": "enum", "enum": "EITHER_HAND" } },
+            { "name": "comparison_mode", "value": { "type": "enum", "enum": "TYPE_ONLY" } }
+          ],
+          "operations": [
+            { "action": "game_cancel_event", "values": [] },
+            { "action": "player_swing_hand", "values": [ { "name": "hand_type", "value": { "type": "enum", "enum": "MAIN" } } ] },
+            { "action": "player_display_particle_ray", "values": [
+              { "name": "particle", "value": { "type": "particle", "particle_type": "flame", "count": 1, "first_spread": 0, "second_spread": 0, "x_motion": 0, "y_motion": 0, "z_motion": 0 } },
+              { "name": "start", "value": { "type": "game_value", "game_value": "location", "selection": "{\"type\":\"default\"}" } },
+              { "name": "ray", "value": { "type": "game_value", "game_value": "direction_of_view", "selection": "{\"type\":\"default\"}" } },
+              { "name": "divider", "value": { "type": "number", "number": 20 } },
+              { "name": "unit_of_measurement", "value": { "type": "enum", "enum": "POINTS" } }
+            ] },
+            { "action": "player_display_particle_ray", "values": [
+              { "name": "particle", "value": { "type": "particle", "particle_type": "end_rod", "count": 1, "first_spread": 0, "second_spread": 0, "x_motion": 0, "y_motion": 0, "z_motion": 0 } },
+              { "name": "start", "value": { "type": "game_value", "game_value": "eye_location", "selection": "{\"type\":\"default\"}" } },
+              { "name": "ray", "value": { "type": "game_value", "game_value": "direction_of_view", "selection": "{\"type\":\"default\"}" } },
+              { "name": "divider", "value": { "type": "number", "number": 12 } },
+              { "name": "unit_of_measurement", "value": { "type": "enum", "enum": "POINTS" } }
+            ] },
+            { "action": "player_launch_forward", "values": [
+              { "name": "power", "value": { "type": "number", "number": 3 } },
+              { "name": "increment", "value": { "type": "enum", "enum": "FALSE" } },
+              { "name": "launch_axis", "value": { "type": "enum", "enum": "YAW_AND_PITCH" } }
+            ] },
+            { "action": "player_launch_up", "values": [
+              { "name": "power", "value": { "type": "number", "number": 0.8 } },
+              { "name": "increment", "value": { "type": "enum", "enum": "TRUE" } }
+            ] },
+            { "action": "entity_give_potion_effects", "selection": { "type": "default_player" }, "values": [
+              { "name": "potions", "value": { "type": "array", "values": [ { "type": "potion", "potion": "speed", "amplifier": 2, "duration": 5 }, { "type": "potion", "potion": "resistance", "amplifier": 0, "duration": 5 }, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {} ] } },
+              { "name": "overwrite", "value": { "type": "enum", "enum": "TRUE" } },
+              { "name": "show_icon", "value": { "type": "enum", "enum": "TRUE" } },
+              { "name": "particle_mode", "value": { "type": "enum", "enum": "REGULAR" } }
+            ] },
+            { "action": "player_play_sound", "values": [ { "name": "sound", "value": { "type": "sound", "sound": "item.trident.riptide_1", "volume": 1, "pitch": 1 } } ] },
+            { "action": "player_send_action_bar", "values": [ { "name": "text", "value": { "type": "text", "text": "⚡ Шквал Кометы!" } } ] },
+            { "action": "player_set_item_cooldown", "values": [
+              { "name": "item", "value": { "type": "item", "item": "{\"id\":\"blaze_rod\",\"Count\":1}" } },
+              { "name": "cooldown", "value": { "type": "number", "number": 60 } },
+              { "name": "sound", "value": { "type": "sound", "sound": "entity.villager.no", "volume": 1, "pitch": 1 } }
+            ] }
+          ]
         }
-        if (an_hp.less_or_equals(25)) {
-            if (an_desp.equals(0)) {
-                world::spawn_mob(item("zombie_spawn_egg"), value::location, 20, "☠ Пособник Блюстителя", [potion("speed", amplifier=1)], natural_equipment="TRUE");
-                world::spawn_mob(item("zombie_spawn_egg"), value::location, 20, "☠ Пособник Блюстителя", [potion("speed", amplifier=1)], natural_equipment="TRUE");
-                world::spawn_lightning_bolt(value::location);
-                game var an_desp = 1;
-                player<all_players>::message("💀 Босс на грани смерти: он призвал пособников!");
-            }
-        }
+      ]
     }
-}
-
-// ===== Смерть босса: взрыв, молния, трофеи убийце =====
-event<entity_death> {
-    if (entity::name_equals(["👹 Блюститель Анархии"])) {
-        player<all_players>::remove_boss_bar("an_boss");
-        world::create_explosion(value::location, 2);
-        world::spawn_lightning_bolt(value::location);
-        var an_drop = an_boss.get_list_random_value();
-        player<killer_player>::give_items([an_drop], 1);
-        var an_drop = an_boss.get_list_random_value();
-        player<killer_player>::give_items([an_drop], 1);
-        var an_drop = an_boss.get_list_random_value();
-        player<killer_player>::give_items([an_drop], 1);
-        player<killer_player>::send_advancement("CHALLENGE", "Блюститель повержен!", item("totem_of_undying"));
-        player<killer_player>::message("🏆 Ты поверг Блюстителя Анархии! Трофеи — твои.");
-        player<killer_player>::play_sound(sound("ui.toast.challenge_complete"));
-    }
-}
-
-// ===== f0-f2: особые дропы блоков =====
-function f0() {
-    if (an_block.item_equals([item("grass_block")], "TYPE_ONLY")) { var an_drop = an_grass.get_list_random_value(); player::give_items([an_drop], 1); }
-    if (an_block.item_equals([item("dirt")], "TYPE_ONLY")) { var an_drop = an_dirt.get_list_random_value(); player::give_items([an_drop], 1); }
-    if (an_block.item_equals([item("cobblestone")], "TYPE_ONLY")) { var an_drop = an_cobble.get_list_random_value(); player::give_items([an_drop], 1); }
-    if (an_block.item_equals([item("oak_log")], "TYPE_ONLY")) { var an_drop = an_log.get_list_random_value(); player::give_items([an_drop], 1); }
-}
-function f1() {
-    if (an_block.item_equals([item("oak_leaves")], "TYPE_ONLY")) { var an_drop = an_leaves.get_list_random_value(); player::give_items([an_drop], 1); }
-    if (an_block.item_equals([item("oak_planks")], "TYPE_ONLY")) { var an_drop = an_planks.get_list_random_value(); player::give_items([an_drop], 1); }
-    if (an_block.item_equals([item("wheat")], "TYPE_ONLY")) { var an_drop = an_wheat.get_list_random_value(); player::give_items([an_drop], 1); }
-    if (an_block.item_equals([item("pumpkin")], "TYPE_ONLY")) { var an_drop = an_pumpkin.get_list_random_value(); player::give_items([an_drop], 1); }
-}
-function f2() {
-    if (an_block.item_equals([item("melon")], "TYPE_ONLY")) { var an_drop = an_melon.get_list_random_value(); player::give_items([an_drop], 1); }
-    if (an_block.item_equals([item("iron_block")], "TYPE_ONLY")) { var an_drop = an_ironblock.get_list_random_value(); player::give_items([an_drop], 1); }
-    if not (an_block.item_equals([item("grass_block"), item("dirt"), item("cobblestone"), item("oak_log"), item("oak_leaves"), item("oak_planks"), item("wheat"), item("pumpkin"), item("melon"), item("iron_block")], "TYPE_ONLY")) {
-        var an_drop = an_drops_general.get_list_random_value();
-        player::give_items([an_drop], 1);
-    }
-}
-
-// ===== f3: шанс падения кейсов при ломании блока =====
-function f3() {
-    var an_roll = variable::random_in_range(1, 150, "TRUE");
-    if (an_roll.equals(1)) { player::give_items([item("chest", name="&a🌿 Лесной кейс", lore=["&7Сокровище дремучей чащи", "&7ПКМ — открыть"])], 1); player::action_bar("🌿 Из блока выпал Лесной кейс!"); }
-    var an_roll = variable::random_in_range(1, 400, "TRUE");
-    if (an_roll.equals(1)) { player::give_items([item("barrel", name="&6🏜 Пустынный кейс", lore=["&7Сокровище раскалённых барханов", "&7ПКМ — открыть"])], 1); player::action_bar("🏜 Да это же Пустынный кейс!"); }
-    var an_roll = variable::random_in_range(1, 1500, "TRUE");
-    if (an_roll.equals(1)) { player::give_items([item("white_shulker_box", name="&b❄ Ледяной кейс", lore=["&7Древний лёд хранит тайны", "&7ПКМ — открыть"])], 1); player::action_bar("❄ Невероятно! Ледяной кейс!"); }
-    var an_roll = variable::random_in_range(1, 6000, "TRUE");
-    if (an_roll.equals(1)) { player::give_items([item("nether_star", name="&c🔥 Адский кейс", lore=["&7Добыча из самой преисподней", "&7ПКМ — открыть"])], 1); player::action_bar("🔥 ЛЕГЕНДАРНЫЙ АДСКИЙ КЕЙС!"); }
-}
-
-// ===== f4-f5: открытие кейсов ПКМ =====
-function f4() {
-    if (player::is_holding([item("chest", name="&a🌿 Лесной кейс")], "EITHER_HAND", "IGNORE_STACK_SIZE")) {
-        world::cancel_event();
-        player::remove_items([item("chest", name="&a🌿 Лесной кейс")]);
-        var an_drop = an_case1.get_list_random_value();
-        player::give_items([an_drop], 1);
-        player::play_sound(sound("entity.player.levelup"));
-        player::send_advancement("CHALLENGE", "Кейс открыт!", item("chest"));
-        player::message("🌿 Лесной кейс открыт! Проверь инвентарь.");
-        save var `%player%_cases` = `%player%_cases` + 1;
-    }
-    if (player::is_holding([item("barrel", name="&6🏜 Пустынный кейс")], "EITHER_HAND", "IGNORE_STACK_SIZE")) {
-        world::cancel_event();
-        player::remove_items([item("barrel", name="&6🏜 Пустынный кейс")]);
-        var an_drop = an_case2.get_list_random_value();
-        player::give_items([an_drop], 1);
-        player::play_sound(sound("entity.player.levelup"));
-        player::send_advancement("CHALLENGE", "Кейс открыт!", item("barrel"));
-        player::message("🏜 Пустынный кейс открыт! Проверь инвентарь.");
-        save var `%player%_cases` = `%player%_cases` + 1;
-    }
-}
-function f5() {
-    if (player::is_holding([item("white_shulker_box", name="&b❄ Ледяной кейс")], "EITHER_HAND", "IGNORE_STACK_SIZE")) {
-        world::cancel_event();
-        player::remove_items([item("white_shulker_box", name="&b❄ Ледяной кейс")]);
-        var an_drop = an_case3.get_list_random_value();
-        player::give_items([an_drop], 1);
-        player::play_sound(sound("entity.player.levelup"));
-        player::send_advancement("CHALLENGE", "Кейс открыт!", item("white_shulker_box"));
-        player::message("❄ Ледяной кейс открыт! Проверь инвентарь.");
-        save var `%player%_cases` = `%player%_cases` + 1;
-    }
-    if (player::is_holding([item("nether_star", name="&c🔥 Адский кейс")], "EITHER_HAND", "IGNORE_STACK_SIZE")) {
-        world::cancel_event();
-        player::remove_items([item("nether_star", name="&c🔥 Адский кейс")]);
-        var an_drop = an_case4.get_list_random_value();
-        player::give_items([an_drop], 1);
-        player::play_sound(sound("entity.player.levelup"));
-        player::send_advancement("CHALLENGE", "Кейс открыт!", item("nether_star"));
-        player::message("🔥 АДСКИЙ КЕЙС ОТКРЫТ! Ты настоящий везунчик!");
-        save var `%player%_cases` = `%player%_cases` + 1;
-    }
-}
-
-// ===== f6: Книга мега-дропа и Динамит Анархии =====
-function f6() {
-    if (player::is_holding([item("book", name="&5📖 Книга мега-дропа")], "EITHER_HAND", "IGNORE_STACK_SIZE")) {
-        world::cancel_event();
-        player::remove_items([item("book", name="&5📖 Книга мега-дропа")]);
-        var an_drop = an_drops_general.get_list_random_value();
-        player::give_items([an_drop], 1);
-        var an_drop = an_drops_general.get_list_random_value();
-        player::give_items([an_drop], 1);
-        var an_drop = an_drops_general.get_list_random_value();
-        player::give_items([an_drop], 1);
-        var an_drop = an_drops_general.get_list_random_value();
-        player::give_items([an_drop], 1);
-        var an_drop = an_drops_general.get_list_random_value();
-        player::give_items([an_drop], 1);
-        player::play_sound(sound("entity.player.levelup"));
-        player::message("📖 Книга рассыпалась в 5 случайных дропов!");
-    }
-    if (player::is_holding([item("tnt", name="&c🧨 Динамит Анархии")], "EITHER_HAND", "IGNORE_STACK_SIZE")) {
-        world::cancel_event();
-        player::remove_items([item("tnt", name="&c🧨 Динамит Анархии")]);
-        world::create_explosion(value::target_block_location, 3);
-        player::message("🧨 Динамит Анархии активирован!");
-    }
-}
-
-// ===== f7: Жезл Молний и Свиток удачи =====
-function f7() {
-    if (player::is_holding([item("lightning_rod", name="&e⚡ Жезл Молний")], "EITHER_HAND", "IGNORE_STACK_SIZE")) {
-        world::cancel_event();
-        world::spawn_lightning_bolt(value::target_block_location);
-        player::set_item_cooldown(item("lightning_rod", name="&e⚡ Жезл Молний"), 60, sound("entity.villager.no"));
-        player::message("⚡ Жезл исторг молнию!");
-    }
-    if (player::is_holding([item("paper", name="&d📜 Свиток удачи")], "EITHER_HAND", "IGNORE_STACK_SIZE")) {
-        world::cancel_event();
-        player::remove_items([item("paper", name="&d📜 Свиток удачи")]);
-        var an_drop = an_case_items.get_list_random_value();
-        player::give_items([an_drop], 1);
-        player::play_sound(sound("block.enchantment_table.use"));
-        player::message("📜 Свиток сгорел — судьба вручила тебе кейс!");
-    }
-}
-
-// ===== f8: призыв Блюстителя Анархии Идолом =====
-function f8() {
-    if (player::is_holding([item("totem_of_undying", name="&6👑 Идол Анархии")], "EITHER_HAND", "IGNORE_STACK_SIZE")) {
-        world::cancel_event();
-        player::remove_items([item("totem_of_undying", name="&6👑 Идол Анархии")]);
-        world::spawn_mob(
-            item("zombie_spawn_egg"),
-            value::location,
-            200,
-            "👹 Блюститель Анархии",
-            [potion("fire_resistance"), potion("speed", amplifier=1), potion("strength", amplifier=1), potion("resistance")],
-            item("diamond_sword", name="&bРеликвия Блюстителя", nbt='{Enchantments:[{id:"sharpness",lvl:3},{id:"knockback",lvl:1}]}'),
-            item("diamond_helmet", name="&bРеликвия Блюстителя", nbt='{Enchantments:[{id:"protection",lvl:3}]}'),
-            item("diamond_chestplate", name="&bРеликвия Блюстителя", nbt='{Enchantments:[{id:"protection",lvl:3}]}'),
-            item("diamond_leggings", name="&bРеликвия Блюстителя", nbt='{Enchantments:[{id:"protection",lvl:3}]}'),
-            item("diamond_boots", name="&bРеликвия Блюстителя", nbt='{Enchantments:[{id:"protection",lvl:3},{id:"feather_falling",lvl:2}]}'),
-            item("air"),
-            natural_equipment="FALSE"
-        );
-        entity<last_entity>::set_max_health(200, "TRUE");
-        entity<last_entity>::set_target("%player%");
-        player<all_players>::set_boss_bar("an_boss", "👹 Блюститель Анархии", 1, "RED", "NOTCHED_10", "FOG_AND_DARK_SKY");
-        player::play_sound(sound("entity.wither.spawn"));
-        player::message("👑 Блюститель Анархии призван! Убей его — и богатство твоё!");
-        game var an_rage = 0;
-        game var an_desp = 0;
-    }
+  ]
 }
