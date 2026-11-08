@@ -1,20 +1,1911 @@
 {
-  "code": [
+  "handlers": [
     {
-      "id": "block",
-      "block": "event",
-      "action": "Join",
-      "args": {}
+      "type": "event",
+      "position": 0,
+      "event": "world_start",
+      "operations": [
+        {
+          "action": "set_variable_set_value",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "ap_base",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "value",
+              "value": {
+                "type": "item",
+                "item": "H4sIAAAAAAAA/wE4AMf/CgAAAgACaWQAD21pbmVjcmFmdDpzdG9uZQMABWNvdW50AAAAAQMAC0RhdGFWZXJzaW9uAAAOdADEenqzOAAAAA=="
+              }
+            }
+          ]
+        },
+        {
+          "action": "set_variable_set_value",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "apoc_meteor",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "value",
+              "value": {
+                "type": "number",
+                "number": 0
+              }
+            }
+          ]
+        },
+        {
+          "action": "set_variable_set_value",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "apoc_run",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "value",
+              "value": {
+                "type": "number",
+                "number": 0
+              }
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "block",
-      "block": "player_action",
-      "action": "SendMessage",
-      "args": {
-        "messages": [
-          "&aДобро пожаловать на плот!"
-        ]
-      }
+      "type": "event",
+      "position": 1,
+      "event": "player_chat",
+      "operations": [
+        {
+          "action": "set_variable_set_value",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "apoc_imsg",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "value",
+              "value": {
+                "type": "game_value",
+                "game_value": "event_chat_message",
+                "selection": "{\"type\":\"default\"}"
+              }
+            }
+          ]
+        },
+        {
+          "action": "if_variable_equals",
+          "values": [
+            {
+              "name": "value",
+              "value": {
+                "type": "variable",
+                "variable": "apoc_imsg",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "compare",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "text",
+                    "text": "@world menu",
+                    "parsing": "plain"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "compare_type",
+              "value": {
+                "type": "enum",
+                "enum": "ANY"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "event_cancel",
+              "values": []
+            },
+            {
+              "action": "if_player_has_privilege",
+              "values": [
+                {
+                  "name": "privilege",
+                  "value": {
+                    "type": "enum",
+                    "enum": "OWNER"
+                  }
+                },
+                {
+                  "name": "exact",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                }
+              ],
+              "operations": [
+                {
+                  "action": "set_variable_set_value",
+                  "values": [
+                    {
+                      "name": "variable",
+                      "value": {
+                        "type": "variable",
+                        "variable": "apoc_st",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "value",
+                      "value": {
+                        "type": "text",
+                        "text": "&cВЫКЛЮЧЕНО",
+                        "parsing": "legacy"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "action": "if_variable_equals",
+                  "values": [
+                    {
+                      "name": "value",
+                      "value": {
+                        "type": "variable",
+                        "variable": "apoc_meteor",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "compare",
+                      "value": {
+                        "type": "array",
+                        "values": [
+                          {
+                            "type": "number",
+                            "number": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "compare_type",
+                      "value": {
+                        "type": "enum",
+                        "enum": "ANY"
+                      }
+                    }
+                  ],
+                  "operations": [
+                    {
+                      "action": "set_variable_set_value",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_st",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "value",
+                          "value": {
+                            "type": "text",
+                            "text": "&aВКЛЮЧЕНО",
+                            "parsing": "legacy"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "action": "set_variable_set_value",
+                  "values": [
+                    {
+                      "name": "variable",
+                      "value": {
+                        "type": "variable",
+                        "variable": "apoc_icon",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "value",
+                      "value": {
+                        "type": "variable",
+                        "variable": "ap_base",
+                        "scope": "game"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "action": "set_variable_set_item_type",
+                  "values": [
+                    {
+                      "name": "variable",
+                      "value": {
+                        "type": "variable",
+                        "variable": "apoc_icon",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "item",
+                      "value": {
+                        "type": "variable",
+                        "variable": "ap_base",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "type",
+                      "value": {
+                        "type": "text",
+                        "text": "minecraft:magma_block",
+                        "parsing": "plain"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "action": "set_variable_set_item_name",
+                  "values": [
+                    {
+                      "name": "variable",
+                      "value": {
+                        "type": "variable",
+                        "variable": "apoc_icon",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "item",
+                      "value": {
+                        "type": "variable",
+                        "variable": "apoc_icon",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "text",
+                      "value": {
+                        "type": "text",
+                        "text": "&6Дождь метеоритов",
+                        "parsing": "legacy"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "action": "set_variable_set_item_lore",
+                  "values": [
+                    {
+                      "name": "variable",
+                      "value": {
+                        "type": "variable",
+                        "variable": "apoc_icon",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "item",
+                      "value": {
+                        "type": "variable",
+                        "variable": "apoc_icon",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "lore",
+                      "value": {
+                        "type": "array",
+                        "values": [
+                          {
+                            "type": "variable",
+                            "variable": "apoc_st",
+                            "scope": "game"
+                          },
+                          {
+                            "type": "text",
+                            "text": "&7Клик: включить/выключить",
+                            "parsing": "legacy"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "action": "set_variable_create_list",
+                  "values": [
+                    {
+                      "name": "variable",
+                      "value": {
+                        "type": "variable",
+                        "variable": "apoc_menu",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "values",
+                      "value": {
+                        "type": "array",
+                        "values": [
+                          {
+                            "type": "variable",
+                            "variable": "apoc_icon",
+                            "scope": "game"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "action": "player_show_inventory_menu",
+                  "values": [
+                    {
+                      "name": "items",
+                      "value": {
+                        "type": "variable",
+                        "variable": "apoc_menu",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "name",
+                      "value": {
+                        "type": "text",
+                        "text": "События апокалипсиса",
+                        "parsing": "legacy"
+                      }
+                    },
+                    {
+                      "name": "custom_id",
+                      "value": {
+                        "type": "text",
+                        "text": "apocmenu",
+                        "parsing": "plain"
+                      }
+                    },
+                    {
+                      "name": "inventory_type",
+                      "value": {
+                        "type": "enum",
+                        "enum": "CHEST"
+                      }
+                    }
+                  ],
+                  "selection": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "selection": {
+                "type": "default"
+              }
+            },
+            {
+              "action": "if_player_has_privilege",
+              "values": [
+                {
+                  "name": "privilege",
+                  "value": {
+                    "type": "enum",
+                    "enum": "OWNER"
+                  }
+                },
+                {
+                  "name": "exact",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                }
+              ],
+              "operations": [
+                {
+                  "action": "player_send_message",
+                  "values": [
+                    {
+                      "name": "messages",
+                      "value": {
+                        "type": "array",
+                        "values": [
+                          {
+                            "type": "text",
+                            "text": "&cТолько владелец мира может открыть это меню.",
+                            "parsing": "legacy"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "merging",
+                      "value": {
+                        "type": "enum",
+                        "enum": "SPACES"
+                      }
+                    }
+                  ],
+                  "selection": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "is_inverted": true,
+              "selection": {
+                "type": "default"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "position": 2,
+      "event": "player_click_inventory",
+      "operations": [
+        {
+          "action": "set_variable_set_value",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "apoc_icust",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "value",
+              "value": {
+                "type": "game_value",
+                "game_value": "open_inventory_custom_id",
+                "selection": "{\"type\":\"default\"}"
+              }
+            }
+          ]
+        },
+        {
+          "action": "if_variable_equals",
+          "values": [
+            {
+              "name": "value",
+              "value": {
+                "type": "variable",
+                "variable": "apoc_icust",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "compare",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "text",
+                    "text": "apocmenu",
+                    "parsing": "plain"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "compare_type",
+              "value": {
+                "type": "enum",
+                "enum": "ANY"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "event_cancel",
+              "values": []
+            },
+            {
+              "action": "set_variable_set_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "apoc_slot",
+                    "scope": "game"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "game_value",
+                    "game_value": "event_slot",
+                    "selection": "{\"type\":\"default\"}"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "if_variable_equals",
+              "values": [
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "variable",
+                    "variable": "apoc_slot",
+                    "scope": "game"
+                  }
+                },
+                {
+                  "name": "compare",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "number",
+                        "number": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "compare_type",
+                  "value": {
+                    "type": "enum",
+                    "enum": "ANY"
+                  }
+                }
+              ],
+              "operations": [
+                {
+                  "action": "set_variable_set_value",
+                  "values": [
+                    {
+                      "name": "variable",
+                      "value": {
+                        "type": "variable",
+                        "variable": "apoc_t",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "value",
+                      "value": {
+                        "type": "variable",
+                        "variable": "apoc_meteor",
+                        "scope": "game"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "action": "if_variable_equals",
+                  "values": [
+                    {
+                      "name": "value",
+                      "value": {
+                        "type": "variable",
+                        "variable": "apoc_t",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "compare",
+                      "value": {
+                        "type": "array",
+                        "values": [
+                          {
+                            "type": "number",
+                            "number": 0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "compare_type",
+                      "value": {
+                        "type": "enum",
+                        "enum": "ANY"
+                      }
+                    }
+                  ],
+                  "operations": [
+                    {
+                      "action": "set_variable_set_value",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_meteor",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "value",
+                          "value": {
+                            "type": "number",
+                            "number": 1
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "player_send_message",
+                      "values": [
+                        {
+                          "name": "messages",
+                          "value": {
+                            "type": "array",
+                            "values": [
+                              {
+                                "type": "text",
+                                "text": "&aМетеоритный дождь включён.",
+                                "parsing": "legacy"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "merging",
+                          "value": {
+                            "type": "enum",
+                            "enum": "SPACES"
+                          }
+                        }
+                      ],
+                      "selection": {
+                        "type": "default"
+                      }
+                    },
+                    {
+                      "action": "set_variable_set_value",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_st",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "value",
+                          "value": {
+                            "type": "text",
+                            "text": "&cВЫКЛЮЧЕНО",
+                            "parsing": "legacy"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "if_variable_equals",
+                      "values": [
+                        {
+                          "name": "value",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_meteor",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "compare",
+                          "value": {
+                            "type": "array",
+                            "values": [
+                              {
+                                "type": "number",
+                                "number": 1
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "compare_type",
+                          "value": {
+                            "type": "enum",
+                            "enum": "ANY"
+                          }
+                        }
+                      ],
+                      "operations": [
+                        {
+                          "action": "set_variable_set_value",
+                          "values": [
+                            {
+                              "name": "variable",
+                              "value": {
+                                "type": "variable",
+                                "variable": "apoc_st",
+                                "scope": "game"
+                              }
+                            },
+                            {
+                              "name": "value",
+                              "value": {
+                                "type": "text",
+                                "text": "&aВКЛЮЧЕНО",
+                                "parsing": "legacy"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "action": "set_variable_set_value",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_icon",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "value",
+                          "value": {
+                            "type": "variable",
+                            "variable": "ap_base",
+                            "scope": "game"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "set_variable_set_item_type",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_icon",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "item",
+                          "value": {
+                            "type": "variable",
+                            "variable": "ap_base",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "type",
+                          "value": {
+                            "type": "text",
+                            "text": "minecraft:magma_block",
+                            "parsing": "plain"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "set_variable_set_item_name",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_icon",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "item",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_icon",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "text",
+                          "value": {
+                            "type": "text",
+                            "text": "&6Дождь метеоритов",
+                            "parsing": "legacy"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "set_variable_set_item_lore",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_icon",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "item",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_icon",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "lore",
+                          "value": {
+                            "type": "array",
+                            "values": [
+                              {
+                                "type": "variable",
+                                "variable": "apoc_st",
+                                "scope": "game"
+                              },
+                              {
+                                "type": "text",
+                                "text": "&7Клик: включить/выключить",
+                                "parsing": "legacy"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "set_variable_create_list",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_menu",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "values",
+                          "value": {
+                            "type": "array",
+                            "values": [
+                              {
+                                "type": "variable",
+                                "variable": "apoc_icon",
+                                "scope": "game"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "player_show_inventory_menu",
+                      "values": [
+                        {
+                          "name": "items",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_menu",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "name",
+                          "value": {
+                            "type": "text",
+                            "text": "События апокалипсиса",
+                            "parsing": "legacy"
+                          }
+                        },
+                        {
+                          "name": "custom_id",
+                          "value": {
+                            "type": "text",
+                            "text": "apocmenu",
+                            "parsing": "plain"
+                          }
+                        },
+                        {
+                          "name": "inventory_type",
+                          "value": {
+                            "type": "enum",
+                            "enum": "CHEST"
+                          }
+                        }
+                      ],
+                      "selection": {
+                        "type": "default"
+                      }
+                    },
+                    {
+                      "action": "if_variable_equals",
+                      "values": [
+                        {
+                          "name": "value",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_run",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "compare",
+                          "value": {
+                            "type": "array",
+                            "values": [
+                              {
+                                "type": "number",
+                                "number": 0
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "compare_type",
+                          "value": {
+                            "type": "enum",
+                            "enum": "ANY"
+                          }
+                        }
+                      ],
+                      "operations": [
+                        {
+                          "action": "set_variable_set_value",
+                          "values": [
+                            {
+                              "name": "variable",
+                              "value": {
+                                "type": "variable",
+                                "variable": "apoc_run",
+                                "scope": "game"
+                              }
+                            },
+                            {
+                              "name": "value",
+                              "value": {
+                                "type": "number",
+                                "number": 1
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "action": "repeat_forever",
+                          "values": [],
+                          "operations": [
+                            {
+                              "action": "control_wait",
+                              "values": [
+                                {
+                                  "name": "duration",
+                                  "value": {
+                                    "type": "number",
+                                    "number": 5
+                                  }
+                                },
+                                {
+                                  "name": "time_unit",
+                                  "value": {
+                                    "type": "enum",
+                                    "enum": "TICKS"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "action": "if_variable_equals",
+                              "values": [
+                                {
+                                  "name": "value",
+                                  "value": {
+                                    "type": "variable",
+                                    "variable": "apoc_meteor",
+                                    "scope": "game"
+                                  }
+                                },
+                                {
+                                  "name": "compare",
+                                  "value": {
+                                    "type": "array",
+                                    "values": [
+                                      {
+                                        "type": "number",
+                                        "number": 1
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "name": "compare_type",
+                                  "value": {
+                                    "type": "enum",
+                                    "enum": "ANY"
+                                  }
+                                }
+                              ],
+                              "operations": [
+                                {
+                                  "action": "select_random_player",
+                                  "values": []
+                                },
+                                {
+                                  "action": "set_variable_set_value",
+                                  "values": [
+                                    {
+                                      "name": "variable",
+                                      "value": {
+                                        "type": "variable",
+                                        "variable": "apoc_sz",
+                                        "scope": "game"
+                                      }
+                                    },
+                                    {
+                                      "name": "value",
+                                      "value": {
+                                        "type": "game_value",
+                                        "game_value": "selection_size",
+                                        "selection": "{\"type\":\"current\"}"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "action": "if_variable_greater",
+                                  "values": [
+                                    {
+                                      "name": "value",
+                                      "value": {
+                                        "type": "variable",
+                                        "variable": "apoc_sz",
+                                        "scope": "game"
+                                      }
+                                    },
+                                    {
+                                      "name": "compare",
+                                      "value": {
+                                        "type": "number",
+                                        "number": 0
+                                      }
+                                    }
+                                  ],
+                                  "operations": [
+                                    {
+                                      "action": "set_variable_set_value",
+                                      "values": [
+                                        {
+                                          "name": "variable",
+                                          "value": {
+                                            "type": "variable",
+                                            "variable": "apoc_ploc",
+                                            "scope": "game"
+                                          }
+                                        },
+                                        {
+                                          "name": "value",
+                                          "value": {
+                                            "type": "game_value",
+                                            "game_value": "location",
+                                            "selection": "{\"type\":\"current\"}"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "action": "set_variable_shift_all_coordinates",
+                                      "values": [
+                                        {
+                                          "name": "variable",
+                                          "value": {
+                                            "type": "variable",
+                                            "variable": "apoc_a1",
+                                            "scope": "game"
+                                          }
+                                        },
+                                        {
+                                          "name": "location",
+                                          "value": {
+                                            "type": "variable",
+                                            "variable": "apoc_ploc",
+                                            "scope": "game"
+                                          }
+                                        },
+                                        {
+                                          "name": "x",
+                                          "value": {
+                                            "type": "number",
+                                            "number": 50
+                                          }
+                                        },
+                                        {
+                                          "name": "y",
+                                          "value": {
+                                            "type": "number",
+                                            "number": 50
+                                          }
+                                        },
+                                        {
+                                          "name": "z",
+                                          "value": {
+                                            "type": "number",
+                                            "number": 50
+                                          }
+                                        },
+                                        {
+                                          "name": "yaw",
+                                          "value": {
+                                            "type": "number",
+                                            "number": 0
+                                          }
+                                        },
+                                        {
+                                          "name": "pitch",
+                                          "value": {
+                                            "type": "number",
+                                            "number": 0
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "action": "set_variable_shift_all_coordinates",
+                                      "values": [
+                                        {
+                                          "name": "variable",
+                                          "value": {
+                                            "type": "variable",
+                                            "variable": "apoc_a2",
+                                            "scope": "game"
+                                          }
+                                        },
+                                        {
+                                          "name": "location",
+                                          "value": {
+                                            "type": "variable",
+                                            "variable": "apoc_ploc",
+                                            "scope": "game"
+                                          }
+                                        },
+                                        {
+                                          "name": "x",
+                                          "value": {
+                                            "type": "number",
+                                            "number": -50
+                                          }
+                                        },
+                                        {
+                                          "name": "y",
+                                          "value": {
+                                            "type": "number",
+                                            "number": 50
+                                          }
+                                        },
+                                        {
+                                          "name": "z",
+                                          "value": {
+                                            "type": "number",
+                                            "number": -50
+                                          }
+                                        },
+                                        {
+                                          "name": "yaw",
+                                          "value": {
+                                            "type": "number",
+                                            "number": 0
+                                          }
+                                        },
+                                        {
+                                          "name": "pitch",
+                                          "value": {
+                                            "type": "number",
+                                            "number": 0
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "action": "set_variable_random_location",
+                                      "values": [
+                                        {
+                                          "name": "variable",
+                                          "value": {
+                                            "type": "variable",
+                                            "variable": "apoc_tgt",
+                                            "scope": "game"
+                                          }
+                                        },
+                                        {
+                                          "name": "location_1",
+                                          "value": {
+                                            "type": "variable",
+                                            "variable": "apoc_a1",
+                                            "scope": "game"
+                                          }
+                                        },
+                                        {
+                                          "name": "location_2",
+                                          "value": {
+                                            "type": "variable",
+                                            "variable": "apoc_a2",
+                                            "scope": "game"
+                                          }
+                                        },
+                                        {
+                                          "name": "integer",
+                                          "value": {
+                                            "type": "enum",
+                                            "enum": "FALSE"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "action": "game_spawn_primed_tnt",
+                                      "values": [
+                                        {
+                                          "name": "location",
+                                          "value": {
+                                            "type": "variable",
+                                            "variable": "apoc_tgt",
+                                            "scope": "game"
+                                          }
+                                        },
+                                        {
+                                          "name": "tnt_power",
+                                          "value": {
+                                            "type": "number",
+                                            "number": 3
+                                          }
+                                        },
+                                        {
+                                          "name": "fuse_duration",
+                                          "value": {
+                                            "type": "number",
+                                            "number": 40
+                                          }
+                                        },
+                                        {
+                                          "name": "custom_name",
+                                          "value": {
+                                            "type": "text",
+                                            "text": "Метеорит",
+                                            "parsing": "plain"
+                                          }
+                                        },
+                                        {
+                                          "name": "block",
+                                          "value": {
+                                            "type": "block",
+                                            "block": "minecraft:magma_block"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "action": "select_last_entity",
+                                      "values": []
+                                    },
+                                    {
+                                      "action": "entity_set_custom_tag",
+                                      "values": [
+                                        {
+                                          "name": "name",
+                                          "value": {
+                                            "type": "text",
+                                            "text": "apoc_meteor",
+                                            "parsing": "plain"
+                                          }
+                                        },
+                                        {
+                                          "name": "value",
+                                          "value": {
+                                            "type": "text",
+                                            "text": "1",
+                                            "parsing": "plain"
+                                          }
+                                        }
+                                      ],
+                                      "selection": {
+                                        "type": "current"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "action": "if_variable_equals",
+                              "values": [
+                                {
+                                  "name": "value",
+                                  "value": {
+                                    "type": "variable",
+                                    "variable": "apoc_meteor",
+                                    "scope": "game"
+                                  }
+                                },
+                                {
+                                  "name": "compare",
+                                  "value": {
+                                    "type": "array",
+                                    "values": [
+                                      {
+                                        "type": "number",
+                                        "number": 0
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "name": "compare_type",
+                                  "value": {
+                                    "type": "enum",
+                                    "enum": "ANY"
+                                  }
+                                }
+                              ],
+                              "operations": [
+                                {
+                                  "action": "set_variable_set_value",
+                                  "values": [
+                                    {
+                                      "name": "variable",
+                                      "value": {
+                                        "type": "variable",
+                                        "variable": "apoc_run",
+                                        "scope": "game"
+                                      }
+                                    },
+                                    {
+                                      "name": "value",
+                                      "value": {
+                                        "type": "number",
+                                        "number": 0
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "action": "control_stop_repeat",
+                                  "values": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "action": "if_variable_equals",
+                  "values": [
+                    {
+                      "name": "value",
+                      "value": {
+                        "type": "variable",
+                        "variable": "apoc_t",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "compare",
+                      "value": {
+                        "type": "array",
+                        "values": [
+                          {
+                            "type": "number",
+                            "number": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "compare_type",
+                      "value": {
+                        "type": "enum",
+                        "enum": "ANY"
+                      }
+                    }
+                  ],
+                  "operations": [
+                    {
+                      "action": "set_variable_set_value",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_meteor",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "value",
+                          "value": {
+                            "type": "number",
+                            "number": 0
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "player_send_message",
+                      "values": [
+                        {
+                          "name": "messages",
+                          "value": {
+                            "type": "array",
+                            "values": [
+                              {
+                                "type": "text",
+                                "text": "&cМетеоритный дождь выключен.",
+                                "parsing": "legacy"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "merging",
+                          "value": {
+                            "type": "enum",
+                            "enum": "SPACES"
+                          }
+                        }
+                      ],
+                      "selection": {
+                        "type": "default"
+                      }
+                    },
+                    {
+                      "action": "set_variable_set_value",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_st",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "value",
+                          "value": {
+                            "type": "text",
+                            "text": "&cВЫКЛЮЧЕНО",
+                            "parsing": "legacy"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "if_variable_equals",
+                      "values": [
+                        {
+                          "name": "value",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_meteor",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "compare",
+                          "value": {
+                            "type": "array",
+                            "values": [
+                              {
+                                "type": "number",
+                                "number": 1
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "compare_type",
+                          "value": {
+                            "type": "enum",
+                            "enum": "ANY"
+                          }
+                        }
+                      ],
+                      "operations": [
+                        {
+                          "action": "set_variable_set_value",
+                          "values": [
+                            {
+                              "name": "variable",
+                              "value": {
+                                "type": "variable",
+                                "variable": "apoc_st",
+                                "scope": "game"
+                              }
+                            },
+                            {
+                              "name": "value",
+                              "value": {
+                                "type": "text",
+                                "text": "&aВКЛЮЧЕНО",
+                                "parsing": "legacy"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "action": "set_variable_set_value",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_icon",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "value",
+                          "value": {
+                            "type": "variable",
+                            "variable": "ap_base",
+                            "scope": "game"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "set_variable_set_item_type",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_icon",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "item",
+                          "value": {
+                            "type": "variable",
+                            "variable": "ap_base",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "type",
+                          "value": {
+                            "type": "text",
+                            "text": "minecraft:magma_block",
+                            "parsing": "plain"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "set_variable_set_item_name",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_icon",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "item",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_icon",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "text",
+                          "value": {
+                            "type": "text",
+                            "text": "&6Дождь метеоритов",
+                            "parsing": "legacy"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "set_variable_set_item_lore",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_icon",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "item",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_icon",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "lore",
+                          "value": {
+                            "type": "array",
+                            "values": [
+                              {
+                                "type": "variable",
+                                "variable": "apoc_st",
+                                "scope": "game"
+                              },
+                              {
+                                "type": "text",
+                                "text": "&7Клик: включить/выключить",
+                                "parsing": "legacy"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "set_variable_create_list",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_menu",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "values",
+                          "value": {
+                            "type": "array",
+                            "values": [
+                              {
+                                "type": "variable",
+                                "variable": "apoc_icon",
+                                "scope": "game"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "player_show_inventory_menu",
+                      "values": [
+                        {
+                          "name": "items",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_menu",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "name",
+                          "value": {
+                            "type": "text",
+                            "text": "События апокалипсиса",
+                            "parsing": "legacy"
+                          }
+                        },
+                        {
+                          "name": "custom_id",
+                          "value": {
+                            "type": "text",
+                            "text": "apocmenu",
+                            "parsing": "plain"
+                          }
+                        },
+                        {
+                          "name": "inventory_type",
+                          "value": {
+                            "type": "enum",
+                            "enum": "CHEST"
+                          }
+                        }
+                      ],
+                      "selection": {
+                        "type": "default"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "position": 3,
+      "event": "entity_explode",
+      "operations": [
+        {
+          "action": "if_entity_has_custom_tag",
+          "values": [
+            {
+              "name": "tag",
+              "value": {
+                "type": "text",
+                "text": "apoc_meteor",
+                "parsing": "plain"
+              }
+            },
+            {
+              "name": "tag_value",
+              "value": {
+                "type": "text",
+                "text": "1",
+                "parsing": "plain"
+              }
+            },
+            {
+              "name": "compare_type",
+              "value": {
+                "type": "enum",
+                "enum": "EQUALS"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "set_variable_set_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "apoc_eloc",
+                    "scope": "game"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "game_value",
+                    "game_value": "location",
+                    "selection": "{\"type\":\"default\"}"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "repeat_adjacently",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "apoc_b",
+                    "scope": "game"
+                  }
+                },
+                {
+                  "name": "origin",
+                  "value": {
+                    "type": "variable",
+                    "variable": "apoc_eloc",
+                    "scope": "game"
+                  }
+                },
+                {
+                  "name": "change_rotation",
+                  "value": {
+                    "type": "enum",
+                    "enum": "FALSE"
+                  }
+                },
+                {
+                  "name": "include_self",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "pattern",
+                  "value": {
+                    "type": "enum",
+                    "enum": "CUBE"
+                  }
+                }
+              ],
+              "operations": [
+                {
+                  "action": "if_game_block_equals",
+                  "values": [
+                    {
+                      "name": "blocks",
+                      "value": {
+                        "type": "block",
+                        "block": "minecraft:bedrock"
+                      }
+                    },
+                    {
+                      "name": "location",
+                      "value": {
+                        "type": "variable",
+                        "variable": "apoc_b",
+                        "scope": "game"
+                      }
+                    }
+                  ],
+                  "operations": [
+                    {
+                      "action": "game_break_block",
+                      "values": [
+                        {
+                          "name": "locations",
+                          "value": {
+                            "type": "variable",
+                            "variable": "apoc_b",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "tool",
+                          "value": {
+                            "type": "item",
+                            "item": "H4sIAAAAAAAA/wE4AMf/CgAAAgACaWQAD21pbmVjcmFmdDpzdG9uZQMABWNvdW50AAAAAQMAC0RhdGFWZXJzaW9uAAAOdADEenqzOAAAAA=="
+                          }
+                        },
+                        {
+                          "name": "drop_exp",
+                          "value": {
+                            "type": "enum",
+                            "enum": "FALSE"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "is_inverted": true
+                }
+              ]
+            }
+          ],
+          "selection": {
+            "type": "default"
+          }
+        }
+      ]
     }
   ]
 }
