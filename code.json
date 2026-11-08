@@ -31,11 +31,11 @@
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"netherite_sword\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🩸 Клинок Вампира\\\",\\\"color\\\":\\\"dark_red\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Вампиризм: восстанавливает\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"здоровье атакующему\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                    "item": "{\"id\":\"netherite_sword\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🩸 Клинок Вампира\\\",\\\"color\\\":\\\"dark_red\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Вампиризм: восстанавливает\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"половину урона атакующему\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"iron_axe\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🌪 Молот Ветров\\\",\\\"color\\\":\\\"aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Подбрасывает жертву\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"в воздух\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                    "item": "{\"id\":\"iron_axe\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🌪 Молот Ветров\\\",\\\"color\\\":\\\"aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Поднимает жертву в воздух\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"левитацией\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
                   },
                   {
                     "type": "item",
@@ -45,9 +45,18 @@
                     "type": "item",
                     "item": "{\"id\":\"trident\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🔱 Трезубец Скача\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"ПКМ — рывок вперёд\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"по направлению взгляда\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
                   },
-                  {},
-                  {},
-                  {},
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"bow\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🕸 Ловчий лук\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Плетёт паутину\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"в месте попадания\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"bow\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🌈 Эндер-лук\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Телепортирует стрелка\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"в место попадания\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"crossbow\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🔥 Адский арбалет\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Поджигает место\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"попадания снаряда\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
                   {},
                   {},
                   {},
@@ -76,7 +85,7 @@
                 "values": [
                   {
                     "type": "text",
-                    "text": "⚔ Оружейник выдал тебе 8 оружий:"
+                    "text": "⚔ Оружейник выдал тебе 11 оружий:"
                   },
                   {
                     "type": "text",
@@ -85,6 +94,18 @@
                   {
                     "type": "text",
                     "text": "💥 Взрывной лук — взрыв при попадании"
+                  },
+                  {
+                    "type": "text",
+                    "text": "🕸 Ловчий лук — паутина при попадании"
+                  },
+                  {
+                    "type": "text",
+                    "text": "🌈 Эндер-лук — телепорт к стреле"
+                  },
+                  {
+                    "type": "text",
+                    "text": "🔥 Адский арбалет — огонь при попадании"
                   },
                   {
                     "type": "text",
@@ -100,7 +121,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "🌪 Молот Ветров — подбрасывает жертву"
+                    "text": "🌪 Молот Ветров — левитация жертвы"
                   },
                   {
                     "type": "text",
@@ -110,9 +131,6 @@
                     "type": "text",
                     "text": "🔱 Трезубец Скача — ПКМ: рывок вперёд"
                   },
-                  {},
-                  {},
-                  {},
                   {},
                   {},
                   {},
@@ -141,7 +159,7 @@
                 "values": [
                   {
                     "type": "text",
-                    "text": "⚔ Арсенал выдан: 8 оружий!"
+                    "text": "⚔ Арсенал выдан: 11 оружий!"
                   },
                   {},
                   {},
@@ -338,12 +356,259 @@
               ]
             }
           ]
+        },
+        {
+          "action": "if_player_is_holding",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"bow\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🕸 Ловчий лук\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Плетёт паутину\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"в месте попадания\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "hand_slot",
+              "value": {
+                "type": "enum",
+                "enum": "EITHER_HAND"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "entity_set_custom_name",
+              "selection": {
+                "type": "projectile"
+              },
+              "values": [
+                {
+                  "name": "custom_name",
+                  "value": {
+                    "type": "text",
+                    "text": "ob_w_w"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "entity_set_custom_name_visibility",
+              "selection": {
+                "type": "projectile"
+              },
+              "values": [
+                {
+                  "name": "visibility",
+                  "value": {
+                    "type": "enum",
+                    "enum": "FALSE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_holding",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"bow\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🌈 Эндер-лук\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Телепортирует стрелка\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"в место попадания\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "hand_slot",
+              "value": {
+                "type": "enum",
+                "enum": "EITHER_HAND"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "entity_set_custom_name",
+              "selection": {
+                "type": "projectile"
+              },
+              "values": [
+                {
+                  "name": "custom_name",
+                  "value": {
+                    "type": "text",
+                    "text": "ob_w_t"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "entity_set_custom_name_visibility",
+              "selection": {
+                "type": "projectile"
+              },
+              "values": [
+                {
+                  "name": "visibility",
+                  "value": {
+                    "type": "enum",
+                    "enum": "FALSE"
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "type": "event",
       "position": 2,
+      "event": "player_launch_projectile",
+      "operations": [
+        {
+          "action": "if_player_is_holding",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"crossbow\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🔥 Адский арбалет\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Поджигает место\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"попадания снаряда\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "hand_slot",
+              "value": {
+                "type": "enum",
+                "enum": "EITHER_HAND"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "entity_set_custom_name",
+              "selection": {
+                "type": "projectile"
+              },
+              "values": [
+                {
+                  "name": "custom_name",
+                  "value": {
+                    "type": "text",
+                    "text": "ob_w_x"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "entity_set_custom_name_visibility",
+              "selection": {
+                "type": "projectile"
+              },
+              "values": [
+                {
+                  "name": "visibility",
+                  "value": {
+                    "type": "enum",
+                    "enum": "FALSE"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "position": 3,
       "event": "player_projectile_hit",
       "operations": [
         {
@@ -538,12 +803,369 @@
               ]
             }
           ]
+        },
+        {
+          "action": "if_entity_name_equals",
+          "selection": {
+            "type": "projectile"
+          },
+          "values": [
+            {
+              "name": "names_or_uuids",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "text",
+                    "text": "ob_w_w"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "game_set_block",
+              "values": [
+                {
+                  "name": "block",
+                  "value": {
+                    "type": "item",
+                    "item": "{\"id\":\"cobweb\",\"Count\":1}"
+                  }
+                },
+                {
+                  "name": "locations",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "game_value",
+                        "game_value": "location",
+                        "selection": "{\"type\":\"projectile\"}"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "action": "player_send_message",
+              "values": [
+                {
+                  "name": "messages",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "text",
+                        "text": "🕸 Ловчий лук: цель в паутине!"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "merging",
+                  "value": {
+                    "type": "enum",
+                    "enum": "SEPARATE_LINES"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_entity_name_equals",
+          "selection": {
+            "type": "projectile"
+          },
+          "values": [
+            {
+              "name": "names_or_uuids",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "text",
+                    "text": "ob_w_t"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_teleport",
+              "values": [
+                {
+                  "name": "location",
+                  "value": {
+                    "type": "game_value",
+                    "game_value": "location",
+                    "selection": "{\"type\":\"projectile\"}"
+                  }
+                },
+                {
+                  "name": "keep_rotation",
+                  "value": {
+                    "type": "enum",
+                    "enum": "FALSE"
+                  }
+                },
+                {
+                  "name": "keep_velocity",
+                  "value": {
+                    "type": "enum",
+                    "enum": "FALSE"
+                  }
+                },
+                {
+                  "name": "ignore_passengers",
+                  "value": {
+                    "type": "enum",
+                    "enum": "FALSE"
+                  }
+                },
+                {
+                  "name": "dismount",
+                  "value": {
+                    "type": "enum",
+                    "enum": "FALSE"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "player_send_message",
+              "values": [
+                {
+                  "name": "messages",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "text",
+                        "text": "🌈 Эндер-лук: телепортация!"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "merging",
+                  "value": {
+                    "type": "enum",
+                    "enum": "SEPARATE_LINES"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_entity_name_equals",
+          "selection": {
+            "type": "projectile"
+          },
+          "values": [
+            {
+              "name": "names_or_uuids",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "text",
+                    "text": "ob_w_x"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "game_set_block",
+              "values": [
+                {
+                  "name": "block",
+                  "value": {
+                    "type": "item",
+                    "item": "{\"id\":\"fire\",\"Count\":1}"
+                  }
+                },
+                {
+                  "name": "locations",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "game_value",
+                        "game_value": "location",
+                        "selection": "{\"type\":\"projectile\"}"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "action": "player_send_message",
+              "values": [
+                {
+                  "name": "messages",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "text",
+                        "text": "🔥 Адский арбалет: огонь!"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "merging",
+                  "value": {
+                    "type": "enum",
+                    "enum": "SEPARATE_LINES"
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "type": "event",
-      "position": 3,
+      "position": 4,
       "event": "entity_take_damage",
       "operations": [
         {
@@ -793,7 +1415,7 @@
                     "values": [
                       {
                         "type": "item",
-                        "item": "{\"id\":\"netherite_sword\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🩸 Клинок Вампира\\\",\\\"color\\\":\\\"dark_red\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Вампиризм: восстанавливает\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"здоровье атакующему\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                        "item": "{\"id\":\"netherite_sword\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🩸 Клинок Вампира\\\",\\\"color\\\":\\\"dark_red\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Вампиризм: восстанавливает\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"половину урона атакующему\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
                       },
                       {},
                       {},
@@ -883,7 +1505,7 @@
                       "name": "health",
                       "value": {
                         "type": "number",
-                        "number": "%math(%var_local(ob_vh)+%var_local(ob_vd))"
+                        "number": "%math(%var_local(ob_vh)+%var_local(ob_vd)/2)"
                       }
                     }
                   ]
@@ -903,7 +1525,7 @@
                     "values": [
                       {
                         "type": "item",
-                        "item": "{\"id\":\"iron_axe\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🌪 Молот Ветров\\\",\\\"color\\\":\\\"aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Подбрасывает жертву\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"в воздух\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                        "item": "{\"id\":\"iron_axe\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🌪 Молот Ветров\\\",\\\"color\\\":\\\"aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Поднимает жертву в воздух\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"левитацией\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
                       },
                       {},
                       {},
@@ -942,20 +1564,54 @@
               ],
               "operations": [
                 {
-                  "action": "entity_launch_up",
+                  "action": "entity_give_potion_effects",
                   "values": [
                     {
-                      "name": "power",
+                      "name": "potions",
                       "value": {
-                        "type": "number",
-                        "number": 2.5
+                        "type": "array",
+                        "values": [
+                          {
+                            "type": "potion",
+                            "potion": "levitation",
+                            "amplifier": 1,
+                            "duration": 40
+                          },
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {}
+                        ]
                       }
                     },
                     {
-                      "name": "increment",
+                      "name": "overwrite",
                       "value": {
                         "type": "enum",
                         "enum": "FALSE"
+                      }
+                    },
+                    {
+                      "name": "show_icon",
+                      "value": {
+                        "type": "enum",
+                        "enum": "TRUE"
+                      }
+                    },
+                    {
+                      "name": "particle_mode",
+                      "value": {
+                        "type": "enum",
+                        "enum": "REGULAR"
                       }
                     }
                   ]
@@ -1079,7 +1735,585 @@
     },
     {
       "type": "event",
-      "position": 4,
+      "position": 5,
+      "event": "player_take_damage",
+      "operations": [
+        {
+          "action": "if_variable_equals",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "value",
+              "value": {
+                "type": "game_value",
+                "game_value": "event_damage_cause",
+                "selection": "{\"type\":\"default\"}"
+              }
+            },
+            {
+              "name": "compare",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "text",
+                    "text": "LIGHTNING"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            }
+          ],
+          "operations": [
+            {
+              "selection": {
+                "type": "damager_player"
+              },
+              "action": "if_player_is_holding",
+              "values": [
+                {
+                  "name": "items",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "item",
+                        "item": "{\"id\":\"iron_sword\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🌀 Клинок Сумасброда\\\",\\\"color\\\":\\\"aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Разворачивает жертву\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"на 180°\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "hand_slot",
+                  "value": {
+                    "type": "enum",
+                    "enum": "EITHER_HAND"
+                  }
+                },
+                {
+                  "name": "comparison_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+                  }
+                }
+              ],
+              "operations": [
+                {
+                  "action": "set_variable_value",
+                  "values": [
+                    {
+                      "name": "variable",
+                      "value": {
+                        "type": "variable",
+                        "variable": "ob_floc",
+                        "scope": "local"
+                      }
+                    },
+                    {
+                      "name": "value",
+                      "value": {
+                        "type": "game_value",
+                        "game_value": "location",
+                        "selection": "{\"type\":\"default\"}"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "action": "set_variable_shift_location_in_direction",
+                  "values": [
+                    {
+                      "name": "variable",
+                      "value": {
+                        "type": "variable",
+                        "variable": "ob_floc",
+                        "scope": "local"
+                      }
+                    },
+                    {
+                      "name": "location",
+                      "value": {
+                        "type": "variable",
+                        "variable": "ob_floc",
+                        "scope": "local"
+                      }
+                    },
+                    {
+                      "name": "shift",
+                      "value": {
+                        "type": "number",
+                        "number": -2
+                      }
+                    },
+                    {
+                      "name": "direction",
+                      "value": {
+                        "type": "enum",
+                        "enum": "FORWARD"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "action": "player_face_location",
+                  "values": [
+                    {
+                      "name": "location",
+                      "value": {
+                        "type": "variable",
+                        "variable": "ob_floc",
+                        "scope": "local"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "selection": {
+                "type": "damager_player"
+              },
+              "action": "if_player_is_holding",
+              "values": [
+                {
+                  "name": "items",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "item",
+                        "item": "{\"id\":\"diamond_sword\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"⚡ Меч Грозы\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Призывает молнию\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"в жертву удара\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "hand_slot",
+                  "value": {
+                    "type": "enum",
+                    "enum": "EITHER_HAND"
+                  }
+                },
+                {
+                  "name": "comparison_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+                  }
+                }
+              ],
+              "operations": [
+                {
+                  "action": "game_spawn_lightning_bolt",
+                  "values": [
+                    {
+                      "name": "location",
+                      "value": {
+                        "type": "game_value",
+                        "game_value": "location",
+                        "selection": "{\"type\":\"default\"}"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "selection": {
+                "type": "damager_player"
+              },
+              "action": "if_player_is_holding",
+              "values": [
+                {
+                  "name": "items",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "item",
+                        "item": "{\"id\":\"netherite_sword\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🩸 Клинок Вампира\\\",\\\"color\\\":\\\"dark_red\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Вампиризм: восстанавливает\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"половину урона атакующему\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "hand_slot",
+                  "value": {
+                    "type": "enum",
+                    "enum": "EITHER_HAND"
+                  }
+                },
+                {
+                  "name": "comparison_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+                  }
+                }
+              ],
+              "operations": [
+                {
+                  "action": "set_variable_value",
+                  "values": [
+                    {
+                      "name": "variable",
+                      "value": {
+                        "type": "variable",
+                        "variable": "ob_vh",
+                        "scope": "local"
+                      }
+                    },
+                    {
+                      "name": "value",
+                      "value": {
+                        "type": "game_value",
+                        "game_value": "current_health",
+                        "selection": "{\"type\":\"damager_player\"}"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "action": "set_variable_value",
+                  "values": [
+                    {
+                      "name": "variable",
+                      "value": {
+                        "type": "variable",
+                        "variable": "ob_vd",
+                        "scope": "local"
+                      }
+                    },
+                    {
+                      "name": "value",
+                      "value": {
+                        "type": "game_value",
+                        "game_value": "event_damage",
+                        "selection": "{\"type\":\"default\"}"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "action": "player_set_health",
+                  "selection": {
+                    "type": "damager_player"
+                  },
+                  "values": [
+                    {
+                      "name": "health",
+                      "value": {
+                        "type": "number",
+                        "number": "%math(%var_local(ob_vh)+%var_local(ob_vd)/2)"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "selection": {
+                "type": "damager_player"
+              },
+              "action": "if_player_is_holding",
+              "values": [
+                {
+                  "name": "items",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "item",
+                        "item": "{\"id\":\"iron_axe\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🌪 Молот Ветров\\\",\\\"color\\\":\\\"aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Поднимает жертву в воздух\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"левитацией\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "hand_slot",
+                  "value": {
+                    "type": "enum",
+                    "enum": "EITHER_HAND"
+                  }
+                },
+                {
+                  "name": "comparison_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+                  }
+                }
+              ],
+              "operations": [
+                {
+                  "action": "player_give_potion_effect",
+                  "values": [
+                    {
+                      "name": "potions",
+                      "value": {
+                        "type": "array",
+                        "values": [
+                          {
+                            "type": "potion",
+                            "potion": "levitation",
+                            "amplifier": 1,
+                            "duration": 40
+                          },
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {}
+                        ]
+                      }
+                    },
+                    {
+                      "name": "overwrite",
+                      "value": {
+                        "type": "enum",
+                        "enum": "FALSE"
+                      }
+                    },
+                    {
+                      "name": "show_icon",
+                      "value": {
+                        "type": "enum",
+                        "enum": "TRUE"
+                      }
+                    },
+                    {
+                      "name": "particle_mode",
+                      "value": {
+                        "type": "enum",
+                        "enum": "REGULAR"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "selection": {
+                "type": "damager_player"
+              },
+              "action": "if_player_is_holding",
+              "values": [
+                {
+                  "name": "items",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "item",
+                        "item": "{\"id\":\"golden_sword\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"☠ Кинжал Отравителя\\\",\\\"color\\\":\\\"green\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Отравляет жертву\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"и слабит её\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "hand_slot",
+                  "value": {
+                    "type": "enum",
+                    "enum": "EITHER_HAND"
+                  }
+                },
+                {
+                  "name": "comparison_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+                  }
+                }
+              ],
+              "operations": [
+                {
+                  "action": "player_give_potion_effect",
+                  "values": [
+                    {
+                      "name": "potions",
+                      "value": {
+                        "type": "array",
+                        "values": [
+                          {
+                            "type": "potion",
+                            "potion": "poison",
+                            "amplifier": 1,
+                            "duration": 200
+                          },
+                          {
+                            "type": "potion",
+                            "potion": "weakness",
+                            "amplifier": 1,
+                            "duration": 100
+                          },
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {}
+                        ]
+                      }
+                    },
+                    {
+                      "name": "overwrite",
+                      "value": {
+                        "type": "enum",
+                        "enum": "FALSE"
+                      }
+                    },
+                    {
+                      "name": "show_icon",
+                      "value": {
+                        "type": "enum",
+                        "enum": "TRUE"
+                      }
+                    },
+                    {
+                      "name": "particle_mode",
+                      "value": {
+                        "type": "enum",
+                        "enum": "REGULAR"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "position": 6,
       "event": "player_right_click",
       "operations": [
         {
@@ -1131,78 +2365,114 @@
           ],
           "operations": [
             {
-              "action": "player_launch_forward",
+              "action": "if_player_item_is_not_on_cooldown",
               "values": [
                 {
-                  "name": "power",
+                  "name": "items",
                   "value": {
-                    "type": "number",
-                    "number": 2.5
-                  }
-                },
-                {
-                  "name": "increment",
-                  "value": {
-                    "type": "enum",
-                    "enum": "FALSE"
-                  }
-                },
-                {
-                  "name": "launch_axis",
-                  "value": {
-                    "type": "enum",
-                    "enum": "YAW_AND_PITCH"
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "item",
+                        "item": "{\"id\":\"trident\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🔱 Трезубец Скача\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"ПКМ — рывок вперёд\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"по направлению взгляда\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
                   }
                 }
-              ]
-            },
-            {
-              "action": "player_play_sound",
-              "values": [
+              ],
+              "operations": [
                 {
-                  "name": "sound",
-                  "value": {
-                    "type": "sound",
-                    "sound": "item.trident.riptide_1",
-                    "volume": 1,
-                    "pitch": 1
-                  }
+                  "action": "player_launch_forward",
+                  "values": [
+                    {
+                      "name": "power",
+                      "value": {
+                        "type": "number",
+                        "number": 2.5
+                      }
+                    },
+                    {
+                      "name": "increment",
+                      "value": {
+                        "type": "enum",
+                        "enum": "FALSE"
+                      }
+                    },
+                    {
+                      "name": "launch_axis",
+                      "value": {
+                        "type": "enum",
+                        "enum": "YAW_AND_PITCH"
+                      }
+                    }
+                  ]
                 },
                 {
-                  "name": "location",
-                  "value": {
-                    "type": "game_value",
-                    "game_value": "location",
-                    "selection": "{\"type\":\"default\"}"
-                  }
-                }
-              ]
-            },
-            {
-              "action": "player_set_item_cooldown",
-              "values": [
-                {
-                  "name": "item",
-                  "value": {
-                    "type": "item",
-                    "item": "{\"id\":\"trident\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🔱 Трезубец Скача\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"ПКМ — рывок вперёд\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"по направлению взгляда\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
-                  }
+                  "action": "player_play_sound",
+                  "values": [
+                    {
+                      "name": "sound",
+                      "value": {
+                        "type": "sound",
+                        "sound": "item.trident.riptide_1",
+                        "volume": 1,
+                        "pitch": 1
+                      }
+                    },
+                    {
+                      "name": "location",
+                      "value": {
+                        "type": "game_value",
+                        "game_value": "location",
+                        "selection": "{\"type\":\"default\"}"
+                      }
+                    }
+                  ]
                 },
                 {
-                  "name": "cooldown",
-                  "value": {
-                    "type": "number",
-                    "number": 60
-                  }
-                },
-                {
-                  "name": "sound",
-                  "value": {
-                    "type": "sound",
-                    "sound": "item.trident.riptide_2",
-                    "volume": 1,
-                    "pitch": 1
-                  }
+                  "action": "player_set_item_cooldown",
+                  "values": [
+                    {
+                      "name": "item",
+                      "value": {
+                        "type": "item",
+                        "item": "{\"id\":\"trident\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🔱 Трезубец Скача\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"ПКМ — рывок вперёд\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"по направлению взгляда\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                      }
+                    },
+                    {
+                      "name": "cooldown",
+                      "value": {
+                        "type": "number",
+                        "number": 60
+                      }
+                    },
+                    {
+                      "name": "sound",
+                      "value": {
+                        "type": "sound",
+                        "sound": "item.trident.riptide_2",
+                        "volume": 1,
+                        "pitch": 1
+                      }
+                    }
+                  ]
                 }
               ]
             }
