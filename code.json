@@ -76,6 +76,79 @@
           ]
         },
         {
+          "action": "player_give_items",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный шлем\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный нагрудник\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные леггинсы\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные ботинки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"turtle_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулий шлем\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулья броня\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи штаны\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи плавники\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Шлем Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Нагрудник Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Поножи Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Ботинки Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "amount",
+              "value": {
+                "type": "number",
+                "number": 1
+              }
+            }
+          ]
+        },
+        {
           "action": "player_send_message",
           "values": [
             {
@@ -150,6 +223,56 @@
           ]
         },
         {
+          "action": "player_send_message",
+          "values": [
+            {
+              "name": "messages",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "text",
+                    "text": "🛡 Ты также получил 3 комплекта брони:"
+                  },
+                  {
+                    "type": "text",
+                    "text": "🫥 Призрачный комплект — полная невидимость"
+                  },
+                  {
+                    "type": "text",
+                    "text": "🦈 Акулий комплект — сила глубин (дыхание и скорость в воде)"
+                  },
+                  {
+                    "type": "text",
+                    "text": "🦅 Комплект Ветреника — скорость II и прыжки"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "merging",
+              "value": {
+                "type": "enum",
+                "enum": "SEPARATE_LINES"
+              }
+            }
+          ]
+        },
+        {
           "action": "player_send_action_bar",
           "values": [
             {
@@ -159,7 +282,7 @@
                 "values": [
                   {
                     "type": "text",
-                    "text": "⚔ Арсенал выдан: 11 оружий!"
+                    "text": "⚔ Арсенал выдан: 11 оружий и 3 комплекта брони!"
                   },
                   {},
                   {},
@@ -187,6 +310,662 @@
                 "type": "enum",
                 "enum": "SPACES"
               }
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный шлем\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный нагрудник\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные леггинсы\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные ботинки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "invisibility",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "NONE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный шлем\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный нагрудник\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные леггинсы\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные ботинки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "invisibility",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"turtle_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулий шлем\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулья броня\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи штаны\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи плавники\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "conduit_power",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "dolphins_grace",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "REGULAR"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"turtle_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулий шлем\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулья броня\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи штаны\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи плавники\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "conduit_power",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "dolphins_grace",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Шлем Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Нагрудник Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Поножи Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Ботинки Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "speed",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "jump_boost",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "REGULAR"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Шлем Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Нагрудник Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Поножи Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Ботинки Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "speed",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "jump_boost",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
             }
           ]
         }
@@ -516,14 +1295,7 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "type": "event",
-      "position": 2,
-      "event": "player_launch_projectile",
-      "operations": [
+        },
         {
           "action": "if_player_is_holding",
           "values": [
@@ -608,7 +1380,7 @@
     },
     {
       "type": "event",
-      "position": 3,
+      "position": 2,
       "event": "player_projectile_hit",
       "operations": [
         {
@@ -1165,7 +1937,7 @@
     },
     {
       "type": "event",
-      "position": 4,
+      "position": 3,
       "event": "entity_take_damage",
       "operations": [
         {
@@ -1735,7 +2507,7 @@
     },
     {
       "type": "event",
-      "position": 5,
+      "position": 4,
       "event": "player_take_damage",
       "operations": [
         {
@@ -2308,12 +3080,668 @@
               ]
             }
           ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный шлем\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный нагрудник\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные леггинсы\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные ботинки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "invisibility",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "NONE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный шлем\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный нагрудник\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные леггинсы\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные ботинки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "invisibility",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"turtle_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулий шлем\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулья броня\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи штаны\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи плавники\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "conduit_power",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "dolphins_grace",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "REGULAR"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"turtle_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулий шлем\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулья броня\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи штаны\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи плавники\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "conduit_power",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "dolphins_grace",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Шлем Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Нагрудник Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Поножи Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Ботинки Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "speed",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "jump_boost",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "REGULAR"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Шлем Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Нагрудник Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Поножи Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Ботинки Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "speed",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "jump_boost",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "type": "event",
-      "position": 6,
+      "position": 5,
       "event": "player_right_click",
       "operations": [
         {
@@ -2473,6 +3901,2651 @@
                       }
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный шлем\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный нагрудник\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные леггинсы\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные ботинки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "invisibility",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "NONE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный шлем\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный нагрудник\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные леггинсы\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные ботинки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "invisibility",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"turtle_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулий шлем\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулья броня\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи штаны\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи плавники\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "conduit_power",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "dolphins_grace",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "REGULAR"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"turtle_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулий шлем\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулья броня\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи штаны\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи плавники\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "conduit_power",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "dolphins_grace",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Шлем Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Нагрудник Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Поножи Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Ботинки Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "speed",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "jump_boost",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "REGULAR"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Шлем Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Нагрудник Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Поножи Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Ботинки Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "speed",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "jump_boost",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "position": 6,
+      "event": "player_click_inventory",
+      "operations": [
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный шлем\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный нагрудник\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные леггинсы\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные ботинки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "invisibility",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "NONE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный шлем\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный нагрудник\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные леггинсы\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные ботинки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "invisibility",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"turtle_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулий шлем\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулья броня\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи штаны\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи плавники\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "conduit_power",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "dolphins_grace",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "REGULAR"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"turtle_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулий шлем\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулья броня\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи штаны\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи плавники\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "conduit_power",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "dolphins_grace",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Шлем Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Нагрудник Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Поножи Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Ботинки Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "speed",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "jump_boost",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "REGULAR"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Шлем Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Нагрудник Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Поножи Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Ботинки Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "speed",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "jump_boost",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "position": 7,
+      "event": "player_drag_inventory",
+      "operations": [
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный шлем\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный нагрудник\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные леггинсы\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные ботинки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "invisibility",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "NONE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный шлем\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный нагрудник\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные леггинсы\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные ботинки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "invisibility",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"turtle_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулий шлем\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулья броня\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи штаны\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи плавники\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "conduit_power",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "dolphins_grace",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "REGULAR"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"turtle_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулий шлем\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулья броня\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи штаны\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи плавники\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "conduit_power",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "dolphins_grace",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Шлем Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Нагрудник Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Поножи Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Ботинки Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "speed",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "jump_boost",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "REGULAR"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Шлем Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Нагрудник Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Поножи Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Ботинки Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "speed",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "jump_boost",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "position": 8,
+      "event": "player_close_inventory",
+      "operations": [
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный шлем\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный нагрудник\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные леггинсы\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные ботинки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "invisibility",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "NONE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный шлем\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачный нагрудник\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные леггинсы\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"leather_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🫥 Призрачные ботинки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ты становишься невидимым\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"color\":4210752}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "invisibility",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"turtle_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулий шлем\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулья броня\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи штаны\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи плавники\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "conduit_power",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "dolphins_grace",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "REGULAR"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"turtle_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулий шлем\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акулья броня\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи штаны\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦈 Акульи плавники\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"сила глубин в воде\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "conduit_power",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "dolphins_grace",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Шлем Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Нагрудник Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Поножи Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Ботинки Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "speed",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "jump_boost",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "overwrite",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "show_icon",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "particle_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "REGULAR"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "if_player_is_wearing_item",
+          "is_inverted": true,
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Шлем Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Нагрудник Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Поножи Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🦅 Ботинки Ветреника\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Полный комплект:\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"скорость II и прыжки\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "check_mode",
+              "value": {
+                "type": "enum",
+                "enum": "ALL"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_DURABILITY_AND_STACK_SIZE"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "player_remove_potion_effect",
+              "values": [
+                {
+                  "name": "potions",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "speed",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "jump_boost",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
                 }
               ]
             }
