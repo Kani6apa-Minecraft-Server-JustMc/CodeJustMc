@@ -30,7 +30,7 @@
    "position": 2,
    "event": "player_join",
    "operations": [
-    {"action": "player_send_message", "values": [{"name": "messages", "value": {"type": "array", "values": [{"type": "text", "text": "🌍 Мир сгенерирован модулем: 5 биомов, руды, деревья."}, {"type": "text", "text": "Пересоздать регион заново: !gen"}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]}}, {"name": "merging", "value": {"type": "enum", "enum": "SEPARATE_LINES"}}]}
+    {"action": "player_send_message", "values": [{"name": "messages", "value": {"type": "array", "values": [{"type": "text", "text": "🌍 Мир: 5 биомов, пещеры, жилы руд, подземный ад."}, {"type": "text", "text": "Пересоздать регион заново: !gen"}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]}}, {"name": "merging", "value": {"type": "enum", "enum": "SEPARATE_LINES"}}]}
    ]
   },
   {
@@ -41,9 +41,14 @@
    "operations": [
     {"action": "set_variable_value", "values": [{"name": "variable", "value": {"type": "variable", "variable": "b1", "scope": "local"}}, {"name": "value", "value": {"type": "location", "x": -40, "y": 1, "z": -40, "yaw": 90, "pitch": 0}}]},
     {"action": "set_variable_value", "values": [{"name": "variable", "value": {"type": "variable", "variable": "b2", "scope": "local"}}, {"name": "value", "value": {"type": "location", "x": 40, "y": 1, "z": 40, "yaw": 90, "pitch": 0}}]},
-    {"action": "repeat_on_range", "is_inverted": false, "values": [{"name": "start", "value": {"type": "number", "number": 0}}, {"name": "end", "value": {"type": "number", "number": 31}}, {"name": "variable", "value": {"type": "variable", "variable": "k", "scope": "local"}}], "operations": [
-     {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "b1", "scope": "local"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(k)*4+1)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
-     {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t2", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "b2", "scope": "local"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(k)*4+4)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+    {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "ho1", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "b1", "scope": "local"}}, {"name": "shift", "value": {"type": "number", "number": 3}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+    {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "ho2", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "b2", "scope": "local"}}, {"name": "shift", "value": {"type": "number", "number": 4}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+    {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"obsidian\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "ho1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "ho2", "scope": "local"}}]},
+    {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "hn2", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "b2", "scope": "local"}}, {"name": "shift", "value": {"type": "number", "number": 2}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+    {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"netherrack\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "b1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "hn2", "scope": "local"}}]},
+    {"action": "repeat_on_range", "is_inverted": false, "values": [{"name": "start", "value": {"type": "number", "number": 0}}, {"name": "end", "value": {"type": "number", "number": 30}}, {"name": "variable", "value": {"type": "variable", "variable": "k", "scope": "local"}}], "operations": [
+     {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "b1", "scope": "local"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(k)*4+6)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+     {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t2", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "b2", "scope": "local"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(k)*4+9)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
      {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"air\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]},
      {"action": "control_wait", "values": [{"name": "duration", "value": {"type": "number", "number": 1}}, {"name": "time_unit", "value": {"type": "enum", "enum": "TICKS"}}]}
     ]},
@@ -73,8 +78,39 @@
     ]},
     {"action": "set_variable_round", "values": [{"name": "variable", "value": {"type": "variable", "variable": "h", "scope": "local"}}, {"name": "number", "value": {"type": "number", "number": "%math(%var_local(h))"}}, {"name": "precision", "value": {"type": "number", "number": 0}}, {"name": "round_type", "value": {"type": "enum", "enum": "CEIL"}}]},
     {"action": "set_variable_value", "values": [{"name": "variable", "value": {"type": "variable", "variable": "gh", "scope": "game"}}, {"name": "value", "value": {"type": "variable", "variable": "h", "scope": "local"}}]},
+    {"action": "set_variable_value", "values": [{"name": "variable", "value": {"type": "variable", "variable": "gmo", "scope": "game"}}, {"name": "value", "value": {"type": "variable", "variable": "mo", "scope": "local"}}]},
+    {"action": "set_variable_perlin_noise_3d", "values": [{"name": "variable", "value": {"type": "variable", "variable": "ln", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "seed", "value": {"type": "number", "number": 666}}, {"name": "loc_frequency", "value": {"type": "number", "number": 0.04}}, {"name": "octaves", "value": {"type": "number", "number": 1}}, {"name": "frequency", "value": {"type": "number", "number": 1}}, {"name": "amplitude", "value": {"type": "number", "number": 1}}, {"name": "range_mode", "value": {"type": "enum", "enum": "ZERO_TO_ONE"}}, {"name": "normalized", "value": {"type": "enum", "enum": "TRUE"}}]},
+    {"action": "if_variable_greater", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(ln))"}}, {"name": "compare", "value": {"type": "number", "number": 0.62}}], "operations": [
+     {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "la2", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": 2}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"lava\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "la2", "scope": "local"}}]}
+    ]},
+    {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": 5}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+    {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t2", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(h)-5)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+    {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"stone\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]},
+    {"action": "if_variable_less", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(h))"}}, {"name": "compare", "value": {"type": "number", "number": 62}}], "operations": [
+     {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "tw", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(h))"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+     {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t4", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": 61}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"water\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "tw", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t4", "scope": "local"}}]}
+    ]},
+    {"action": "call_function", "values": [{"name": "function_name", "value": {"type": "text", "text": "jmcc.wg_biome"}}]},
+    {"action": "call_function", "values": [{"name": "function_name", "value": {"type": "text", "text": "jmcc.wg_surf"}}]},
+    {"action": "call_function", "values": [{"name": "function_name", "value": {"type": "text", "text": "jmcc.wg_cave1"}}]},
+    {"action": "call_function", "values": [{"name": "function_name", "value": {"type": "text", "text": "jmcc.wg_cave2"}}]},
+    {"action": "call_function", "values": [{"name": "function_name", "value": {"type": "text", "text": "jmcc.wg_ore1"}}]},
+    {"action": "call_function", "values": [{"name": "function_name", "value": {"type": "text", "text": "jmcc.wg_ore2"}}]},
+    {"action": "call_function", "values": [{"name": "function_name", "value": {"type": "text", "text": "jmcc.wg_ore3"}}]},
+    {"action": "call_function", "values": [{"name": "function_name", "value": {"type": "text", "text": "jmcc.wg_deco"}}]}
+   ]
+  },
+  {
+   "type": "function",
+   "position": 5,
+   "is_hidden": true,
+   "name": "jmcc.wg_biome",
+   "operations": [
     {"action": "set_variable_perlin_noise_3d", "values": [{"name": "variable", "value": {"type": "variable", "variable": "tt", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "seed", "value": {"type": "number", "number": 7777}}, {"name": "loc_frequency", "value": {"type": "number", "number": 0.035}}, {"name": "octaves", "value": {"type": "number", "number": 2}}, {"name": "frequency", "value": {"type": "number", "number": 1}}, {"name": "amplitude", "value": {"type": "number", "number": 1}}, {"name": "range_mode", "value": {"type": "enum", "enum": "ZERO_TO_ONE"}}, {"name": "normalized", "value": {"type": "enum", "enum": "TRUE"}}]},
     {"action": "set_variable_perlin_noise_3d", "values": [{"name": "variable", "value": {"type": "variable", "variable": "mm", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "seed", "value": {"type": "number", "number": 911}}, {"name": "loc_frequency", "value": {"type": "number", "number": 0.03}}, {"name": "octaves", "value": {"type": "number", "number": 2}}, {"name": "frequency", "value": {"type": "number", "number": 1}}, {"name": "amplitude", "value": {"type": "number", "number": 1}}, {"name": "range_mode", "value": {"type": "enum", "enum": "ZERO_TO_ONE"}}, {"name": "normalized", "value": {"type": "enum", "enum": "TRUE"}}]},
+    {"action": "set_variable_value", "values": [{"name": "variable", "value": {"type": "variable", "variable": "mo", "scope": "local"}}, {"name": "value", "value": {"type": "variable", "variable": "gmo", "scope": "game"}}]},
     {"action": "set_variable_value", "values": [{"name": "variable", "value": {"type": "variable", "variable": "gb", "scope": "game"}}, {"name": "value", "value": {"type": "number", "number": 5}}]},
     {"action": "if_variable_greater", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(mo))"}}, {"name": "compare", "value": {"type": "number", "number": 0.58}}], "operations": [
      {"action": "set_variable_value", "values": [{"name": "variable", "value": {"type": "variable", "variable": "gb", "scope": "game"}}, {"name": "value", "value": {"type": "number", "number": 1}}]}
@@ -89,22 +125,12 @@
     ]},
     {"action": "if_variable_greater", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(mm))"}}, {"name": "compare", "value": {"type": "number", "number": 0.55}}], "operations": [
      {"action": "set_variable_value", "values": [{"name": "variable", "value": {"type": "variable", "variable": "gb", "scope": "game"}}, {"name": "value", "value": {"type": "number", "number": 4}}]}
-    ]},
-    {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(h)-5)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
-    {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"stone\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t1", "scope": "local"}}]},
-    {"action": "if_variable_less", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(h))"}}, {"name": "compare", "value": {"type": "number", "number": 62}}], "operations": [
-     {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t2", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(h))"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
-     {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t4", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": 61}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
-     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"water\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t2", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t4", "scope": "local"}}]}
-    ]},
-    {"action": "call_function", "values": [{"name": "function_name", "value": {"type": "text", "text": "jmcc.wg_surf"}}]},
-    {"action": "call_function", "values": [{"name": "function_name", "value": {"type": "text", "text": "jmcc.wg_ore"}}]},
-    {"action": "call_function", "values": [{"name": "function_name", "value": {"type": "text", "text": "jmcc.wg_deco"}}]}
+    ]}
    ]
   },
   {
    "type": "function",
-   "position": 5,
+   "position": 6,
    "is_hidden": true,
    "name": "jmcc.wg_surf",
    "operations": [
@@ -136,41 +162,143 @@
   },
   {
    "type": "function",
-   "position": 6,
+   "position": 7,
    "is_hidden": true,
-   "name": "jmcc.wg_ore",
+   "name": "jmcc.wg_cave1",
    "operations": [
-    {"action": "set_variable_value", "values": [{"name": "variable", "value": {"type": "variable", "variable": "h", "scope": "local"}}, {"name": "value", "value": {"type": "variable", "variable": "gh", "scope": "game"}}]},
-    {"action": "repeat_on_range", "is_inverted": false, "values": [{"name": "start", "value": {"type": "number", "number": 1}}, {"name": "end", "value": {"type": "number", "number": 3}}, {"name": "variable", "value": {"type": "variable", "variable": "i", "scope": "local"}}], "operations": [
-     {"action": "set_variable_random_number", "values": [{"name": "variable", "value": {"type": "variable", "variable": "oy", "scope": "local"}}, {"name": "min", "value": {"type": "number", "number": 4}}, {"name": "max", "value": {"type": "number", "number": "%math(%var_local(h)-5)"}}, {"name": "integer", "value": {"type": "enum", "enum": "TRUE"}}]},
-     {"action": "set_variable_random_number", "values": [{"name": "variable", "value": {"type": "variable", "variable": "r", "scope": "local"}}, {"name": "min", "value": {"type": "number", "number": 1}}, {"name": "max", "value": {"type": "number", "number": 100}}, {"name": "integer", "value": {"type": "enum", "enum": "TRUE"}}]},
-     {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(oy)-1)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
-     {"action": "if_variable_less_or_equals", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "compare", "value": {"type": "number", "number": 35}}], "operations": [
-      {"action": "game_set_block", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"coal_ore\",\"Count\":1}"}}, {"name": "locations", "value": {"type": "array", "values": [{"type": "variable", "variable": "t1", "scope": "local"}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]}}]}
-     ]},
-     {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 36}}, {"name": "max", "value": {"type": "number", "number": 60}}], "operations": [
-      {"action": "game_set_block", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"iron_ore\",\"Count\":1}"}}, {"name": "locations", "value": {"type": "array", "values": [{"type": "variable", "variable": "t1", "scope": "local"}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]}}]}
-     ]},
-     {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 61}}, {"name": "max", "value": {"type": "number", "number": 75}}], "operations": [
-      {"action": "game_set_block", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"gold_ore\",\"Count\":1}"}}, {"name": "locations", "value": {"type": "array", "values": [{"type": "variable", "variable": "t1", "scope": "local"}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]}}]}
-     ]},
-     {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 76}}, {"name": "max", "value": {"type": "number", "number": 88}}], "operations": [
-      {"action": "game_set_block", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"redstone_ore\",\"Count\":1}"}}, {"name": "locations", "value": {"type": "array", "values": [{"type": "variable", "variable": "t1", "scope": "local"}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]}}]}
-     ]},
-     {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 89}}, {"name": "max", "value": {"type": "number", "number": 94}}], "operations": [
-      {"action": "if_variable_less_or_equals", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(oy))"}}, {"name": "compare", "value": {"type": "number", "number": 16}}], "operations": [
-       {"action": "game_set_block", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"diamond_ore\",\"Count\":1}"}}, {"name": "locations", "value": {"type": "array", "values": [{"type": "variable", "variable": "t1", "scope": "local"}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]}}]}
-      ]}
-     ]},
-     {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 95}}, {"name": "max", "value": {"type": "number", "number": 100}}], "operations": [
-      {"action": "game_set_block", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"lapis_ore\",\"Count\":1}"}}, {"name": "locations", "value": {"type": "array", "values": [{"type": "variable", "variable": "t1", "scope": "local"}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]}}]}
+    {"action": "repeat_on_range", "is_inverted": false, "values": [{"name": "start", "value": {"type": "number", "number": 7}}, {"name": "end", "value": {"type": "number", "number": 19}}, {"name": "variable", "value": {"type": "variable", "variable": "cy", "scope": "local"}}], "operations": [
+     {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "cpos", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(cy))"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+     {"action": "set_variable_perlin_noise_3d", "values": [{"name": "variable", "value": {"type": "variable", "variable": "cv", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "cpos", "scope": "local"}}, {"name": "seed", "value": {"type": "number", "number": 555}}, {"name": "loc_frequency", "value": {"type": "number", "number": 0.07}}, {"name": "octaves", "value": {"type": "number", "number": 2}}, {"name": "frequency", "value": {"type": "number", "number": 1}}, {"name": "amplitude", "value": {"type": "number", "number": 1}}, {"name": "range_mode", "value": {"type": "enum", "enum": "ZERO_TO_ONE"}}, {"name": "normalized", "value": {"type": "enum", "enum": "TRUE"}}]},
+     {"action": "if_variable_greater", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(cv))"}}, {"name": "compare", "value": {"type": "number", "number": 0.63}}], "operations": [
+      {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "lo", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(cy)-1)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+      {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "hi", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(cy)+1)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+      {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"air\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "lo", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "hi", "scope": "local"}}]}
      ]}
     ]}
    ]
   },
   {
    "type": "function",
-   "position": 7,
+   "position": 8,
+   "is_hidden": true,
+   "name": "jmcc.wg_cave2",
+   "operations": [
+    {"action": "repeat_on_range", "is_inverted": false, "values": [{"name": "start", "value": {"type": "number", "number": 25}}, {"name": "end", "value": {"type": "number", "number": 37}}, {"name": "variable", "value": {"type": "variable", "variable": "cy", "scope": "local"}}], "operations": [
+     {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "cpos", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(cy))"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+     {"action": "set_variable_perlin_noise_3d", "values": [{"name": "variable", "value": {"type": "variable", "variable": "cv", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "cpos", "scope": "local"}}, {"name": "seed", "value": {"type": "number", "number": 555}}, {"name": "loc_frequency", "value": {"type": "number", "number": 0.07}}, {"name": "octaves", "value": {"type": "number", "number": 2}}, {"name": "frequency", "value": {"type": "number", "number": 1}}, {"name": "amplitude", "value": {"type": "number", "number": 1}}, {"name": "range_mode", "value": {"type": "enum", "enum": "ZERO_TO_ONE"}}, {"name": "normalized", "value": {"type": "enum", "enum": "TRUE"}}]},
+     {"action": "if_variable_greater", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(cv))"}}, {"name": "compare", "value": {"type": "number", "number": 0.63}}], "operations": [
+      {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "lo", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(cy)-1)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+      {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "hi", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(cy)+1)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+      {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"air\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "lo", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "hi", "scope": "local"}}]}
+     ]}
+    ]}
+   ]
+  },
+  {
+   "type": "function",
+   "position": 9,
+   "is_hidden": true,
+   "name": "jmcc.wg_ore1",
+   "operations": [
+    {"action": "set_variable_value", "values": [{"name": "variable", "value": {"type": "variable", "variable": "h", "scope": "local"}}, {"name": "value", "value": {"type": "variable", "variable": "gh", "scope": "game"}}]},
+    {"action": "set_variable_random_number", "values": [{"name": "variable", "value": {"type": "variable", "variable": "oy", "scope": "local"}}, {"name": "min", "value": {"type": "number", "number": 8}}, {"name": "max", "value": {"type": "number", "number": "%math(%var_local(h)-8)"}}, {"name": "integer", "value": {"type": "enum", "enum": "TRUE"}}]},
+    {"action": "set_variable_random_number", "values": [{"name": "variable", "value": {"type": "variable", "variable": "r", "scope": "local"}}, {"name": "min", "value": {"type": "number", "number": 1}}, {"name": "max", "value": {"type": "number", "number": 100}}, {"name": "integer", "value": {"type": "enum", "enum": "TRUE"}}]},
+    {"action": "set_variable_random_number", "values": [{"name": "variable", "value": {"type": "variable", "variable": "ve", "scope": "local"}}, {"name": "min", "value": {"type": "number", "number": 2}}, {"name": "max", "value": {"type": "number", "number": 4}}, {"name": "integer", "value": {"type": "enum", "enum": "TRUE"}}]},
+    {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(oy)-1)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+    {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t2", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(oy)+%var_local(ve)-2)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+    {"action": "if_variable_less_or_equals", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "compare", "value": {"type": "number", "number": 30}}], "operations": [
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"coal_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+    ]},
+    {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 31}}, {"name": "max", "value": {"type": "number", "number": 55}}], "operations": [
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"iron_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+    ]},
+    {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 56}}, {"name": "max", "value": {"type": "number", "number": 68}}], "operations": [
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"gold_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+    ]},
+    {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 69}}, {"name": "max", "value": {"type": "number", "number": 80}}], "operations": [
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"redstone_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+    ]},
+    {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 81}}, {"name": "max", "value": {"type": "number", "number": 86}}], "operations": [
+     {"action": "if_variable_less_or_equals", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(oy))"}}, {"name": "compare", "value": {"type": "number", "number": 14}}], "operations": [
+      {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"diamond_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+     ]}
+    ]},
+    {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 87}}, {"name": "max", "value": {"type": "number", "number": 100}}], "operations": [
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"lapis_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+    ]}
+   ]
+  },
+  {
+   "type": "function",
+   "position": 10,
+   "is_hidden": true,
+   "name": "jmcc.wg_ore2",
+   "operations": [
+    {"action": "set_variable_value", "values": [{"name": "variable", "value": {"type": "variable", "variable": "h", "scope": "local"}}, {"name": "value", "value": {"type": "variable", "variable": "gh", "scope": "game"}}]},
+    {"action": "set_variable_random_number", "values": [{"name": "variable", "value": {"type": "variable", "variable": "oy", "scope": "local"}}, {"name": "min", "value": {"type": "number", "number": 8}}, {"name": "max", "value": {"type": "number", "number": "%math(%var_local(h)-8)"}}, {"name": "integer", "value": {"type": "enum", "enum": "TRUE"}}]},
+    {"action": "set_variable_random_number", "values": [{"name": "variable", "value": {"type": "variable", "variable": "r", "scope": "local"}}, {"name": "min", "value": {"type": "number", "number": 1}}, {"name": "max", "value": {"type": "number", "number": 100}}, {"name": "integer", "value": {"type": "enum", "enum": "TRUE"}}]},
+    {"action": "set_variable_random_number", "values": [{"name": "variable", "value": {"type": "variable", "variable": "ve", "scope": "local"}}, {"name": "min", "value": {"type": "number", "number": 2}}, {"name": "max", "value": {"type": "number", "number": 4}}, {"name": "integer", "value": {"type": "enum", "enum": "TRUE"}}]},
+    {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(oy)-1)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+    {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t2", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(oy)+%var_local(ve)-2)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+    {"action": "if_variable_less_or_equals", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "compare", "value": {"type": "number", "number": 30}}], "operations": [
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"coal_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+    ]},
+    {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 31}}, {"name": "max", "value": {"type": "number", "number": 55}}], "operations": [
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"iron_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+    ]},
+    {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 56}}, {"name": "max", "value": {"type": "number", "number": 68}}], "operations": [
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"gold_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+    ]},
+    {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 69}}, {"name": "max", "value": {"type": "number", "number": 80}}], "operations": [
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"redstone_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+    ]},
+    {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 81}}, {"name": "max", "value": {"type": "number", "number": 86}}], "operations": [
+     {"action": "if_variable_less_or_equals", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(oy))"}}, {"name": "compare", "value": {"type": "number", "number": 14}}], "operations": [
+      {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"diamond_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+     ]}
+    ]},
+    {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 87}}, {"name": "max", "value": {"type": "number", "number": 100}}], "operations": [
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"lapis_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+    ]}
+   ]
+  },
+  {
+   "type": "function",
+   "position": 11,
+   "is_hidden": true,
+   "name": "jmcc.wg_ore3",
+   "operations": [
+    {"action": "set_variable_value", "values": [{"name": "variable", "value": {"type": "variable", "variable": "h", "scope": "local"}}, {"name": "value", "value": {"type": "variable", "variable": "gh", "scope": "game"}}]},
+    {"action": "set_variable_random_number", "values": [{"name": "variable", "value": {"type": "variable", "variable": "oy", "scope": "local"}}, {"name": "min", "value": {"type": "number", "number": 8}}, {"name": "max", "value": {"type": "number", "number": "%math(%var_local(h)-8)"}}, {"name": "integer", "value": {"type": "enum", "enum": "TRUE"}}]},
+    {"action": "set_variable_random_number", "values": [{"name": "variable", "value": {"type": "variable", "variable": "r", "scope": "local"}}, {"name": "min", "value": {"type": "number", "number": 1}}, {"name": "max", "value": {"type": "number", "number": 100}}, {"name": "integer", "value": {"type": "enum", "enum": "TRUE"}}]},
+    {"action": "set_variable_random_number", "values": [{"name": "variable", "value": {"type": "variable", "variable": "ve", "scope": "local"}}, {"name": "min", "value": {"type": "number", "number": 2}}, {"name": "max", "value": {"type": "number", "number": 4}}, {"name": "integer", "value": {"type": "enum", "enum": "TRUE"}}]},
+    {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(oy)-1)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+    {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "t2", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "gpos", "scope": "game"}}, {"name": "shift", "value": {"type": "number", "number": "%math(%var_local(oy)+%var_local(ve)-2)"}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+    {"action": "if_variable_less_or_equals", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "compare", "value": {"type": "number", "number": 30}}], "operations": [
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"coal_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+    ]},
+    {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 31}}, {"name": "max", "value": {"type": "number", "number": 55}}], "operations": [
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"iron_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+    ]},
+    {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 56}}, {"name": "max", "value": {"type": "number", "number": 68}}], "operations": [
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"gold_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+    ]},
+    {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 69}}, {"name": "max", "value": {"type": "number", "number": 80}}], "operations": [
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"redstone_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+    ]},
+    {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 81}}, {"name": "max", "value": {"type": "number", "number": 86}}], "operations": [
+     {"action": "if_variable_less_or_equals", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(oy))"}}, {"name": "compare", "value": {"type": "number", "number": 14}}], "operations": [
+      {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"diamond_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+     ]}
+    ]},
+    {"action": "if_variable_in_range", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(r))"}}, {"name": "min", "value": {"type": "number", "number": 87}}, {"name": "max", "value": {"type": "number", "number": 100}}], "operations": [
+     {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"lapis_ore\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "t2", "scope": "local"}}]}
+    ]}
+   ]
+  },
+  {
+   "type": "function",
+   "position": 12,
    "is_hidden": true,
    "name": "jmcc.wg_deco",
    "operations": [
@@ -206,7 +334,8 @@
      ]},
      {"action": "if_variable_equals", "is_inverted": false, "values": [{"name": "value", "value": {"type": "variable", "variable": "gb", "scope": "game"}}, {"name": "compare", "value": {"type": "array", "values": [{"type": "number", "number": 2}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]}}], "operations": [
       {"action": "if_variable_less_or_equals", "is_inverted": false, "values": [{"name": "value", "value": {"type": "number", "number": "%math(%var_local(tr))"}}, {"name": "compare", "value": {"type": "number", "number": 12}}], "operations": [
-       {"action": "game_set_block", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"cactus\",\"Count\":1}"}}, {"name": "locations", "value": {"type": "array", "values": [{"type": "variable", "variable": "t1", "scope": "local"}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]}}]}
+       {"action": "set_variable_shift_location_in_direction", "values": [{"name": "variable", "value": {"type": "variable", "variable": "tc", "scope": "local"}}, {"name": "location", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "shift", "value": {"type": "number", "number": 2}}, {"name": "direction", "value": {"type": "enum", "enum": "UPWARD"}}]},
+       {"action": "game_set_region", "values": [{"name": "block", "value": {"type": "item", "item": "{\"id\":\"cactus\",\"Count\":1}"}}, {"name": "pos_1", "value": {"type": "variable", "variable": "t1", "scope": "local"}}, {"name": "pos_2", "value": {"type": "variable", "variable": "tc", "scope": "local"}}]}
       ]}
      ]}
     ]}
