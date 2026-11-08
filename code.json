@@ -6,14 +6,14 @@
         { "action": "game_cancel_event", "values": [] },
         { "action": "set_variable_value", "values": [
           { "name": "variable", "value": { "type": "variable", "variable": "chat_sender_name", "scope": "save" } },
-          { "name": "value", "value": { "type": "game_value", "game_value": "display_name", "selection": "{\"type\":\"default\"}" } }
+          { "name": "value", "value": { "type": "game_value", "game_value": "name", "selection": "{\"type\":\"default\"}" } }
         ] },
         { "action": "set_variable_value", "values": [
           { "name": "variable", "value": { "type": "variable", "variable": "chat_msg", "scope": "save" } },
           { "name": "value", "value": { "type": "game_value", "game_value": "event_chat_message", "selection": "{\"type\":\"default\"}" } }
         ] },
         { "action": "player_send_minimessage", "selection": { "type": "all_players" }, "values": [
-          { "name": "minimessage", "value": { "type": "text", "text": "<hover:show_text:'<gray>Игрок сервера</gray>'><gradient:#00e5ff:#a855f7><bold>%var_save(chat_sender_name)%</bold></gradient></hover> <dark_gray>»</dark_gray> <white>%var_save(chat_msg)%</white>" } }
+          { "name": "minimessage", "value": { "type": "text", "text": "<hover:show_text:'<gray>Игрок сервера</gray>'><gradient:#00e5ff:#a855f7><bold>%var_save(chat_sender_name)</bold></gradient></hover> <dark_gray>»</dark_gray> <white>%var_save(chat_msg)</white>" } }
         ] }
       ]
     },
@@ -22,10 +22,10 @@
       "operations": [
         { "action": "set_variable_value", "values": [
           { "name": "variable", "value": { "type": "variable", "variable": "join_name", "scope": "save" } },
-          { "name": "value", "value": { "type": "game_value", "game_value": "display_name", "selection": "{\"type\":\"default\"}" } }
+          { "name": "value", "value": { "type": "game_value", "game_value": "name", "selection": "{\"type\":\"default\"}" } }
         ] },
         { "action": "player_send_minimessage", "selection": { "type": "all_players" }, "values": [
-          { "name": "minimessage", "value": { "type": "text", "text": "<gradient:#00ff88:#00e5ff><bold>➕</bold></gradient> <gray>%var_save(join_name)% <dark_gray>зашёл на сервер</dark_gray>" } }
+          { "name": "minimessage", "value": { "type": "text", "text": "<gradient:#00ff88:#00e5ff><bold>➕</bold></gradient> <gray>%var_save(join_name) <dark_gray>зашёл на сервер</dark_gray>" } }
         ] },
         { "action": "player_send_title", "values": [
           { "name": "title", "value": { "type": "text", "text": "Добро пожаловать!" } },
@@ -43,10 +43,10 @@
       "operations": [
         { "action": "set_variable_value", "values": [
           { "name": "variable", "value": { "type": "variable", "variable": "quit_name", "scope": "save" } },
-          { "name": "value", "value": { "type": "game_value", "game_value": "display_name", "selection": "{\"type\":\"default\"}" } }
+          { "name": "value", "value": { "type": "game_value", "game_value": "name", "selection": "{\"type\":\"default\"}" } }
         ] },
         { "action": "player_send_minimessage", "selection": { "type": "all_players" }, "values": [
-          { "name": "minimessage", "value": { "type": "text", "text": "<gradient:#ff5555:#ffaa00><bold>➖</bold></gradient> <gray>%var_save(quit_name)% <dark_gray>покинул сервер</dark_gray>" } }
+          { "name": "minimessage", "value": { "type": "text", "text": "<gradient:#ff5555:#ffaa00><bold>➖</bold></gradient> <gray>%var_save(quit_name) <dark_gray>покинул сервер</dark_gray>" } }
         ] }
       ]
     },
@@ -55,10 +55,10 @@
       "operations": [
         { "action": "set_variable_value", "values": [
           { "name": "variable", "value": { "type": "variable", "variable": "death_name", "scope": "save" } },
-          { "name": "value", "value": { "type": "game_value", "game_value": "display_name", "selection": "{\"type\":\"default\"}" } }
+          { "name": "value", "value": { "type": "game_value", "game_value": "name", "selection": "{\"type\":\"default\"}" } }
         ] },
         { "action": "player_send_minimessage", "selection": { "type": "all_players" }, "values": [
-          { "name": "minimessage", "value": { "type": "text", "text": "<red><bold>☠</bold></red> <gray>%var_save(death_name)% <dark_gray>погиб...</dark_gray>" } }
+          { "name": "minimessage", "value": { "type": "text", "text": "<red><bold>☠</bold></red> <gray>%var_save(death_name) <dark_gray>погиб...</dark_gray>" } }
         ] },
         { "action": "player_play_sound", "selection": { "type": "all_players" }, "values": [
           { "name": "sound", "value": { "type": "sound", "sound": "entity.player.hurt", "volume": 1, "pitch": 1 } }
