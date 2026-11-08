@@ -144,7 +144,10 @@
                     "type": "item",
                     "item": "{\"id\":\"sweet_berries\",\"Count\":1}"
                   },
-                  {},
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"oak_planks\",\"Count\":2}"
+                  },
                   {},
                   {},
                   {},
@@ -206,7 +209,10 @@
                     "type": "item",
                     "item": "{\"id\":\"grass_block\",\"Count\":1}"
                   },
-                  {},
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"oak_planks\",\"Count\":2}"
+                  },
                   {},
                   {},
                   {},
@@ -745,19 +751,15 @@
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"apple\",\"Count\":1}"
+                    "item": "{\"id\":\"apple\",\"Count\":2}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"apple\",\"Count\":1}"
+                    "item": "{\"id\":\"apple\",\"Count\":2}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"apple\",\"Count\":1}"
-                  },
-                  {
-                    "type": "item",
-                    "item": "{\"id\":\"oak_sapling\",\"Count\":1}"
+                    "item": "{\"id\":\"apple\",\"Count\":2}"
                   },
                   {
                     "type": "item",
@@ -765,33 +767,40 @@
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"wheat_seeds\",\"Count\":3}"
+                    "item": "{\"id\":\"oak_sapling\",\"Count\":1}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"raw_copper\",\"Count\":1}"
+                    "item": "{\"id\":\"wheat_seeds\",\"Count\":4}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"raw_copper\",\"Count\":1}"
+                    "item": "{\"id\":\"raw_copper\",\"Count\":2}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"iron_ingot\",\"Count\":1}"
+                    "item": "{\"id\":\"raw_copper\",\"Count\":2}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"bone_meal\",\"Count\":1}"
+                    "item": "{\"id\":\"iron_ingot\",\"Count\":3}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"bone_meal\",\"Count\":1}"
+                    "item": "{\"id\":\"iron_ingot\",\"Count\":3}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"bone_meal\",\"Count\":4}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"bone_meal\",\"Count\":4}"
                   },
                   {
                     "type": "item",
                     "item": "{\"id\":\"book\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"📖 Книга мега-дропа\\\",\\\"color\\\":\\\"dark_purple\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Надписи пахнут удачей\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ПКМ — 5 случайных дропов\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
                   },
-                  {},
                   {},
                   {},
                   {},
@@ -821,47 +830,51 @@
                 "values": [
                   {
                     "type": "item",
-                    "item": "{\"id\":\"sand\",\"Count\":8}"
+                    "item": "{\"id\":\"sand\",\"Count\":16}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"sand\",\"Count\":8}"
+                    "item": "{\"id\":\"gunpowder\",\"Count\":4}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"gunpowder\",\"Count\":2}"
+                    "item": "{\"id\":\"gunpowder\",\"Count\":4}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"gunpowder\",\"Count\":2}"
+                    "item": "{\"id\":\"gunpowder\",\"Count\":4}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"gunpowder\",\"Count\":2}"
+                    "item": "{\"id\":\"cactus\",\"Count\":4}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"cactus\",\"Count\":1}"
+                    "item": "{\"id\":\"cactus\",\"Count\":4}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"cactus\",\"Count\":1}"
+                    "item": "{\"id\":\"sugar_cane\",\"Count\":4}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"sugar_cane\",\"Count\":1}"
+                    "item": "{\"id\":\"sugar_cane\",\"Count\":4}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"sugar_cane\",\"Count\":1}"
+                    "item": "{\"id\":\"gold_ingot\",\"Count\":2}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"gold_ingot\",\"Count\":1}"
+                    "item": "{\"id\":\"gold_ingot\",\"Count\":2}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"emerald\",\"Count\":1}"
+                    "item": "{\"id\":\"emerald\",\"Count\":2}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"emerald\",\"Count\":2}"
                   },
                   {
                     "type": "item",
@@ -869,10 +882,12 @@
                   },
                   {
                     "type": "item",
+                    "item": "{\"id\":\"tnt\",\"Count\":2}"
+                  },
+                  {
+                    "type": "item",
                     "item": "{\"id\":\"tnt\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"🧨 Динамит Анархии\\\",\\\"color\\\":\\\"red\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Одноразовый сюрприз\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ПКМ — взрыв в точке взгляда\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
                   },
-                  {},
-                  {},
                   {},
                   {},
                   {},
@@ -902,19 +917,19 @@
                 "values": [
                   {
                     "type": "item",
-                    "item": "{\"id\":\"packed_ice\",\"Count\":1}"
+                    "item": "{\"id\":\"packed_ice\",\"Count\":4}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"packed_ice\",\"Count\":1}"
+                    "item": "{\"id\":\"packed_ice\",\"Count\":4}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"snowball\",\"Count\":8}"
+                    "item": "{\"id\":\"snowball\",\"Count\":16}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"snowball\",\"Count\":8}"
+                    "item": "{\"id\":\"snowball\",\"Count\":16}"
                   },
                   {
                     "type": "item",
@@ -926,26 +941,32 @@
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"iron_ingot\",\"Count\":3}"
+                    "item": "{\"id\":\"diamond\",\"Count\":1}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"iron_ingot\",\"Count\":3}"
+                    "item": "{\"id\":\"diamond\",\"Count\":1}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"golden_carrot\",\"Count\":1}"
+                    "item": "{\"id\":\"iron_ingot\",\"Count\":4}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"golden_carrot\",\"Count\":1}"
+                    "item": "{\"id\":\"iron_ingot\",\"Count\":4}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"golden_carrot\",\"Count\":4}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"golden_carrot\",\"Count\":4}"
                   },
                   {
                     "type": "item",
                     "item": "{\"id\":\"lightning_rod\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"⚡ Жезл Молний\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Заряжен грозой\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ПКМ — молния (кулдаун 3 сек)\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
                   },
-                  {},
-                  {},
                   {},
                   {},
                   {},
@@ -977,23 +998,27 @@
                 "values": [
                   {
                     "type": "item",
-                    "item": "{\"id\":\"netherite_scrap\",\"Count\":1}"
+                    "item": "{\"id\":\"netherite_scrap\",\"Count\":2}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"blaze_rod\",\"Count\":2}"
+                    "item": "{\"id\":\"blaze_rod\",\"Count\":4}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"blaze_rod\",\"Count\":2}"
+                    "item": "{\"id\":\"blaze_rod\",\"Count\":4}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"quartz\",\"Count\":4}"
+                    "item": "{\"id\":\"quartz\",\"Count\":8}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"quartz\",\"Count\":4}"
+                    "item": "{\"id\":\"quartz\",\"Count\":8}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"ghast_tear\",\"Count\":1}"
                   },
                   {
                     "type": "item",
@@ -1005,11 +1030,15 @@
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"diamond\",\"Count\":1}"
+                    "item": "{\"id\":\"gold_block\",\"Count\":1}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"diamond\",\"Count\":1}"
+                    "item": "{\"id\":\"diamond\",\"Count\":3}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond\",\"Count\":3}"
                   },
                   {
                     "type": "item",
@@ -1017,15 +1046,100 @@
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"obsidian\",\"Count\":4}"
+                    "item": "{\"id\":\"enchanted_golden_apple\",\"Count\":1}"
                   },
                   {
                     "type": "item",
-                    "item": "{\"id\":\"obsidian\",\"Count\":4}"
+                    "item": "{\"id\":\"obsidian\",\"Count\":8}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"obsidian\",\"Count\":8}"
                   },
                   {
                     "type": "item",
                     "item": "{\"id\":\"paper\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"📜 Свиток удачи\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Судьба всё решит\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ПКМ — случайный кейс\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"totem_of_undying\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"👑 Идол Анархии\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Ключ к древнему хаосу\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ПКМ — призвать Блюстителя Анархии\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "action": "set_variable_create_list",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "an_boss",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "values",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond\",\"Count\":4}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond\",\"Count\":4}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond\",\"Count\":4}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"netherite_ingot\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"netherite_ingot\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"enchanted_golden_apple\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"enchanted_golden_apple\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"totem_of_undying\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"totem_of_undying\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"gold_block\",\"Count\":1}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"emerald\",\"Count\":8}"
+                  },
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"netherite_scrap\",\"Count\":4}"
                   },
                   {},
                   {},
@@ -1549,6 +1663,46 @@
               }
             }
           ]
+        },
+        {
+          "action": "set_variable_value",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "an_rage",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "value",
+              "value": {
+                "type": "number",
+                "number": 0
+              }
+            }
+          ]
+        },
+        {
+          "action": "set_variable_value",
+          "values": [
+            {
+              "name": "variable",
+              "value": {
+                "type": "variable",
+                "variable": "an_desp",
+                "scope": "game"
+              }
+            },
+            {
+              "name": "value",
+              "value": {
+                "type": "number",
+                "number": 0
+              }
+            }
+          ]
         }
       ]
     },
@@ -2017,12 +2171,1160 @@
               }
             }
           ]
+        },
+        {
+          "action": "call_function",
+          "values": [
+            {
+              "name": "function_name",
+              "value": {
+                "type": "text",
+                "text": "jmcc.f8"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "position": 5,
+      "event": "entity_take_damage",
+      "operations": [
+        {
+          "action": "if_entity_name_equals",
+          "values": [
+            {
+              "name": "names_or_uuids",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "text",
+                    "text": "👹 Блюститель Анархии"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            }
+          ],
+          "is_inverted": false,
+          "operations": [
+            {
+              "action": "set_variable_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "an_hp",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "game_value",
+                    "game_value": "current_health",
+                    "selection": "{\"type\":\"default\"}"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "an_frac",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "variable",
+                    "variable": "an_hp",
+                    "scope": "local"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_divide",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "an_frac",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "number",
+                        "number": 200
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "division_mode",
+                  "value": {
+                    "type": "enum",
+                    "enum": "DEFAULT"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "player_set_boss_bar",
+              "values": [
+                {
+                  "name": "id",
+                  "value": {
+                    "type": "text",
+                    "text": "an_boss"
+                  }
+                },
+                {
+                  "name": "title",
+                  "value": {
+                    "type": "text",
+                    "text": "👹 Блюститель Анархии"
+                  }
+                },
+                {
+                  "name": "progress",
+                  "value": {
+                    "type": "variable",
+                    "variable": "an_frac",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "color",
+                  "value": {
+                    "type": "enum",
+                    "enum": "RED"
+                  }
+                },
+                {
+                  "name": "style",
+                  "value": {
+                    "type": "enum",
+                    "enum": "NOTCHED_10"
+                  }
+                },
+                {
+                  "name": "sky_effect",
+                  "value": {
+                    "type": "enum",
+                    "enum": "FOG_AND_DARK_SKY"
+                  }
+                }
+              ],
+              "selection": {
+                "type": "all_players"
+              }
+            },
+            {
+              "action": "if_variable_less_or_equals",
+              "values": [
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "variable",
+                    "variable": "an_hp",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "compare",
+                  "value": {
+                    "type": "number",
+                    "number": 100
+                  }
+                }
+              ],
+              "is_inverted": false,
+              "operations": [
+                {
+                  "action": "if_variable_equals",
+                  "values": [
+                    {
+                      "name": "value",
+                      "value": {
+                        "type": "variable",
+                        "variable": "an_rage",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "compare",
+                      "value": {
+                        "type": "array",
+                        "values": [
+                          {
+                            "type": "number",
+                            "number": 0
+                          },
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {}
+                        ]
+                      }
+                    }
+                  ],
+                  "is_inverted": false,
+                  "operations": [
+                    {
+                      "action": "entity_give_potion_effects",
+                      "values": [
+                        {
+                          "name": "potions",
+                          "value": {
+                            "type": "array",
+                            "values": [
+                              {
+                                "type": "potion",
+                                "potion": "speed",
+                                "amplifier": 2,
+                                "duration": 2147483647
+                              },
+                              {
+                                "type": "potion",
+                                "potion": "strength",
+                                "amplifier": 2,
+                                "duration": 2147483647
+                              },
+                              {
+                                "type": "potion",
+                                "potion": "fire_resistance",
+                                "amplifier": 0,
+                                "duration": 2147483647
+                              },
+                              {
+                                "type": "potion",
+                                "potion": "resistance",
+                                "amplifier": 0,
+                                "duration": 2147483647
+                              },
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {}
+                            ]
+                          }
+                        },
+                        {
+                          "name": "overwrite",
+                          "value": {
+                            "type": "enum",
+                            "enum": "TRUE"
+                          }
+                        },
+                        {
+                          "name": "show_icon",
+                          "value": {
+                            "type": "enum",
+                            "enum": "TRUE"
+                          }
+                        },
+                        {
+                          "name": "particle_mode",
+                          "value": {
+                            "type": "enum",
+                            "enum": "AMBIENT"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "set_variable_value",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "an_rage",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "value",
+                          "value": {
+                            "type": "number",
+                            "number": 1
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "player_send_message",
+                      "values": [
+                        {
+                          "name": "messages",
+                          "value": {
+                            "type": "array",
+                            "values": [
+                              {
+                                "type": "text",
+                                "text": "👹 Блюститель В ЯРОСТИ: он ускорился и стал бить сильнее!"
+                              },
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {}
+                            ]
+                          }
+                        },
+                        {
+                          "name": "merging",
+                          "value": {
+                            "type": "enum",
+                            "enum": "SPACES"
+                          }
+                        }
+                      ],
+                      "selection": {
+                        "type": "all_players"
+                      }
+                    },
+                    {
+                      "action": "player_play_sound",
+                      "values": [
+                        {
+                          "name": "sound",
+                          "value": {
+                            "type": "sound",
+                            "sound": "entity.ravager.roar",
+                            "volume": 1,
+                            "pitch": 1
+                          }
+                        },
+                        {
+                          "name": "location",
+                          "value": {
+                            "type": "game_value",
+                            "game_value": "location",
+                            "selection": "{\"type\":\"default\"}"
+                          }
+                        }
+                      ],
+                      "selection": {
+                        "type": "all_players"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "action": "if_variable_less_or_equals",
+              "values": [
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "variable",
+                    "variable": "an_hp",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "compare",
+                  "value": {
+                    "type": "number",
+                    "number": 25
+                  }
+                }
+              ],
+              "is_inverted": false,
+              "operations": [
+                {
+                  "action": "if_variable_equals",
+                  "values": [
+                    {
+                      "name": "value",
+                      "value": {
+                        "type": "variable",
+                        "variable": "an_desp",
+                        "scope": "game"
+                      }
+                    },
+                    {
+                      "name": "compare",
+                      "value": {
+                        "type": "array",
+                        "values": [
+                          {
+                            "type": "number",
+                            "number": 0
+                          },
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {}
+                        ]
+                      }
+                    }
+                  ],
+                  "is_inverted": false,
+                  "operations": [
+                    {
+                      "action": "game_spawn_mob",
+                      "values": [
+                        {
+                          "name": "mob",
+                          "value": {
+                            "type": "item",
+                            "item": "{\"id\":\"zombie_spawn_egg\",\"Count\":1}"
+                          }
+                        },
+                        {
+                          "name": "location",
+                          "value": {
+                            "type": "game_value",
+                            "game_value": "location",
+                            "selection": "{\"type\":\"default\"}"
+                          }
+                        },
+                        {
+                          "name": "health",
+                          "value": {
+                            "type": "number",
+                            "number": 20
+                          }
+                        },
+                        {
+                          "name": "custom_name",
+                          "value": {
+                            "type": "text",
+                            "text": "☠ Пособник Блюстителя"
+                          }
+                        },
+                        {
+                          "name": "potion_effects",
+                          "value": {
+                            "type": "array",
+                            "values": [
+                              {
+                                "type": "potion",
+                                "potion": "speed",
+                                "amplifier": 1,
+                                "duration": 2147483647
+                              },
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {}
+                            ]
+                          }
+                        },
+                        {
+                          "name": "main_hand",
+                          "value": {}
+                        },
+                        {
+                          "name": "helmet",
+                          "value": {}
+                        },
+                        {
+                          "name": "chestplate",
+                          "value": {}
+                        },
+                        {
+                          "name": "leggings",
+                          "value": {}
+                        },
+                        {
+                          "name": "boots",
+                          "value": {}
+                        },
+                        {
+                          "name": "off_hand",
+                          "value": {}
+                        },
+                        {
+                          "name": "natural_equipment",
+                          "value": {
+                            "type": "enum",
+                            "enum": "TRUE"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "game_spawn_mob",
+                      "values": [
+                        {
+                          "name": "mob",
+                          "value": {
+                            "type": "item",
+                            "item": "{\"id\":\"zombie_spawn_egg\",\"Count\":1}"
+                          }
+                        },
+                        {
+                          "name": "location",
+                          "value": {
+                            "type": "game_value",
+                            "game_value": "location",
+                            "selection": "{\"type\":\"default\"}"
+                          }
+                        },
+                        {
+                          "name": "health",
+                          "value": {
+                            "type": "number",
+                            "number": 20
+                          }
+                        },
+                        {
+                          "name": "custom_name",
+                          "value": {
+                            "type": "text",
+                            "text": "☠ Пособник Блюстителя"
+                          }
+                        },
+                        {
+                          "name": "potion_effects",
+                          "value": {
+                            "type": "array",
+                            "values": [
+                              {
+                                "type": "potion",
+                                "potion": "speed",
+                                "amplifier": 1,
+                                "duration": 2147483647
+                              },
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {}
+                            ]
+                          }
+                        },
+                        {
+                          "name": "main_hand",
+                          "value": {}
+                        },
+                        {
+                          "name": "helmet",
+                          "value": {}
+                        },
+                        {
+                          "name": "chestplate",
+                          "value": {}
+                        },
+                        {
+                          "name": "leggings",
+                          "value": {}
+                        },
+                        {
+                          "name": "boots",
+                          "value": {}
+                        },
+                        {
+                          "name": "off_hand",
+                          "value": {}
+                        },
+                        {
+                          "name": "natural_equipment",
+                          "value": {
+                            "type": "enum",
+                            "enum": "TRUE"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "game_spawn_lightning_bolt",
+                      "values": [
+                        {
+                          "name": "location",
+                          "value": {
+                            "type": "game_value",
+                            "game_value": "location",
+                            "selection": "{\"type\":\"default\"}"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "set_variable_value",
+                      "values": [
+                        {
+                          "name": "variable",
+                          "value": {
+                            "type": "variable",
+                            "variable": "an_desp",
+                            "scope": "game"
+                          }
+                        },
+                        {
+                          "name": "value",
+                          "value": {
+                            "type": "number",
+                            "number": 1
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "action": "player_send_message",
+                      "values": [
+                        {
+                          "name": "messages",
+                          "value": {
+                            "type": "array",
+                            "values": [
+                              {
+                                "type": "text",
+                                "text": "💀 Босс на грани смерти: он призвал пособников!"
+                              },
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {},
+                              {}
+                            ]
+                          }
+                        },
+                        {
+                          "name": "merging",
+                          "value": {
+                            "type": "enum",
+                            "enum": "SPACES"
+                          }
+                        }
+                      ],
+                      "selection": {
+                        "type": "all_players"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "position": 6,
+      "event": "entity_death",
+      "operations": [
+        {
+          "action": "if_entity_name_equals",
+          "values": [
+            {
+              "name": "names_or_uuids",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "text",
+                    "text": "👹 Блюститель Анархии"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            }
+          ],
+          "is_inverted": false,
+          "operations": [
+            {
+              "action": "player_remove_boss_bar",
+              "values": [
+                {
+                  "name": "id",
+                  "value": {
+                    "type": "text",
+                    "text": "an_boss"
+                  }
+                }
+              ],
+              "selection": {
+                "type": "all_players"
+              }
+            },
+            {
+              "action": "game_create_explosion",
+              "values": [
+                {
+                  "name": "location",
+                  "value": {
+                    "type": "game_value",
+                    "game_value": "location",
+                    "selection": "{\"type\":\"default\"}"
+                  }
+                },
+                {
+                  "name": "power",
+                  "value": {
+                    "type": "number",
+                    "number": 2
+                  }
+                }
+              ]
+            },
+            {
+              "action": "game_spawn_lightning_bolt",
+              "values": [
+                {
+                  "name": "location",
+                  "value": {
+                    "type": "game_value",
+                    "game_value": "location",
+                    "selection": "{\"type\":\"default\"}"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_get_list_random_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "an_drop",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "list",
+                  "value": {
+                    "type": "variable",
+                    "variable": "an_boss",
+                    "scope": "game"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "player_give_items",
+              "values": [
+                {
+                  "name": "items",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "variable",
+                        "variable": "an_drop",
+                        "scope": "local"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "amount",
+                  "value": {
+                    "type": "number",
+                    "number": 1
+                  }
+                }
+              ],
+              "selection": {
+                "type": "killer_player"
+              }
+            },
+            {
+              "action": "set_variable_get_list_random_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "an_drop",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "list",
+                  "value": {
+                    "type": "variable",
+                    "variable": "an_boss",
+                    "scope": "game"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "player_give_items",
+              "values": [
+                {
+                  "name": "items",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "variable",
+                        "variable": "an_drop",
+                        "scope": "local"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "amount",
+                  "value": {
+                    "type": "number",
+                    "number": 1
+                  }
+                }
+              ],
+              "selection": {
+                "type": "killer_player"
+              }
+            },
+            {
+              "action": "set_variable_get_list_random_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "an_drop",
+                    "scope": "local"
+                  }
+                },
+                {
+                  "name": "list",
+                  "value": {
+                    "type": "variable",
+                    "variable": "an_boss",
+                    "scope": "game"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "player_give_items",
+              "values": [
+                {
+                  "name": "items",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "variable",
+                        "variable": "an_drop",
+                        "scope": "local"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "amount",
+                  "value": {
+                    "type": "number",
+                    "number": 1
+                  }
+                }
+              ],
+              "selection": {
+                "type": "killer_player"
+              }
+            },
+            {
+              "action": "player_send_advancement",
+              "values": [
+                {
+                  "name": "frame",
+                  "value": {
+                    "type": "enum",
+                    "enum": "CHALLENGE"
+                  }
+                },
+                {
+                  "name": "name",
+                  "value": {
+                    "type": "text",
+                    "text": "Блюститель повержен!"
+                  }
+                },
+                {
+                  "name": "icon",
+                  "value": {
+                    "type": "item",
+                    "item": "{\"id\":\"totem_of_undying\",\"Count\":1}"
+                  }
+                }
+              ],
+              "selection": {
+                "type": "killer_player"
+              }
+            },
+            {
+              "action": "player_send_message",
+              "values": [
+                {
+                  "name": "messages",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "text",
+                        "text": "🏆 Ты поверг Блюстителя Анархии! Трофеи — твои."
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "merging",
+                  "value": {
+                    "type": "enum",
+                    "enum": "SPACES"
+                  }
+                }
+              ],
+              "selection": {
+                "type": "killer_player"
+              }
+            },
+            {
+              "action": "player_play_sound",
+              "values": [
+                {
+                  "name": "sound",
+                  "value": {
+                    "type": "sound",
+                    "sound": "ui.toast.challenge_complete",
+                    "volume": 1,
+                    "pitch": 1
+                  }
+                },
+                {
+                  "name": "location",
+                  "value": {
+                    "type": "game_value",
+                    "game_value": "location",
+                    "selection": "{\"type\":\"default\"}"
+                  }
+                }
+              ],
+              "selection": {
+                "type": "killer_player"
+              }
+            }
+          ]
         }
       ]
     },
     {
       "type": "function",
-      "position": 5,
+      "position": 7,
       "is_hidden": true,
       "name": "jmcc.f0",
       "operations": [
@@ -2498,7 +3800,7 @@
     },
     {
       "type": "function",
-      "position": 6,
+      "position": 8,
       "is_hidden": true,
       "name": "jmcc.f1",
       "operations": [
@@ -2974,7 +4276,7 @@
     },
     {
       "type": "function",
-      "position": 7,
+      "position": 9,
       "is_hidden": true,
       "name": "jmcc.f2",
       "operations": [
@@ -3360,7 +4662,7 @@
     },
     {
       "type": "function",
-      "position": 8,
+      "position": 10,
       "is_hidden": true,
       "name": "jmcc.f3",
       "operations": [
@@ -4020,7 +5322,7 @@
     },
     {
       "type": "function",
-      "position": 9,
+      "position": 11,
       "is_hidden": true,
       "name": "jmcc.f4",
       "operations": [
@@ -4548,7 +5850,7 @@
     },
     {
       "type": "function",
-      "position": 10,
+      "position": 12,
       "is_hidden": true,
       "name": "jmcc.f5",
       "operations": [
@@ -5076,7 +6378,7 @@
     },
     {
       "type": "function",
-      "position": 11,
+      "position": 13,
       "is_hidden": true,
       "name": "jmcc.f6",
       "operations": [
@@ -5696,7 +6998,7 @@
     },
     {
       "type": "function",
-      "position": 12,
+      "position": 14,
       "is_hidden": true,
       "name": "jmcc.f7",
       "operations": [
@@ -6045,6 +7347,416 @@
                   "value": {
                     "type": "enum",
                     "enum": "SPACES"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "position": 15,
+      "is_hidden": true,
+      "name": "jmcc.f8",
+      "operations": [
+        {
+          "action": "if_player_is_holding",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "array",
+                "values": [
+                  {
+                    "type": "item",
+                    "item": "{\"id\":\"totem_of_undying\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"👑 Идол Анархии\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Ключ к древнему хаосу\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ПКМ — призвать Блюстителя Анархии\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            },
+            {
+              "name": "hand_slot",
+              "value": {
+                "type": "enum",
+                "enum": "EITHER_HAND"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "IGNORE_STACK_SIZE"
+              }
+            }
+          ],
+          "is_inverted": false,
+          "operations": [
+            {
+              "action": "game_cancel_event",
+              "values": []
+            },
+            {
+              "action": "player_remove_items",
+              "values": [
+                {
+                  "name": "items",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "item",
+                        "item": "{\"id\":\"totem_of_undying\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"👑 Идол Анархии\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}\",\"Lore\":[\"{\\\"text\\\":\\\"Ключ к древнему хаосу\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"ПКМ — призвать Блюстителя Анархии\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}}"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "action": "game_spawn_mob",
+              "values": [
+                {
+                  "name": "mob",
+                  "value": {
+                    "type": "item",
+                    "item": "{\"id\":\"zombie_spawn_egg\",\"Count\":1}"
+                  }
+                },
+                {
+                  "name": "location",
+                  "value": {
+                    "type": "game_value",
+                    "game_value": "location",
+                    "selection": "{\"type\":\"default\"}"
+                  }
+                },
+                {
+                  "name": "health",
+                  "value": {
+                    "type": "number",
+                    "number": 200
+                  }
+                },
+                {
+                  "name": "custom_name",
+                  "value": {
+                    "type": "text",
+                    "text": "👹 Блюститель Анархии"
+                  }
+                },
+                {
+                  "name": "potion_effects",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "potion",
+                        "potion": "fire_resistance",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "speed",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "strength",
+                        "amplifier": 1,
+                        "duration": 2147483647
+                      },
+                      {
+                        "type": "potion",
+                        "potion": "resistance",
+                        "amplifier": 0,
+                        "duration": 2147483647
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "main_hand",
+                  "value": {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_sword\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"Реликвия Блюстителя\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\"},\"Enchantments\":[{\"id\":\"sharpness\",\"lvl\":3},{\"id\":\"knockback\",\"lvl\":1}]}}"
+                  }
+                },
+                {
+                  "name": "helmet",
+                  "value": {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_helmet\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"Реликвия Блюстителя\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\"},\"Enchantments\":[{\"id\":\"protection\",\"lvl\":3}]}}"
+                  }
+                },
+                {
+                  "name": "chestplate",
+                  "value": {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_chestplate\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"Реликвия Блюстителя\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\"},\"Enchantments\":[{\"id\":\"protection\",\"lvl\":3}]}}"
+                  }
+                },
+                {
+                  "name": "leggings",
+                  "value": {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_leggings\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"Реликвия Блюстителя\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\"},\"Enchantments\":[{\"id\":\"protection\",\"lvl\":3}]}}"
+                  }
+                },
+                {
+                  "name": "boots",
+                  "value": {
+                    "type": "item",
+                    "item": "{\"id\":\"diamond_boots\",\"Count\":1,\"tag\":{\"display\":{\"Name\":\"{\\\"text\\\":\\\"Реликвия Блюстителя\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":false}\"},\"Enchantments\":[{\"id\":\"protection\",\"lvl\":3},{\"id\":\"feather_falling\",\"lvl\":2}]}}"
+                  }
+                },
+                {
+                  "name": "off_hand",
+                  "value": {}
+                },
+                {
+                  "name": "natural_equipment",
+                  "value": {
+                    "type": "enum",
+                    "enum": "FALSE"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "entity_set_max_health",
+              "values": [
+                {
+                  "name": "max_health",
+                  "value": {
+                    "type": "number",
+                    "number": 200
+                  }
+                },
+                {
+                  "name": "heal_to_max",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                }
+              ],
+              "selection": {
+                "type": "last_entity"
+              }
+            },
+            {
+              "action": "entity_set_target",
+              "values": [
+                {
+                  "name": "name_or_uuid",
+                  "value": {
+                    "type": "text",
+                    "text": "%player%"
+                  }
+                }
+              ],
+              "selection": {
+                "type": "last_entity"
+              }
+            },
+            {
+              "action": "player_set_boss_bar",
+              "values": [
+                {
+                  "name": "id",
+                  "value": {
+                    "type": "text",
+                    "text": "an_boss"
+                  }
+                },
+                {
+                  "name": "title",
+                  "value": {
+                    "type": "text",
+                    "text": "👹 Блюститель Анархии"
+                  }
+                },
+                {
+                  "name": "progress",
+                  "value": {
+                    "type": "number",
+                    "number": 1
+                  }
+                },
+                {
+                  "name": "color",
+                  "value": {
+                    "type": "enum",
+                    "enum": "RED"
+                  }
+                },
+                {
+                  "name": "style",
+                  "value": {
+                    "type": "enum",
+                    "enum": "NOTCHED_10"
+                  }
+                },
+                {
+                  "name": "sky_effect",
+                  "value": {
+                    "type": "enum",
+                    "enum": "FOG_AND_DARK_SKY"
+                  }
+                }
+              ],
+              "selection": {
+                "type": "all_players"
+              }
+            },
+            {
+              "action": "player_play_sound",
+              "values": [
+                {
+                  "name": "sound",
+                  "value": {
+                    "type": "sound",
+                    "sound": "entity.wither.spawn",
+                    "volume": 1,
+                    "pitch": 1
+                  }
+                },
+                {
+                  "name": "location",
+                  "value": {
+                    "type": "game_value",
+                    "game_value": "location",
+                    "selection": "{\"type\":\"default\"}"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "player_send_message",
+              "values": [
+                {
+                  "name": "messages",
+                  "value": {
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "text",
+                        "text": "👑 Блюститель Анархии призван! Убей его — и богатство твоё!"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "merging",
+                  "value": {
+                    "type": "enum",
+                    "enum": "SPACES"
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "an_rage",
+                    "scope": "game"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "number",
+                    "number": 0
+                  }
+                }
+              ]
+            },
+            {
+              "action": "set_variable_value",
+              "values": [
+                {
+                  "name": "variable",
+                  "value": {
+                    "type": "variable",
+                    "variable": "an_desp",
+                    "scope": "game"
+                  }
+                },
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "number",
+                    "number": 0
                   }
                 }
               ]
