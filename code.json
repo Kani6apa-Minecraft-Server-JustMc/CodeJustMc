@@ -1095,6 +1095,27 @@
                     "type": "enum",
                     "enum": "FALSE"
                   }
+                },
+                {
+                  "name": "keep_velocity",
+                  "value": {
+                    "type": "enum",
+                    "enum": "FALSE"
+                  }
+                },
+                {
+                  "name": "ignore_passengers",
+                  "value": {
+                    "type": "enum",
+                    "enum": "FALSE"
+                  }
+                },
+                {
+                  "name": "dismount",
+                  "value": {
+                    "type": "enum",
+                    "enum": "FALSE"
+                  }
                 }
               ]
             },
@@ -1286,6 +1307,27 @@
             },
             {
               "name": "keep_rotation",
+              "value": {
+                "type": "enum",
+                "enum": "FALSE"
+              }
+            },
+            {
+              "name": "keep_velocity",
+              "value": {
+                "type": "enum",
+                "enum": "FALSE"
+              }
+            },
+            {
+              "name": "ignore_passengers",
+              "value": {
+                "type": "enum",
+                "enum": "FALSE"
+              }
+            },
+            {
+              "name": "dismount",
               "value": {
                 "type": "enum",
                 "enum": "FALSE"
@@ -1491,16 +1533,48 @@
               ]
             },
             {
-              "action": "player_send_action_bar",
               "selection": {
                 "type": "all_players"
               },
+              "action": "player_send_action_bar",
               "values": [
                 {
-                  "name": "text",
+                  "name": "messages",
                   "value": {
-                    "type": "text",
-                    "text": "⛏ %var_save(ob_phase_name) • Разбито блоков: %var_save(ob_breaks)"
+                    "type": "array",
+                    "values": [
+                      {
+                        "type": "text",
+                        "text": "⛏ %var_save(ob_phase_name) • Разбито блоков: %var_save(ob_breaks)"
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                },
+                {
+                  "name": "merging",
+                  "value": {
+                    "type": "enum",
+                    "enum": "SPACES"
                   }
                 }
               ]
@@ -1649,10 +1723,10 @@
                   ]
                 },
                 {
-                  "action": "player_play_sound",
                   "selection": {
                     "type": "all_players"
                   },
+                  "action": "player_play_sound",
                   "values": [
                     {
                       "name": "sound",
@@ -1661,6 +1735,14 @@
                         "sound": "entity.player.levelup",
                         "volume": 1,
                         "pitch": 1
+                      }
+                    },
+                    {
+                      "name": "location",
+                      "value": {
+                        "type": "game_value",
+                        "game_value": "location",
+                        "selection": "{\"type\":\"default\"}"
                       }
                     }
                   ]
@@ -1887,10 +1969,8 @@
     {
       "type": "function",
       "position": 4,
-      "event": {
-        "is_hidden": true,
-        "name": "jmcc.f0"
-      },
+      "is_hidden": true,
+      "name": "jmcc.f0",
       "operations": [
         {
           "action": "if_variable_greater_or_equals",
@@ -1925,7 +2005,7 @@
                   }
                 },
                 {
-                  "name": "variable",
+                  "name": "list",
                   "value": {
                     "type": "variable",
                     "variable": "ob_p8",
@@ -2028,7 +2108,7 @@
                   }
                 },
                 {
-                  "name": "variable",
+                  "name": "list",
                   "value": {
                     "type": "variable",
                     "variable": "ob_p7",
@@ -2131,7 +2211,7 @@
                   }
                 },
                 {
-                  "name": "variable",
+                  "name": "list",
                   "value": {
                     "type": "variable",
                     "variable": "ob_p6",
@@ -2234,7 +2314,7 @@
                   }
                 },
                 {
-                  "name": "variable",
+                  "name": "list",
                   "value": {
                     "type": "variable",
                     "variable": "ob_p5",
@@ -2337,7 +2417,7 @@
                   }
                 },
                 {
-                  "name": "variable",
+                  "name": "list",
                   "value": {
                     "type": "variable",
                     "variable": "ob_p4",
@@ -2440,7 +2520,7 @@
                   }
                 },
                 {
-                  "name": "variable",
+                  "name": "list",
                   "value": {
                     "type": "variable",
                     "variable": "ob_p3",
@@ -2543,7 +2623,7 @@
                   }
                 },
                 {
-                  "name": "variable",
+                  "name": "list",
                   "value": {
                     "type": "variable",
                     "variable": "ob_p2",
@@ -2646,7 +2726,7 @@
                   }
                 },
                 {
-                  "name": "variable",
+                  "name": "list",
                   "value": {
                     "type": "variable",
                     "variable": "ob_p1",
