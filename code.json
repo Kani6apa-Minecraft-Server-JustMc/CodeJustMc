@@ -1,11 +1,14 @@
 {
   "module_name": "random_starter_drops",
   "version": "1.0",
+  "position": 0,
   "events": [
     {
+      "position": 0,
       "trigger": "player_break_block",
       "actions": [
         {
+          "position": 0,
           "type": "random_switch",
           "cases": [
             {
