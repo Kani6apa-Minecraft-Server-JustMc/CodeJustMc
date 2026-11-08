@@ -1,59 +1,68 @@
 {
   "handlers": [
     {
-      "type": "event",
-      "position": 0,
-      "event": "player_right_click",
+      "type": "event", "position": 0, "event": "player_chat",
       "operations": [
-        {
-          "action": "if_player_is_holding",
-          "is_inverted": false,
-          "values": [
-            { "name": "items", "value": { "type": "array", "values": [ { "type": "item", "item": "{\"id\":\"blaze_rod\",\"Count\":1}" }, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {} ] } },
-            { "name": "hand_slot", "value": { "type": "enum", "enum": "EITHER_HAND" } },
-            { "name": "comparison_mode", "value": { "type": "enum", "enum": "TYPE_ONLY" } }
-          ],
-          "operations": [
-            { "action": "game_cancel_event", "values": [] },
-            { "action": "player_swing_hand", "values": [ { "name": "hand_type", "value": { "type": "enum", "enum": "MAIN" } } ] },
-            { "action": "player_display_particle_ray", "values": [
-              { "name": "particle", "value": { "type": "particle", "particle_type": "flame", "count": 1, "first_spread": 0, "second_spread": 0, "x_motion": 0, "y_motion": 0, "z_motion": 0 } },
-              { "name": "start", "value": { "type": "game_value", "game_value": "location", "selection": "{\"type\":\"default\"}" } },
-              { "name": "ray", "value": { "type": "game_value", "game_value": "direction_of_view", "selection": "{\"type\":\"default\"}" } },
-              { "name": "divider", "value": { "type": "number", "number": 20 } },
-              { "name": "unit_of_measurement", "value": { "type": "enum", "enum": "POINTS" } }
-            ] },
-            { "action": "player_display_particle_ray", "values": [
-              { "name": "particle", "value": { "type": "particle", "particle_type": "end_rod", "count": 1, "first_spread": 0, "second_spread": 0, "x_motion": 0, "y_motion": 0, "z_motion": 0 } },
-              { "name": "start", "value": { "type": "game_value", "game_value": "eye_location", "selection": "{\"type\":\"default\"}" } },
-              { "name": "ray", "value": { "type": "game_value", "game_value": "direction_of_view", "selection": "{\"type\":\"default\"}" } },
-              { "name": "divider", "value": { "type": "number", "number": 12 } },
-              { "name": "unit_of_measurement", "value": { "type": "enum", "enum": "POINTS" } }
-            ] },
-            { "action": "player_launch_forward", "values": [
-              { "name": "power", "value": { "type": "number", "number": 3 } },
-              { "name": "increment", "value": { "type": "enum", "enum": "FALSE" } },
-              { "name": "launch_axis", "value": { "type": "enum", "enum": "YAW_AND_PITCH" } }
-            ] },
-            { "action": "player_launch_up", "values": [
-              { "name": "power", "value": { "type": "number", "number": 0.8 } },
-              { "name": "increment", "value": { "type": "enum", "enum": "TRUE" } }
-            ] },
-            { "action": "entity_give_potion_effects", "selection": { "type": "default_player" }, "values": [
-              { "name": "potions", "value": { "type": "array", "values": [ { "type": "potion", "potion": "speed", "amplifier": 2, "duration": 5 }, { "type": "potion", "potion": "resistance", "amplifier": 0, "duration": 5 }, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {} ] } },
-              { "name": "overwrite", "value": { "type": "enum", "enum": "TRUE" } },
-              { "name": "show_icon", "value": { "type": "enum", "enum": "TRUE" } },
-              { "name": "particle_mode", "value": { "type": "enum", "enum": "REGULAR" } }
-            ] },
-            { "action": "player_play_sound", "values": [ { "name": "sound", "value": { "type": "sound", "sound": "item.trident.riptide_1", "volume": 1, "pitch": 1 } } ] },
-            { "action": "player_send_action_bar", "values": [ { "name": "text", "value": { "type": "text", "text": "⚡ Шквал Кометы!" } } ] },
-            { "action": "player_set_item_cooldown", "values": [
-              { "name": "item", "value": { "type": "item", "item": "{\"id\":\"blaze_rod\",\"Count\":1}" } },
-              { "name": "cooldown", "value": { "type": "number", "number": 60 } },
-              { "name": "sound", "value": { "type": "sound", "sound": "entity.villager.no", "volume": 1, "pitch": 1 } }
-            ] }
-          ]
-        }
+        { "action": "game_cancel_event", "values": [] },
+        { "action": "set_variable_value", "values": [
+          { "name": "variable", "value": { "type": "variable", "variable": "chat_sender_name", "scope": "save" } },
+          { "name": "value", "value": { "type": "game_value", "game_value": "display_name", "selection": "{\"type\":\"default\"}" } }
+        ] },
+        { "action": "set_variable_value", "values": [
+          { "name": "variable", "value": { "type": "variable", "variable": "chat_msg", "scope": "save" } },
+          { "name": "value", "value": { "type": "game_value", "game_value": "event_chat_message", "selection": "{\"type\":\"default\"}" } }
+        ] },
+        { "action": "player_send_minimessage", "selection": { "type": "all_players" }, "values": [
+          { "name": "minimessage", "value": { "type": "text", "text": "<hover:show_text:'<gray>Игрок сервера</gray>'><gradient:#00e5ff:#a855f7><bold>%var_save(chat_sender_name)%</bold></gradient></hover> <dark_gray>»</dark_gray> <white>%var_save(chat_msg)%</white>" } }
+        ] }
+      ]
+    },
+    {
+      "type": "event", "position": 1, "event": "player_join",
+      "operations": [
+        { "action": "set_variable_value", "values": [
+          { "name": "variable", "value": { "type": "variable", "variable": "join_name", "scope": "save" } },
+          { "name": "value", "value": { "type": "game_value", "game_value": "display_name", "selection": "{\"type\":\"default\"}" } }
+        ] },
+        { "action": "player_send_minimessage", "selection": { "type": "all_players" }, "values": [
+          { "name": "minimessage", "value": { "type": "text", "text": "<gradient:#00ff88:#00e5ff><bold>➕</bold></gradient> <gray>%var_save(join_name)% <dark_gray>зашёл на сервер</dark_gray>" } }
+        ] },
+        { "action": "player_send_title", "values": [
+          { "name": "title", "value": { "type": "text", "text": "Добро пожаловать!" } },
+          { "name": "subtitle", "value": { "type": "text", "text": "Приятной игры :)" } },
+          { "name": "fade_in", "value": { "type": "number", "number": 10 } },
+          { "name": "stay", "value": { "type": "number", "number": 60 } },
+          { "name": "fade_out", "value": { "type": "number", "number": 20 } }
+        ] },
+        { "action": "player_send_action_bar", "values": [ { "name": "text", "value": { "type": "text", "text": "Ты на сервере! Общайся в чате :)" } } ] },
+        { "action": "player_play_sound", "values": [ { "name": "sound", "value": { "type": "sound", "sound": "entity.player.levelup", "volume": 1, "pitch": 1 } } ] }
+      ]
+    },
+    {
+      "type": "event", "position": 2, "event": "player_quit",
+      "operations": [
+        { "action": "set_variable_value", "values": [
+          { "name": "variable", "value": { "type": "variable", "variable": "quit_name", "scope": "save" } },
+          { "name": "value", "value": { "type": "game_value", "game_value": "display_name", "selection": "{\"type\":\"default\"}" } }
+        ] },
+        { "action": "player_send_minimessage", "selection": { "type": "all_players" }, "values": [
+          { "name": "minimessage", "value": { "type": "text", "text": "<gradient:#ff5555:#ffaa00><bold>➖</bold></gradient> <gray>%var_save(quit_name)% <dark_gray>покинул сервер</dark_gray>" } }
+        ] }
+      ]
+    },
+    {
+      "type": "event", "position": 3, "event": "player_death",
+      "operations": [
+        { "action": "set_variable_value", "values": [
+          { "name": "variable", "value": { "type": "variable", "variable": "death_name", "scope": "save" } },
+          { "name": "value", "value": { "type": "game_value", "game_value": "display_name", "selection": "{\"type\":\"default\"}" } }
+        ] },
+        { "action": "player_send_minimessage", "selection": { "type": "all_players" }, "values": [
+          { "name": "minimessage", "value": { "type": "text", "text": "<red><bold>☠</bold></red> <gray>%var_save(death_name)% <dark_gray>погиб...</dark_gray>" } }
+        ] },
+        { "action": "player_play_sound", "selection": { "type": "all_players" }, "values": [
+          { "name": "sound", "value": { "type": "sound", "sound": "entity.player.hurt", "volume": 1, "pitch": 1 } }
+        ] }
       ]
     }
   ]
