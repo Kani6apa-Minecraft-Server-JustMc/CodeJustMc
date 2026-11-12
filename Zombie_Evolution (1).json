@@ -1,0 +1,234 @@
+{
+  "handlers": [
+    {
+      "type": "event",
+      "event": "entity_spawn",
+      "position": 0,
+      "operations": [
+        {
+          "action": "select_event_target",
+          "values": [
+            {
+              "name": "selection_type",
+              "value": {
+                "type": "enum",
+                "enum": "DEFAULT"
+              }
+            }
+          ],
+          "operations": []
+        },
+        {
+          "action": "if_entity_is_type",
+          "is_inverted": false,
+          "values": [
+            {
+              "name": "entity_types",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:zombie\"}"
+              }
+            }
+          ],
+          "operations": [
+            {
+              "action": "entity_set_ai",
+              "values": [
+                {
+                  "name": "ai",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                }
+              ],
+              "operations": []
+            },
+            {
+              "action": "entity_set_aware",
+              "values": [
+                {
+                  "name": "aware",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                }
+              ],
+              "operations": []
+            },
+            {
+              "action": "entity_set_pathfinder_settings",
+              "values": [
+                {
+                  "name": "navigation_type",
+                  "value": {
+                    "type": "enum",
+                    "enum": "GROUND"
+                  }
+                },
+                {
+                  "name": "can_float",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "can_open_door",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                },
+                {
+                  "name": "can_pass_door",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                }
+              ],
+              "operations": []
+            },
+            {
+              "action": "entity_set_attribute",
+              "values": [
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "number",
+                    "number": 0.30
+                  }
+                },
+                {
+                  "name": "attribute_type",
+                  "value": {
+                    "type": "enum",
+                    "enum": "GENERIC_MOVEMENT_SPEED"
+                  }
+                }
+              ],
+              "operations": []
+            },
+            {
+              "action": "entity_set_attribute",
+              "values": [
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "number",
+                    "number": 48
+                  }
+                },
+                {
+                  "name": "attribute_type",
+                  "value": {
+                    "type": "enum",
+                    "enum": "GENERIC_FOLLOW_RANGE"
+                  }
+                }
+              ],
+              "operations": []
+            },
+            {
+              "action": "entity_set_attribute",
+              "values": [
+                {
+                  "name": "value",
+                  "value": {
+                    "type": "number",
+                    "number": 30
+                  }
+                },
+                {
+                  "name": "attribute_type",
+                  "value": {
+                    "type": "enum",
+                    "enum": "GENERIC_MAX_HEALTH"
+                  }
+                }
+              ],
+              "operations": []
+            },
+            {
+              "action": "entity_set_current_health",
+              "values": [
+                {
+                  "name": "health",
+                  "value": {
+                    "type": "number",
+                    "number": 30
+                  }
+                }
+              ],
+              "operations": []
+            },
+            {
+              "action": "entity_set_custom_name",
+              "values": [
+                {
+                  "name": "custom_name",
+                  "value": {
+                    "type": "text",
+                    "text": "§2Эволюционировавший зомби",
+                    "parsing": "legacy"
+                  }
+                }
+              ],
+              "operations": []
+            },
+            {
+              "action": "entity_set_custom_name_visibility",
+              "values": [
+                {
+                  "name": "visibility",
+                  "value": {
+                    "type": "enum",
+                    "enum": "TRUE"
+                  }
+                }
+              ],
+              "operations": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "event": "entity_block_break_progress_update",
+      "position": 1,
+      "operations": [
+        {
+          "action": "game_break_block",
+          "values": [
+            {
+              "name": "locations",
+              "value": {
+                "type": "game_value",
+                "game_value": "event_block_location",
+                "selection": "null"
+              }
+            },
+            {
+              "name": "tool",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:netherite_axe\"}"
+              }
+            },
+            {
+              "name": "drop_exp",
+              "value": {
+                "type": "enum",
+                "enum": "FALSE"
+              }
+            }
+          ],
+          "operations": []
+        }
+      ]
+    }
+  ]
+}
