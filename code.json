@@ -1,214 +1,271 @@
 {
-  "name": "PvP_Classes_Module",
-  "version": "2.0",
-  "author": "AI Assistant",
-  "description": "Модуль выбора 10 уникальных PvP классов через GUI при входе и возрождении на сервере JustMc",
-  "triggers": [
-    "player_join",
-    "player_respawn"
-  ],
-  "on_trigger": {
-    "action": "open_gui",
-    "gui": "pvp_classes_menu"
-  },
-  "guis": {
-    "pvp_classes_menu": {
-      "title": "&8[&6JustMc&8] &bВыбор PvP Класса",
-      "rows": 3,
-      "items": {
-        "10": {
-          "slot": 10,
-          "material": "DIAMOND_SWORD",
-          "name": "&cПиромант",
-          "lore": [
-            "&7Стихия огня и разрушения.",
-            "&7Оружие с поджогом и зелья силы."
-          ],
-          "click_action": "select_class",
-          "class_id": "pyromancer"
+  "handlers": [
+    {
+      "type": "event",
+      "event": "player_join",
+      "position": [0, 0, 0],
+      "operations": [
+        {
+          "action": "player_give_items",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:crossbow\",tag:{display:{Name:'{\"text\":\"Арбалет Бури\",\"color\":\"aqua\",\"italic\":false}'}}}"
+              }
+            },
+            { "name": "amount", "value": { "type": "number", "number": 1 } }
+          ]
         },
-        "11": {
-          "slot": 11,
-          "material": "ENDER_EYE",
-          "name": "&5Теневой Ассасин",
-          "lore": [
-            "&7Мастер скрытности и быстрых ударов.",
-            "&7Высокая скорость и невидимость."
-          ],
-          "click_action": "select_class",
-          "class_id": "assassin"
+        {
+          "action": "player_give_items",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:bow\",tag:{display:{Name:'{\"text\":\"Лук Пламени\",\"color\":\"red\",\"italic\":false}'}}}"
+              }
+            },
+            { "name": "amount", "value": { "type": "number", "number": 1 } }
+          ]
         },
-        "12": {
-          "slot": 12,
-          "material": "DIAMOND_CHESTPLATE",
-          "name": "&eПаладин",
-          "lore": [
-            "&7Святой защитник с мощной броней.",
-            "&7Регенерация и высокая выживаемость."
-          ],
-          "click_action": "select_class",
-          "class_id": "paladin"
+        {
+          "action": "player_give_items",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:diamond_sword\",tag:{display:{Name:'{\"text\":\"Клинок Вихря\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+              }
+            },
+            { "name": "amount", "value": { "type": "number", "number": 1 } }
+          ]
         },
-        "13": {
-          "slot": 13,
-          "material": "BOW",
-          "name": "&bГромовой Лучник",
-          "lore": [
-            "&7Стрелок, управляющий молниями.",
-            "&7Дистанционный бой и скорость."
-          ],
-          "click_action": "select_class",
-          "class_id": "archer"
+        {
+          "action": "player_give_items",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:diamond_axe\",tag:{display:{Name:'{\"text\":\"Топор Оглушения\",\"color\":\"gold\",\"italic\":false}'}}}"
+              }
+            },
+            { "name": "amount", "value": { "type": "number", "number": 1 } }
+          ]
         },
-        "14": {
-          "slot": 14,
-          "material": "WITHER_ROSE",
-          "name": "&8Некромант",
-          "lore": [
-            "&7Повелитель темных сил.",
-            "&7Иссушение врагов и поглощение урона."
-          ],
-          "click_action": "select_class",
-          "class_id": "necromancer"
-        },
-        "15": {
-          "slot": 15,
-          "material": "IRON_AXE",
-          "name": "&4Берсерк",
-          "lore": [
-            "&7Яростный воин ближнего боя.",
-            "&7Огромный урон за счет здоровья."
-          ],
-          "click_action": "select_class",
-          "class_id": "berserker"
-        },
-        "16": {
-          "slot": 16,
-          "material": "BLUE_ICE",
-          "name": "&3Ледяной Маг",
-          "lore": [
-            "&7Замораживает противников.",
-            "&7Замедление врагов и защита."
-          ],
-          "click_action": "select_class",
-          "class_id": "mage"
-        },
-        "19": {
-          "slot": 19,
-          "material": "REDSTONE",
-          "name": "&4Вампир",
-          "lore": [
-            "&7Крадет здоровье у противников.",
-            "&7Вампиризм и ночное видение."
-          ],
-          "click_action": "select_class",
-          "class_id": "vampire"
-        },
-        "21": {
-          "slot": 21,
-          "material": "ANVIL",
-          "name": "&8Джаггернаут",
-          "lore": [
-            "&7Несокрушимая крепость.",
-            "&7Максимальная броня и сопротивление."
-          ],
-          "click_action": "select_class",
-          "class_id": "juggernaut"
-        },
-        "25": {
-          "slot": 25,
-          "material": "FEATHER",
-          "name": "&aСтранник Ветра",
-          "lore": [
-            "&7Неуловимый акробат.",
-            "&7Экстремальная скорость и прыгучесть."
-          ],
-          "click_action": "select_class",
-          "class_id": "windrunner"
+        {
+          "action": "player_give_items",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:trident\",tag:{display:{Name:'{\"text\":\"Трезубец Притяжения\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
+              }
+            },
+            { "name": "amount", "value": { "type": "number", "number": 1 } }
+          ]
         }
-      }
+      ]
+    },
+    {
+      "type": "event",
+      "event": "player_interact",
+      "position": [1, 0, 0],
+      "operations": [
+        {
+          "action": "if_player_has_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:crossbow\",tag:{display:{Name:'{\"text\":\"Арбалет Бури\",\"color\":\"aqua\",\"italic\":false}'}}}"
+              }
+            },
+            { "name": "check_mode", "value": { "type": "text", "text": "ANY", "parsing": "plain" } },
+            { "name": "comparison_mode", "value": { "type": "text", "text": "EXACT", "parsing": "plain" } }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                { "name": "potions", "value": { "type": "text", "text": "SPEED", "parsing": "plain" } },
+                { "name": "duration", "value": { "type": "number", "number": 200 } },
+                { "name": "amplifier", "value": { "type": "number", "number": 2 } }
+              ]
+            },
+            {
+              "action": "player_play_sound",
+              "values": [
+                { "name": "sound", "value": { "type": "text", "text": "entity.arrow.shoot", "parsing": "plain" } },
+                { "name": "volume", "value": { "type": "number", "number": 1.0 } },
+                { "name": "pitch", "value": { "type": "number", "number": 1.5 } }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "event": "player_interact",
+      "position": [2, 0, 0],
+      "operations": [
+        {
+          "action": "if_player_has_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:bow\",tag:{display:{Name:'{\"text\":\"Лук Пламени\",\"color\":\"red\",\"italic\":false}'}}}"
+              }
+            },
+            { "name": "check_mode", "value": { "type": "text", "text": "ANY", "parsing": "plain" } },
+            { "name": "comparison_mode", "value": { "type": "text", "text": "EXACT", "parsing": "plain" } }
+          ],
+          "operations": [
+            {
+              "action": "player_display_particle",
+              "values": [
+                { "name": "particle", "value": { "type": "text", "text": "FLAME", "parsing": "plain" } },
+                { "name": "count", "value": { "type": "number", "number": 10 } },
+                { "name": "spread", "value": { "type": "number", "number": 0.5 } }
+              ]
+            },
+            {
+              "action": "player_play_sound",
+              "values": [
+                { "name": "sound", "value": { "type": "text", "text": "entity.blaze.shoot", "parsing": "plain" } },
+                { "name": "volume", "value": { "type": "number", "number": 1.0 } },
+                { "name": "pitch", "value": { "type": "number", "number": 0.8 } }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "event": "player_interact",
+      "position": [3, 0, 0],
+      "operations": [
+        {
+          "action": "if_player_has_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:diamond_sword\",tag:{display:{Name:'{\"text\":\"Клинок Вихря\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+              }
+            },
+            { "name": "check_mode", "value": { "type": "text", "text": "ANY", "parsing": "plain" } },
+            { "name": "comparison_mode", "value": { "type": "text", "text": "EXACT", "parsing": "plain" } }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                { "name": "potions", "value": { "type": "text", "text": "STRENGTH", "parsing": "plain" } },
+                { "name": "duration", "value": { "type": "number", "number": 100 } },
+                { "name": "amplifier", "value": { "type": "number", "number": 1 } }
+              ]
+            },
+            {
+              "action": "player_play_sound",
+              "values": [
+                { "name": "sound", "value": { "type": "text", "text": "entity.player.attack.sweep", "parsing": "plain" } },
+                { "name": "volume", "value": { "type": "number", "number": 1.0 } },
+                { "name": "pitch", "value": { "type": "number", "number": 1.2 } }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "event": "player_interact",
+      "position": [4, 0, 0],
+      "operations": [
+        {
+          "action": "if_player_has_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:diamond_axe\",tag:{display:{Name:'{\"text\":\"Топор Оглушения\",\"color\":\"gold\",\"italic\":false}'}}}"
+              }
+            },
+            { "name": "check_mode", "value": { "type": "text", "text": "ANY", "parsing": "plain" } },
+            { "name": "comparison_mode", "value": { "type": "text", "text": "EXACT", "parsing": "plain" } }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                { "name": "potions", "value": { "type": "text", "text": "SLOWNESS", "parsing": "plain" } },
+                { "name": "duration", "value": { "type": "number", "number": 120 } },
+                { "name": "amplifier", "value": { "type": "number", "number": 2 } }
+              ]
+            },
+            {
+              "action": "player_play_sound",
+              "values": [
+                { "name": "sound", "value": { "type": "text", "text": "entity.iron_golem.attack", "parsing": "plain" } },
+                { "name": "volume", "value": { "type": "number", "number": 1.0 } },
+                { "name": "pitch", "value": { "type": "number", "number": 0.9 } }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "event": "player_interact",
+      "position": [5, 0, 0],
+      "operations": [
+        {
+          "action": "if_player_has_item",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:trident\",tag:{display:{Name:'{\"text\":\"Трезубец Притяжения\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
+              }
+            },
+            { "name": "check_mode", "value": { "type": "text", "text": "ANY", "parsing": "plain" } },
+            { "name": "comparison_mode", "value": { "type": "text", "text": "EXACT", "parsing": "plain" } }
+          ],
+          "operations": [
+            {
+              "action": "player_give_potion_effect",
+              "values": [
+                { "name": "potions", "value": { "type": "text", "text": "LUCK", "parsing": "plain" } },
+                { "name": "duration", "value": { "type": "number", "number": 300 } },
+                { "name": "amplifier", "value": { "type": "number", "number": 1 } }
+              ]
+            },
+            {
+              "action": "player_play_sound",
+              "values": [
+                { "name": "sound", "value": { "type": "text", "text": "item.trident.throw", "parsing": "plain" } },
+                { "name": "volume", "value": { "type": "number", "number": 1.0 } },
+                { "name": "pitch", "value": { "type": "number", "number": 1.0 } }
+              ]
+            }
+          ]
+        }
+      ]
     }
-  },
-  "classes": {
-    "pyromancer": {
-      "armor": {
-        "helmet": { "material": "GOLDEN_HELMET", "enchants": { "PROTECTION": 2, "FIRE_PROTECTION": 4 } },
-        "chestplate": { "material": "GOLDEN_CHESTPLATE", "enchants": { "PROTECTION": 2, "FIRE_PROTECTION": 4 } },
-        "leggings": { "material": "GOLDEN_LEGGINGS", "enchants": { "PROTECTION": 2 } },
-        "boots": { "material": "GOLDEN_BOOTS", "enchants": { "PROTECTION": 2, "FEATHER_FALLING": 3 } }
-      },
-      "items": [
-        { "material": "DIAMOND_SWORD", "amount": 1, "enchants": { "FIRE_ASPECT": 2, "SHARPNESS": 1 } },
-        { "material": "SPLASH_POTION", "potion": "FIRE_RESISTANCE", "amount": 2 }
-      ],
-      "effects": [
-        { "type": "SPEED", "amplifier": 1, "duration": 999999 },
-        { "type": "FIRE_RESISTANCE", "amplifier": 0, "duration": 999999 }
-      ],
-      "attributes": {
-        "generic.max_health": 20.0,
-        "generic.attack_damage": 3.0
-      },
-      "passives": [
-        "Иммунитет к огню и лаве",
-        "Шанс поджечь врага при ударе"
-      ]
-    },
-    "assassin": {
-      "armor": {
-        "helmet": { "material": "LEATHER_HELMET", "color": "0,0,0", "enchants": { "PROTECTION": 1 } },
-        "chestplate": { "material": "LEATHER_CHESTPLATE", "color": "0,0,0", "enchants": { "PROTECTION": 1 } },
-        "leggings": { "material": "LEATHER_LEGGINGS", "color": "0,0,0" },
-        "boots": { "material": "LEATHER_BOOTS", "color": "0,0,0", "enchants": { "FEATHER_FALLING": 4 } }
-      },
-      "items": [
-        { "material": "IRON_SWORD", "amount": 1, "enchants": { "SHARPNESS": 3, "KNOCKBACK": 1 } },
-        { "material": "ENDER_PEARL", "amount": 4 }
-      ],
-      "effects": [
-        { "type": "SPEED", "amplifier": 2, "duration": 999999 },
-        { "type": "INVISIBILITY", "amplifier": 0, "duration": 999999 }
-      ],
-      "attributes": {
-        "generic.max_health": 16.0,
-        "generic.movement_speed": 0.15
-      },
-      "passives": [
-        "Повышенный урон в спину",
-        "Меньший запас здоровья"
-      ]
-    },
-    "paladin": {
-      "armor": {
-        "helmet": { "material": "DIAMOND_HELMET", "enchants": { "PROTECTION": 3 } },
-        "chestplate": { "material": "DIAMOND_CHESTPLATE", "enchants": { "PROTECTION": 3 } },
-        "leggings": { "material": "DIAMOND_LEGGINGS", "enchants": { "PROTECTION": 3 } },
-        "boots": { "material": "DIAMOND_BOOTS", "enchants": { "PROTECTION": 3 } }
-      },
-      "items": [
-        { "material": "IRON_SWORD", "amount": 1, "enchants": { "UNBREAKING": 3 } },
-        { "material": "SHIELD", "amount": 1 }
-      ],
-      "effects": [
-        { "type": "REGENERATION", "amplifier": 0, "duration": 999999 },
-        { "type": "RESISTANCE", "amplifier": 0, "duration": 999999 }
-      ],
-      "attributes": {
-        "generic.max_health": 24.0,
-        "generic.knockback_resistance": 0.5
-      },
-      "passives": [
-        "Постоянная регенерация 1-го уровня",
-        "Тяжелая броня снижает базовую скорость"
-      ]
-    },
-    "archer": {
-      "armor": {
-        "helmet": { "material": "CHAINMAIL_HELMET", "enchants": { "PROJECTILE_PROTECTION": 3 } },
-        "chestplate": { "material": "CHAINMAIL_CHESTPLATE", "enchants": { "PROJECTILE_PROTECTION": 3 } },
-        "leggings": { "material": "CHAINMAIL_LEGGINGS" },
-        "boots": { "material": "CHAINMAIL_BOOTS", "enchants": { "FEATHER_FALLING": 2 } }
-      },
-      "items": [
-        { "material": "BOW", "amount": 1, "enchants": { "POWER": 3, "FLAME": 1, "INFINITY": 1 } },
-        { "material":
+  ]
+}
