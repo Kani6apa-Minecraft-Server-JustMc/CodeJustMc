@@ -76,7 +76,7 @@
           "values": [
             { "name": "items", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:diamond_sword\",tag:{display:{Name:'{\"italic\":false,\"color\":\"aqua\",\"text\":\"Клинок Бури\"}',Lore:['{\"color\":\"gray\",\"text\":\"ПКМ: рывок вперед (КД 3 сек)\"}']},Enchantments:[{id:\"minecraft:sharpness\",lvl:4}],Unbreakable:1b}}" } },
             { "name": "hand_slot", "value": { "type": "enum", "enum": "EITHER_HAND" } },
-            { "name": "comparison_mode", "value": { "type": "enum", "enum": "EXACT" } }
+            { "name": "comparison_mode", "value": { "type": "enum", "enum": "EXACTLY" } }
           ],
           "operations": [
             { "action": "game_cancel_event", "values": [] },
@@ -88,7 +88,7 @@
           "values": [
             { "name": "items", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:diamond_axe\",tag:{display:{Name:'{\"italic\":false,\"color\":\"green\",\"text\":\"Топор Землетрясения\"}',Lore:['{\"color\":\"gray\",\"text\":\"ПКМ: удар земли по области (КД 5 сек)\"}']},Enchantments:[{id:\"minecraft:sharpness\",lvl:3}],Unbreakable:1b}}" } },
             { "name": "hand_slot", "value": { "type": "enum", "enum": "EITHER_HAND" } },
-            { "name": "comparison_mode", "value": { "type": "enum", "enum": "EXACT" } }
+            { "name": "comparison_mode", "value": { "type": "enum", "enum": "EXACTLY" } }
           ],
           "operations": [
             { "action": "game_cancel_event", "values": [] },
@@ -100,7 +100,7 @@
           "values": [
             { "name": "items", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:trident\",tag:{display:{Name:'{\"italic\":false,\"color\":\"dark_aqua\",\"text\":\"Трезубец Грозы\"}',Lore:['{\"color\":\"gray\",\"text\":\"ПКМ: бросок грозового трезубца (КД 4 сек)\"}']},Enchantments:[{id:\"minecraft:impaling\",lvl:3}],Unbreakable:1b}}" } },
             { "name": "hand_slot", "value": { "type": "enum", "enum": "EITHER_HAND" } },
-            { "name": "comparison_mode", "value": { "type": "enum", "enum": "EXACT" } }
+            { "name": "comparison_mode", "value": { "type": "enum", "enum": "EXACTLY" } }
           ],
           "operations": [
             { "action": "game_cancel_event", "values": [] },
@@ -119,7 +119,7 @@
           "values": [
             { "name": "items", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:bow\",tag:{display:{Name:'{\"italic\":false,\"color\":\"gold\",\"text\":\"Лук Охотника\"}',Lore:['{\"color\":\"gray\",\"text\":\"Стрелы наносят тройной урон\"}']},Enchantments:[{id:\"minecraft:power\",lvl:3}],Unbreakable:1b}}" } },
             { "name": "hand_slot", "value": { "type": "enum", "enum": "EITHER_HAND" } },
-            { "name": "comparison_mode", "value": { "type": "enum", "enum": "EXACT" } }
+            { "name": "comparison_mode", "value": { "type": "enum", "enum": "EXACTLY" } }
           ],
           "operations": [
             { "action": "select_event_target", "values": [ { "name": "selection_type", "value": { "type": "enum", "enum": "PROJECTILE" } } ] },
@@ -132,7 +132,7 @@
           "values": [
             { "name": "items", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:crossbow\",tag:{display:{Name:'{\"italic\":false,\"color\":\"red\",\"text\":\"Арбалет Пламени\"}',Lore:['{\"color\":\"gray\",\"text\":\"Стрелы поджигают цель\"}']},Enchantments:[{id:\"minecraft:quick_charge\",lvl:2}],Unbreakable:1b}}" } },
             { "name": "hand_slot", "value": { "type": "enum", "enum": "EITHER_HAND" } },
-            { "name": "comparison_mode", "value": { "type": "enum", "enum": "EXACT" } }
+            { "name": "comparison_mode", "value": { "type": "enum", "enum": "EXACTLY" } }
           ],
           "operations": [
             { "action": "select_event_target", "values": [ { "name": "selection_type", "value": { "type": "enum", "enum": "PROJECTILE" } } ] },
