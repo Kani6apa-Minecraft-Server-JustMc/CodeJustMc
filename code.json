@@ -1,42 +1,425 @@
 {
   "handlers": [
     {
-      "handler_id": "quake_hammer_slam",
-      "trigger": "player_right_click_item",
-      "conditions": [
-        {
-          "if_item_custom_id": "quake_hammer"
-        },
-        {
-          "if_variable_cooldown_expired": {
-            "variable": "quake_cooldown",
-            "player": "self"
-          }
-        }
-      ],
+      "type": "player_chat",
       "actions": [
         {
-          "type": "set_variable_cooldown",
-          "variable": "quake_cooldown",
-          "time": 5
+          "action": "if_variable_equals",
+          "args": {
+            "value": "%event_message%",
+            "compare": "@weapons"
+          },
+          "actions": [
+            {
+              "action": "cancel_event"
+            },
+            {
+              "action": "call_function",
+              "args": {
+                "function_name": "give_custom_weapons"
+              }
+            }
+          ]
         },
         {
-          "type": "entity_radius_action",
-          "radius": 5.0,
-          "action": "launch_up",
-          "power": 1.5
+          "action": "if_variable_equals",
+          "args": {
+            "value": "%event_message%",
+            "compare": "@boss"
+          },
+          "actions": [
+            {
+              "action": "cancel_event"
+            },
+            {
+              "action": "call_function",
+              "args": {
+                "function_name": "spawn_abyss_boss"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "player_right_click",
+      "actions": [
+        {
+          "action": "if_player_holding",
+          "args": {
+            "item": "{id:\"minecraft:netherite_sword\",Count:1b,tag:{custom_id:\"void_blade\"}}",
+            "hand": "MAIN_HAND"
+          },
+          "actions": [
+            {
+              "action": "if_variable_less_or_equals",
+              "args": {
+                "value": "%var(cd_void_%player_uuid%)%",
+                "compare": "%world_time%"
+              },
+              "actions": [
+                {
+                  "action": "set_variable",
+                  "args": {
+                    "variable": "cd_void_%player_uuid%",
+                    "value": "%math(%world_time% + 80)%"
+                  }
+                },
+                {
+                  "action": "player_teleport_forward",
+                  "args": {
+                    "distance": 6
+                  }
+                },
+                {
+                  "action": "spawn_particle",
+                  "args": {
+                    "particle": "PORTAL",
+                    "location": "%player_location%",
+                    "count": 40,
+                    "offset_x": 0.5,
+                    "offset_y": 1.0,
+                    "offset_z": 0.5
+                  }
+                },
+                {
+                  "action": "play_sound",
+                  "args": {
+                    "sound": "ENTITY_ENDERMAN_TELEPORT",
+                    "location": "%player_location%",
+                    "volume": 1.0,
+                    "pitch": 1.2
+                  }
+                },
+                {
+                  "action": "damage_nearby_entities",
+                  "args": {
+                    "location": "%player_location%",
+                    "radius": 3.5,
+                    "damage": 8.0,
+                    "exclude_players": true
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
-          "type": "play_sound",
-          "sound": "entity.generic.explode",
-          "volume": 1.0,
-          "pitch": 0.8
+          "action": "if_player_holding",
+          "args": {
+            "item": "{id:\"minecraft:blaze_rod\",Count:1b,tag:{custom_id:\"inferno_staff\"}}",
+            "hand": "MAIN_HAND"
+          },
+          "actions": [
+            {
+              "action": "if_variable_less_or_equals",
+              "args": {
+                "value": "%var(cd_inferno_%player_uuid%)%",
+                "compare": "%world_time%"
+              },
+              "actions": [
+                {
+                  "action": "set_variable",
+                  "args": {
+                    "variable": "cd_inferno_%player_uuid%",
+                    "value": "%math(%world_time% + 60)%"
+                  }
+                },
+                {
+                  "action": "launch_projectile",
+                  "args": {
+                    "projectile": "SMALL_FIREBALL",
+                    "speed": 1.8
+                  }
+                },
+                {
+                  "action": "play_sound",
+                  "args": {
+                    "sound": "ENTITY_BLAZE_SHOOT",
+                    "location": "%player_location%",
+                    "volume": 1.0,
+                    "pitch": 0.9
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "player_damage_entity",
+      "actions": [
+        {
+          "action": "if_player_holding",
+          "args": {
+            "item": "{id:\"minecraft:netherite_axe\",Count:1b,tag:{custom_id:\"thunder_hammer\"}}",
+            "hand": "MAIN_HAND"
+          },
+          "actions": [
+            {
+              "action": "if_variable_less_or_equals",
+              "args": {
+                "value": "%var(cd_thunder_%player_uuid%)%",
+                "compare": "%world_time%"
+              },
+              "actions": [
+                {
+                  "action": "set_variable",
+                  "args": {
+                    "variable": "cd_thunder_%player_uuid%",
+                    "value": "%math(%world_time% + 100)%"
+                  }
+                },
+                {
+                  "action": "strike_lightning",
+                  "args": {
+                    "location": "%victim_location%"
+                  }
+                },
+                {
+                  "action": "play_sound",
+                  "args": {
+                    "sound": "ENTITY_LIGHTNING_BOLT_THUNDER",
+                    "location": "%victim_location%",
+                    "volume": 1.2,
+                    "pitch": 1.0
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
-          "type": "send_actionbar",
-          "message": "§6Сейсмический удар активирован!"
+          "action": "if_player_holding",
+          "args": {
+            "item": "{id:\"minecraft:netherite_hoe\",Count:1b,tag:{custom_id:\"reaper_scythe\"}}",
+            "hand": "MAIN_HAND"
+          },
+          "actions": [
+            {
+              "action": "if_variable_less_or_equals",
+              "args": {
+                "value": "%var(cd_scythe_%player_uuid%)%",
+                "compare": "%world_time%"
+              },
+              "actions": [
+                {
+                  "action": "set_variable",
+                  "args": {
+                    "variable": "cd_scythe_%player_uuid%",
+                    "value": "%math(%world_time% + 40)%"
+                  }
+                },
+                {
+                  "action": "heal_player",
+                  "args": {
+                    "amount": 2.0
+                  }
+                },
+                {
+                  "action": "give_entity_effect",
+                  "args": {
+                    "target": "VICTIM",
+                    "effect": "WITHER",
+                    "duration": 60,
+                    "amplifier": 1
+                  }
+                },
+                {
+                  "action": "spawn_particle",
+                  "args": {
+                    "particle": "DAMAGE_INDICATOR",
+                    "location": "%victim_location%",
+                    "count": 15,
+                    "offset_x": 0.4,
+                    "offset_y": 0.8,
+                    "offset_z": 0.4
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "projectile_hit_entity",
+      "actions": [
+        {
+          "action": "if_shooter_holding",
+          "args": {
+            "item": "{id:\"minecraft:bow\",Count:1b,tag:{custom_id:\"frost_bow\"}}"
+          },
+          "actions": [
+            {
+              "action": "give_entity_effect",
+              "args": {
+                "target": "VICTIM",
+                "effect": "SLOWNESS",
+                "duration": 60,
+                "amplifier": 3
+              }
+            },
+            {
+              "action": "spawn_particle",
+              "args": {
+                "particle": "SNOWFLAKE",
+                "location": "%victim_location%",
+                "count": 30,
+                "offset_x": 0.6,
+                "offset_y": 1.0,
+                "offset_z": 0.6
+              }
+            },
+            {
+              "action": "play_sound",
+              "args": {
+                "sound": "BLOCK_GLASS_BREAK",
+                "location": "%victim_location%",
+                "volume": 1.0,
+                "pitch": 1.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "entity_death",
+      "actions": [
+        {
+          "action": "if_variable_equals",
+          "args": {
+            "value": "%victim_uuid%",
+            "compare": "%var(abyss_boss_uuid)%"
+          },
+          "actions": [
+            {
+              "action": "remove_bossbar",
+              "args": {
+                "id": "abyss_boss_bar"
+              }
+            },
+            {
+              "action": "set_variable",
+              "args": {
+                "variable": "abyss_boss_alive",
+                "value": 0
+              }
+            },
+            {
+              "action": "send_message_all",
+              "args": {
+                "message": "§5§l[БОСС] §dВладыка Бездны повержен! Легендарный трофей выпал на землю."
+              }
+            },
+            {
+              "action": "play_sound_all",
+              "args": {
+                "sound": "UI_TOAST_CHALLENGE_COMPLETE",
+                "volume": 1.0,
+                "pitch": 1.0
+              }
+            },
+            {
+              "action": "drop_item",
+              "args": {
+                "location": "%victim_location%",
+                "item": "{id:\"minecraft:netherite_sword\",Count:1b,tag:{custom_id:\"void_blade\",display:{Name:'{\"text\":\"Клинок Бездны\",\"color\":\"dark_purple\",\"bold\":true,\"italic\":false}'}}}"
+              }
+            }
+          ]
         }
       ]
     }
-  ]
-}
+  ],
+  "functions": [
+    {
+      "name": "give_custom_weapons",
+      "actions": [
+        {
+          "action": "give_item",
+          "args": {
+            "item": "{id:\"minecraft:netherite_sword\",Count:1b,tag:{custom_id:\"void_blade\",Unbreakable:1b,display:{Name:'{\"text\":\"Клинок Бездны\",\"color\":\"dark_purple\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"ПКМ: Рывок сквозь пустоту (КД: 4с)\",\"color\":\"gray\",\"italic\":false}']}}}"
+          }
+        },
+        {
+          "action": "give_item",
+          "args": {
+            "item": "{id:\"minecraft:blaze_rod\",Count:1b,tag:{custom_id:\"inferno_staff\",display:{Name:'{\"text\":\"Посох Инферно\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"ПКМ: Выстрел огненным шаром (КД: 3с)\",\"color\":\"gray\",\"italic\":false}']}}}"
+          }
+        },
+        {
+          "action": "give_item",
+          "args": {
+            "item": "{id:\"minecraft:netherite_axe\",Count:1b,tag:{custom_id:\"thunder_hammer\",Unbreakable:1b,display:{Name:'{\"text\":\"Молот Громовержца\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"Удар: Призывает молнию (КД: 5с)\",\"color\":\"gray\",\"italic\":false}']}}}"
+          }
+        },
+        {
+          "action": "give_item",
+          "args": {
+            "item": "{id:\"minecraft:bow\",Count:1b,tag:{custom_id:\"frost_bow\",Unbreakable:1b,display:{Name:'{\"text\":\"Лук Ледяной Скорби\",\"color\":\"blue\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"Попадание: Замораживает цель\",\"color\":\"gray\",\"italic\":false}']}}}"
+          }
+        },
+        {
+          "action": "give_item",
+          "args": {
+            "item": "{id:\"minecraft:netherite_hoe\",Count:1b,tag:{custom_id:\"reaper_scythe\",Unbreakable:1b,display:{Name:'{\"text\":\"Коса Жнеца\",\"color\":\"dark_red\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"Удар: Вампиризм + Иссушение (КД: 2с)\",\"color\":\"gray\",\"italic\":false}']}}}"
+          }
+        },
+        {
+          "action": "send_message",
+          "args": {
+            "message": "§aВы получили 5 кастомных оружий!"
+          }
+        }
+      ]
+    },
+    {
+      "name": "spawn_abyss_boss",
+      "actions": [
+        {
+          "action": "if_variable_equals",
+          "args": {
+            "value": "%var(abyss_boss_alive)%",
+            "compare": 1
+          },
+          "actions": [
+            {
+              "action": "send_message",
+              "args": {
+                "message": "§cБосс уже призван в мире!"
+              }
+            },
+            {
+              "action": "stop_execution"
+            }
+          ]
+        },
+        {
+          "action": "spawn_mob",
+          "args": {
+            "mob_type": "WITHER_SKELETON",
+            "location": "%player_location%",
+            "custom_name": "§5§lВладыка Бездны",
+            "max_health": 250.0,
+            "equipment_main_hand": "{id:\"minecraft:netherite_sword\",Count:1b,tag:{Enchantments:[{id:\"minecraft:sharpness\",lvl:3s}]}}",
+            "equipment_helmet": "{id:\"minecraft:netherite_helmet\",Count:1b}",
+            "equipment_chestplate": "{id:\"minecraft:netherite_chestplate\",Count:1b}",
+            "save_uuid_to": "abyss_boss_uuid"
+          }
+        },
+        {
+          "action": "set_variable",
+          "args": {
+            "variable": "abyss_boss_alive",
+            "value": 1
+          }
+        },
+        {
+          "action": "create_bossbar",
+          "args": {
+            "id": "abyss_boss_bar",
+            "title": "§5§lВладыка Бездны",
+            "color": "PURPLE",
