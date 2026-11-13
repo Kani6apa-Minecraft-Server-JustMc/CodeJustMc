@@ -423,3 +423,136 @@
             "id": "abyss_boss_bar",
             "title": "§5§lВладыка Бездны",
             "color": "PURPLE",
+            "style": "SEGMENTED_10"
+          }
+        },
+        {
+          "action": "send_message_all",
+          "args": {
+            "message": "§5§l[ВНИМАНИЕ] §dВладыка Бездны пробудился!"
+          }
+        },
+        {
+          "action": "call_function",
+          "args": {
+            "function_name": "boss_ai_loop"
+          }
+        }
+      ]
+    },
+    {
+      "name": "boss_ai_loop",
+      "actions": [
+        {
+          "action": "repeat_while",
+          "args": {
+            "condition": "variable_equals",
+            "value": "%var(abyss_boss_alive)%",
+            "compare": 1
+          },
+          "actions": [
+            {
+              "action": "control_wait",
+              "args": {
+                "ticks": 80
+              }
+            },
+            {
+              "action": "if_variable_equals",
+              "args": {
+                "value": "%var(abyss_boss_alive)%",
+                "compare": 1
+              },
+              "actions": [
+                {
+                  "action": "update_bossbar_entity",
+                  "args": {
+                    "id": "abyss_boss_bar",
+                    "entity_uuid": "%var(abyss_boss_uuid)%"
+                  }
+                },
+                {
+                  "action": "set_variable_local",
+                  "args": {
+                    "variable": "skill_roll",
+                    "value": "%random(1, 3)%"
+                  }
+                },
+                {
+                  "action": "if_variable_equals",
+                  "args": {
+                    "value": "%var_local(skill_roll)%",
+                    "compare": 1
+                  },
+                  "actions": [
+                    {
+                      "action": "pull_entities_to_entity",
+                      "args": {
+                        "target_uuid": "%var(abyss_boss_uuid)%",
+                        "radius": 12.0,
+                        "power": 1.2
+                      }
+                    },
+                    {
+                      "action": "give_area_effect",
+                      "args": {
+                        "center_uuid": "%var(abyss_boss_uuid)%",
+                        "radius": 10.0,
+                        "effect": "BLINDNESS",
+                        "duration": 40,
+                        "amplifier": 0
+                      }
+                    },
+                    {
+                      "action": "play_sound_at_entity",
+                      "args": {
+                        "entity_uuid": "%var(abyss_boss_uuid)%",
+                        "sound": "ENTITY_ENDER_DRAGON_GROWL",
+                        "volume": 1.2,
+                        "pitch": 0.7
+                      }
+                    }
+                  ]
+                },
+                {
+                  "action": "if_variable_equals",
+                  "args": {
+                    "value": "%var_local(skill_roll)%",
+                    "compare": 2
+                  },
+                  "actions": [
+                    {
+                      "action": "spawn_mob_at_entity",
+                      "args": {
+                        "entity_uuid": "%var(abyss_boss_uuid)%",
+                        "mob_type": "ENDERMITE",
+                        "custom_name": "§8Порождение Бездны",
+                        "count": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "action": "if_variable_equals",
+                  "args": {
+                    "value": "%var_local(skill_roll)%",
+                    "compare": 3
+                  },
+                  "actions": [
+                    {
+                      "action": "strike_lightning_nearest_player",
+                      "args": {
+                        "source_uuid": "%var(abyss_boss_uuid)%",
+                        "radius": 15.0
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
