@@ -2,232 +2,987 @@
   "handlers": [
     {
       "type": "event",
-      "event": "player_join",
       "position": 0,
+      "event": "player_join",
       "operations": [
-        {
-          "action": "player_give_items",
-          "values": [
-            { "name": "items", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:diamond_sword\",tag:{display:{Name:'{\"italic\":false,\"color\":\"aqua\",\"text\":\"Клинок Бури\"}',Lore:['{\"color\":\"gray\",\"text\":\"ПКМ: рывок вперед (КД 3 сек)\"}']},Enchantments:[{id:\"minecraft:sharpness\",lvl:4}],Unbreakable:1b}}" } },
-            { "name": "amount", "value": { "type": "number", "number": 1 } }
-          ]
-        },
-        {
-          "action": "player_give_items",
-          "values": [
-            { "name": "items", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:bow\",tag:{display:{Name:'{\"italic\":false,\"color\":\"gold\",\"text\":\"Лук Охотника\"}',Lore:['{\"color\":\"gray\",\"text\":\"Стрелы наносят тройной урон\"}']},Enchantments:[{id:\"minecraft:power\",lvl:3}],Unbreakable:1b}}" } },
-            { "name": "amount", "value": { "type": "number", "number": 1 } }
-          ]
-        },
-        {
-          "action": "player_give_items",
-          "values": [
-            { "name": "items", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:crossbow\",tag:{display:{Name:'{\"italic\":false,\"color\":\"red\",\"text\":\"Арбалет Пламени\"}',Lore:['{\"color\":\"gray\",\"text\":\"Стрелы поджигают цель\"}']},Enchantments:[{id:\"minecraft:quick_charge\",lvl:2}],Unbreakable:1b}}" } },
-            { "name": "amount", "value": { "type": "number", "number": 1 } }
-          ]
-        },
-        {
-          "action": "player_give_items",
-          "values": [
-            { "name": "items", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:diamond_axe\",tag:{display:{Name:'{\"italic\":false,\"color\":\"green\",\"text\":\"Топор Землетрясения\"}',Lore:['{\"color\":\"gray\",\"text\":\"ПКМ: удар земли по области (КД 5 сек)\"}']},Enchantments:[{id:\"minecraft:sharpness\",lvl:3}],Unbreakable:1b}}" } },
-            { "name": "amount", "value": { "type": "number", "number": 1 } }
-          ]
-        },
-        {
-          "action": "player_give_items",
-          "values": [
-            { "name": "items", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:trident\",tag:{display:{Name:'{\"italic\":false,\"color\":\"dark_aqua\",\"text\":\"Трезубец Грозы\"}',Lore:['{\"color\":\"gray\",\"text\":\"ПКМ: бросок грозового трезубца (КД 4 сек)\"}']},Enchantments:[{id:\"minecraft:impaling\",lvl:3}],Unbreakable:1b}}" } },
-            { "name": "amount", "value": { "type": "number", "number": 1 } }
-          ]
-        },
-        {
-          "action": "player_send_title",
-          "values": [
-            { "name": "title", "value": { "type": "text", "text": "§bЛегендарное оружие", "parsing": "legacy" } },
-            { "name": "subtitle", "value": { "type": "text", "text": "§7Способности активируются на §fПКМ", "parsing": "legacy" } },
-            { "name": "fade_in", "value": { "type": "number", "number": 10 } },
-            { "name": "stay", "value": { "type": "number", "number": 60 } },
-            { "name": "fade_out", "value": { "type": "number", "number": 10 } }
-          ]
-        },
         {
           "action": "player_send_message",
           "values": [
-            { "name": "messages", "value": { "type": "text", "text": "§6=== Набор «Оружие легенд» ===\n§bКлинок Бури: §fПКМ — рывок\n§eЛук Охотника: §fусиленные стрелы\n§cАрбалет Пламени: §fогненные стрелы\n§aТопор Землетрясения: §fПКМ — удар земли\n§3Трезубец Грозы: §fПКМ — грозовой бросок", "parsing": "legacy" } },
-            { "name": "merging", "value": { "type": "enum", "enum": "SEPARATE_LINES" } }
-          ]
+            {
+              "name": "message",
+              "value": {
+                "type": "text",
+                "text": "§6§l⚔ Добро пожаловать! Тебе выданы 5 кастомных оружий. ПКМ — активировать способность!",
+                "parsing": "legacy"
+              }
+            }
+          ],
+          "operations": []
         },
         {
-          "action": "player_play_sound",
+          "action": "player_give_items",
           "values": [
-            { "name": "sound", "value": { "type": "sound", "sound": "minecraft:entity.player.levelup", "pitch": 1.2, "volume": 1.0 } },
-            { "name": "location", "value": { "type": "game_value", "game_value": "location", "selection": "null" } }
-          ]
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:crossbow\",components:{\"minecraft:custom_name\":\"{\\\"text\\\":\\\"§b§lШквальный Арбалет\\\",\\\"italic\\\":false}\",\"minecraft:lore\":[\"{\\\"text\\\":\\\"§7ПКМ: Шквал — 5 стрел веером\\\",\\\"italic\\\":false}\"],\"minecraft:enchantments\":{levels:{\"minecraft:quick_charge\":3}},\"minecraft:item_model\":\"minecraft:crossbow\",\"minecraft:custom_data\":{weapon_id:\"crossbow_ability\"}}}"
+              }
+            },
+            {
+              "name": "amount",
+              "value": {
+                "type": "number",
+                "number": 1
+              }
+            }
+          ],
+          "operations": []
+        },
+        {
+          "action": "player_give_items",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:bow\",components:{\"minecraft:custom_name\":\"{\\\"text\\\":\\\"§a§lЛук Притяжения\\\",\\\"italic\\\":false}\",\"minecraft:lore\":[\"{\\\"text\\\":\\\"§7ПКМ: Притянуть врагов к себе\\\",\\\"italic\\\":false}\"],\"minecraft:enchantments\":{levels:{\"minecraft:power\":5,\"minecraft:infinity\":1}},\"minecraft:custom_data\":{weapon_id:\"bow_ability\"}}}"
+              }
+            },
+            {
+              "name": "amount",
+              "value": {
+                "type": "number",
+                "number": 1
+              }
+            }
+          ],
+          "operations": []
+        },
+        {
+          "action": "player_give_items",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:diamond_sword\",components:{\"minecraft:custom_name\":\"{\\\"text\\\":\\\"§c§lМеч Вихря\\\",\\\"italic\\\":false}\",\"minecraft:lore\":[\"{\\\"text\\\":\\\"§7ПКМ: Рывок вперёд + скорость\\\",\\\"italic\\\":false}\"],\"minecraft:enchantments\":{levels:{\"minecraft:sharpness\":5,\"minecraft:unbreaking\":3}},\"minecraft:custom_data\":{weapon_id:\"sword_ability\"}}}"
+              }
+            },
+            {
+              "name": "amount",
+              "value": {
+                "type": "number",
+                "number": 1
+              }
+            }
+          ],
+          "operations": []
+        },
+        {
+          "action": "player_give_items",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:diamond_axe\",components:{\"minecraft:custom_name\":\"{\\\"text\\\":\\\"§e§lТопор Земледрожца\\\",\\\"italic\\\":false}\",\"minecraft:lore\":[\"{\\\"text\\\":\\\"§7ПКМ: Замедлить всех вокруг\\\",\\\"italic\\\":false}\"],\"minecraft:enchantments\":{levels:{\"minecraft:efficiency\":5,\"minecraft:unbreaking\":3}},\"minecraft:custom_data\":{weapon_id:\"axe_ability\"}}}"
+              }
+            },
+            {
+              "name": "amount",
+              "value": {
+                "type": "number",
+                "number": 1
+              }
+            }
+          ],
+          "operations": []
+        },
+        {
+          "action": "player_give_items",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:trident\",components:{\"minecraft:custom_name\":\"{\\\"text\\\":\\\"§d§lТрезубец Молнии\\\",\\\"italic\\\":false}\",\"minecraft:lore\":[\"{\\\"text\\\":\\\"§7ПКМ: Телепорт к цели + удар\\\",\\\"italic\\\":false}\"],\"minecraft:enchantments\":{levels:{\"minecraft:loyalty\":3,\"minecraft:channeling\":1}},\"minecraft:custom_data\":{weapon_id:\"trident_ability\"}}}"
+              }
+            },
+            {
+              "name": "amount",
+              "value": {
+                "type": "number",
+                "number": 1
+              }
+            }
+          ],
+          "operations": []
         }
       ]
     },
     {
       "type": "event",
-      "event": "player_right_click",
       "position": 1,
+      "event": "player_interact",
       "operations": [
         {
-          "action": "if_player_is_holding",
+          "action": "if_game_event_item_equals",
           "values": [
-            { "name": "items", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:diamond_sword\",tag:{display:{Name:'{\"italic\":false,\"color\":\"aqua\",\"text\":\"Клинок Бури\"}',Lore:['{\"color\":\"gray\",\"text\":\"ПКМ: рывок вперед (КД 3 сек)\"}']},Enchantments:[{id:\"minecraft:sharpness\",lvl:4}],Unbreakable:1b}}" } },
-            { "name": "hand_slot", "value": { "type": "enum", "enum": "EITHER_HAND" } },
-            { "name": "comparison_mode", "value": { "type": "enum", "enum": "EXACTLY" } }
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:crossbow\",components:{\"minecraft:custom_data\":{weapon_id:\"crossbow_ability\"}}}"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "CUSTOM_TAGS_CONTAINS"
+              }
+            }
           ],
+          "is_inverted": false,
           "operations": [
-            { "action": "game_cancel_event", "values": [] },
-            { "action": "call_function", "values": [ { "name": "function_name", "value": { "type": "text", "text": "w_sword_dash", "parsing": "plain" } } ] }
+            {
+              "action": "call_function",
+              "values": [
+                {
+                  "name": "function_name",
+                  "value": {
+                    "type": "text",
+                    "text": "ability_crossbow",
+                    "parsing": "plain"
+                  }
+                },
+                {
+                  "name": "args",
+                  "value": {
+                    "type": "map",
+                    "values": {}
+                  }
+                }
+              ],
+              "operations": []
+            }
           ]
         },
         {
-          "action": "if_player_is_holding",
+          "action": "if_game_event_item_equals",
           "values": [
-            { "name": "items", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:diamond_axe\",tag:{display:{Name:'{\"italic\":false,\"color\":\"green\",\"text\":\"Топор Землетрясения\"}',Lore:['{\"color\":\"gray\",\"text\":\"ПКМ: удар земли по области (КД 5 сек)\"}']},Enchantments:[{id:\"minecraft:sharpness\",lvl:3}],Unbreakable:1b}}" } },
-            { "name": "hand_slot", "value": { "type": "enum", "enum": "EITHER_HAND" } },
-            { "name": "comparison_mode", "value": { "type": "enum", "enum": "EXACTLY" } }
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:bow\",components:{\"minecraft:custom_data\":{weapon_id:\"bow_ability\"}}}"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "CUSTOM_TAGS_CONTAINS"
+              }
+            }
           ],
+          "is_inverted": false,
           "operations": [
-            { "action": "game_cancel_event", "values": [] },
-            { "action": "call_function", "values": [ { "name": "function_name", "value": { "type": "text", "text": "w_axe_quake", "parsing": "plain" } } ] }
+            {
+              "action": "call_function",
+              "values": [
+                {
+                  "name": "function_name",
+                  "value": {
+                    "type": "text",
+                    "text": "ability_bow",
+                    "parsing": "plain"
+                  }
+                },
+                {
+                  "name": "args",
+                  "value": {
+                    "type": "map",
+                    "values": {}
+                  }
+                }
+              ],
+              "operations": []
+            }
           ]
         },
         {
-          "action": "if_player_is_holding",
+          "action": "if_game_event_item_equals",
           "values": [
-            { "name": "items", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:trident\",tag:{display:{Name:'{\"italic\":false,\"color\":\"dark_aqua\",\"text\":\"Трезубец Грозы\"}',Lore:['{\"color\":\"gray\",\"text\":\"ПКМ: бросок грозового трезубца (КД 4 сек)\"}']},Enchantments:[{id:\"minecraft:impaling\",lvl:3}],Unbreakable:1b}}" } },
-            { "name": "hand_slot", "value": { "type": "enum", "enum": "EITHER_HAND" } },
-            { "name": "comparison_mode", "value": { "type": "enum", "enum": "EXACTLY" } }
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:diamond_sword\",components:{\"minecraft:custom_data\":{weapon_id:\"sword_ability\"}}}"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "CUSTOM_TAGS_CONTAINS"
+              }
+            }
           ],
+          "is_inverted": false,
           "operations": [
-            { "action": "game_cancel_event", "values": [] },
-            { "action": "call_function", "values": [ { "name": "function_name", "value": { "type": "text", "text": "w_trident_storm", "parsing": "plain" } } ] }
+            {
+              "action": "call_function",
+              "values": [
+                {
+                  "name": "function_name",
+                  "value": {
+                    "type": "text",
+                    "text": "ability_sword",
+                    "parsing": "plain"
+                  }
+                },
+                {
+                  "name": "args",
+                  "value": {
+                    "type": "map",
+                    "values": {}
+                  }
+                }
+              ],
+              "operations": []
+            }
+          ]
+        },
+        {
+          "action": "if_game_event_item_equals",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:diamond_axe\",components:{\"minecraft:custom_data\":{weapon_id:\"axe_ability\"}}}"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "CUSTOM_TAGS_CONTAINS"
+              }
+            }
+          ],
+          "is_inverted": false,
+          "operations": [
+            {
+              "action": "call_function",
+              "values": [
+                {
+                  "name": "function_name",
+                  "value": {
+                    "type": "text",
+                    "text": "ability_axe",
+                    "parsing": "plain"
+                  }
+                },
+                {
+                  "name": "args",
+                  "value": {
+                    "type": "map",
+                    "values": {}
+                  }
+                }
+              ],
+              "operations": []
+            }
+          ]
+        },
+        {
+          "action": "if_game_event_item_equals",
+          "values": [
+            {
+              "name": "items",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:trident\",components:{\"minecraft:custom_data\":{weapon_id:\"trident_ability\"}}}"
+              }
+            },
+            {
+              "name": "comparison_mode",
+              "value": {
+                "type": "enum",
+                "enum": "CUSTOM_TAGS_CONTAINS"
+              }
+            }
+          ],
+          "is_inverted": false,
+          "operations": [
+            {
+              "action": "call_function",
+              "values": [
+                {
+                  "name": "function_name",
+                  "value": {
+                    "type": "text",
+                    "text": "ability_trident",
+                    "parsing": "plain"
+                  }
+                },
+                {
+                  "name": "args",
+                  "value": {
+                    "type": "map",
+                    "values": {}
+                  }
+                }
+              ],
+              "operations": []
+            }
           ]
         }
       ]
     },
     {
-      "type": "event",
-      "event": "player_shot_bow",
+      "type": "function",
       "position": 2,
+      "name": "ability_crossbow",
+      "values": [
+        {
+          "name": "parameters",
+          "value": {
+            "type": "array",
+            "values": []
+          }
+        }
+      ],
       "operations": [
         {
-          "action": "if_player_is_holding",
+          "action": "player_send_action_bar",
           "values": [
-            { "name": "items", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:bow\",tag:{display:{Name:'{\"italic\":false,\"color\":\"gold\",\"text\":\"Лук Охотника\"}',Lore:['{\"color\":\"gray\",\"text\":\"Стрелы наносят тройной урон\"}']},Enchantments:[{id:\"minecraft:power\",lvl:3}],Unbreakable:1b}}" } },
-            { "name": "hand_slot", "value": { "type": "enum", "enum": "EITHER_HAND" } },
-            { "name": "comparison_mode", "value": { "type": "enum", "enum": "EXACTLY" } }
+            {
+              "name": "message",
+              "value": {
+                "type": "text",
+                "text": "§b⚡ ШКВАЛ — стрелы вырвались на волю!",
+                "parsing": "legacy"
+              }
+            }
           ],
-          "operations": [
-            { "action": "select_event_target", "values": [ { "name": "selection_type", "value": { "type": "enum", "enum": "PROJECTILE" } } ] },
-            { "action": "entity_set_base_arrow_damage", "values": [ { "name": "damage", "value": { "type": "number", "number": 12 } } ] },
-            { "action": "player_send_action_bar", "values": [ { "name": "messages", "value": { "type": "text", "text": "§eМощный выстрел!", "parsing": "legacy" } }, { "name": "merging", "value": { "type": "enum", "enum": "SPACES" } } ] }
-          ]
+          "operations": []
         },
         {
-          "action": "if_player_is_holding",
+          "action": "entity_launch_projectile",
           "values": [
-            { "name": "items", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:crossbow\",tag:{display:{Name:'{\"italic\":false,\"color\":\"red\",\"text\":\"Арбалет Пламени\"}',Lore:['{\"color\":\"gray\",\"text\":\"Стрелы поджигают цель\"}']},Enchantments:[{id:\"minecraft:quick_charge\",lvl:2}],Unbreakable:1b}}" } },
-            { "name": "hand_slot", "value": { "type": "enum", "enum": "EITHER_HAND" } },
-            { "name": "comparison_mode", "value": { "type": "enum", "enum": "EXACTLY" } }
+            {
+              "name": "projectile",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:arrow\"}"
+              }
+            },
+            {
+              "name": "location",
+              "value": {
+                "type": "game_value",
+                "game_value": "player_location",
+                "selection": "null"
+              }
+            },
+            {
+              "name": "name",
+              "value": {
+                "type": "text",
+                "text": "squall_arrow_1",
+                "parsing": "plain"
+              }
+            },
+            {
+              "name": "speed",
+              "value": {
+                "type": "number",
+                "number": 3
+              }
+            },
+            {
+              "name": "inaccuracy",
+              "value": {
+                "type": "number",
+                "number": 5
+              }
+            },
+            {
+              "name": "trail",
+              "value": {}
+            }
           ],
-          "operations": [
-            { "action": "select_event_target", "values": [ { "name": "selection_type", "value": { "type": "enum", "enum": "PROJECTILE" } } ] },
-            { "action": "entity_set_base_arrow_damage", "values": [ { "name": "damage", "value": { "type": "number", "number": 8 } } ] },
-            { "action": "entity_set_fire_ticks", "values": [ { "name": "ticks", "value": { "type": "number", "number": 100 } } ] },
-            { "action": "player_send_action_bar", "values": [ { "name": "messages", "value": { "type": "text", "text": "§cОгненная стрела!", "parsing": "legacy" } }, { "name": "merging", "value": { "type": "enum", "enum": "SPACES" } } ] }
-          ]
+          "operations": []
+        },
+        {
+          "action": "entity_launch_projectile",
+          "values": [
+            {
+              "name": "projectile",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:arrow\"}"
+              }
+            },
+            {
+              "name": "location",
+              "value": {
+                "type": "game_value",
+                "game_value": "player_location",
+                "selection": "null"
+              }
+            },
+            {
+              "name": "name",
+              "value": {
+                "type": "text",
+                "text": "squall_arrow_2",
+                "parsing": "plain"
+              }
+            },
+            {
+              "name": "speed",
+              "value": {
+                "type": "number",
+                "number": 3
+              }
+            },
+            {
+              "name": "inaccuracy",
+              "value": {
+                "type": "number",
+                "number": 12
+              }
+            },
+            {
+              "name": "trail",
+              "value": {}
+            }
+          ],
+          "operations": []
+        },
+        {
+          "action": "entity_launch_projectile",
+          "values": [
+            {
+              "name": "projectile",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:arrow\"}"
+              }
+            },
+            {
+              "name": "location",
+              "value": {
+                "type": "game_value",
+                "game_value": "player_location",
+                "selection": "null"
+              }
+            },
+            {
+              "name": "name",
+              "value": {
+                "type": "text",
+                "text": "squall_arrow_3",
+                "parsing": "plain"
+              }
+            },
+            {
+              "name": "speed",
+              "value": {
+                "type": "number",
+                "number": 3
+              }
+            },
+            {
+              "name": "inaccuracy",
+              "value": {
+                "type": "number",
+                "number": 20
+              }
+            },
+            {
+              "name": "trail",
+              "value": {}
+            }
+          ],
+          "operations": []
+        },
+        {
+          "action": "entity_launch_projectile",
+          "values": [
+            {
+              "name": "projectile",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:arrow\"}"
+              }
+            },
+            {
+              "name": "location",
+              "value": {
+                "type": "game_value",
+                "game_value": "player_location",
+                "selection": "null"
+              }
+            },
+            {
+              "name": "name",
+              "value": {
+                "type": "text",
+                "text": "squall_arrow_4",
+                "parsing": "plain"
+              }
+            },
+            {
+              "name": "speed",
+              "value": {
+                "type": "number",
+                "number": 3
+              }
+            },
+            {
+              "name": "inaccuracy",
+              "value": {
+                "type": "number",
+                "number": 12
+              }
+            },
+            {
+              "name": "trail",
+              "value": {}
+            }
+          ],
+          "operations": []
+        },
+        {
+          "action": "entity_launch_projectile",
+          "values": [
+            {
+              "name": "projectile",
+              "value": {
+                "type": "item",
+                "item": "{Count:1b,id:\"minecraft:arrow\"}"
+              }
+            },
+            {
+              "name": "location",
+              "value": {
+                "type": "game_value",
+                "game_value": "player_location",
+                "selection": "null"
+              }
+            },
+            {
+              "name": "name",
+              "value": {
+                "type": "text",
+                "text": "squall_arrow_5",
+                "parsing": "plain"
+              }
+            },
+            {
+              "name": "speed",
+              "value": {
+                "type": "number",
+                "number": 3
+              }
+            },
+            {
+              "name": "inaccuracy",
+              "value": {
+                "type": "number",
+                "number": 20
+              }
+            },
+            {
+              "name": "trail",
+              "value": {}
+            }
+          ],
+          "operations": []
         }
       ]
     },
     {
       "type": "function",
-      "name": "w_sword_dash",
-      "position": 0,
+      "position": 3,
+      "name": "ability_bow",
       "values": [
-        { "name": "description", "value": { "type": "array", "values": [ {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {} ] } },
-        { "name": "is_hidden", "value": { "type": "enum", "enum": "FALSE" } },
-        { "name": "icon", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:diamond_sword\",tag:{display:{Name:'{\"italic\":false,\"color\":\"aqua\",\"text\":\"Клинок Бури\"}'}}}" } }
+        {
+          "name": "parameters",
+          "value": {
+            "type": "array",
+            "values": []
+          }
+        }
       ],
       "operations": [
-        { "action": "set_variable_value", "values": [ { "name": "variable", "value": { "type": "variable", "variable": "now", "scope": "local" } }, { "name": "value", "value": { "type": "game_value", "game_value": "timestamp", "selection": "null" } } ] },
-        { "action": "set_variable_value", "values": [ { "name": "variable", "value": { "type": "variable", "variable": "cd", "scope": "local" } }, { "name": "value", "value": { "type": "variable", "variable": "cd_sword_%player%", "scope": "save" } } ] },
         {
-          "action": "if_variable_less",
+          "action": "player_send_action_bar",
           "values": [
-            { "name": "value", "value": { "type": "variable", "variable": "cd", "scope": "local" } },
-            { "name": "compare", "value": { "type": "variable", "variable": "now", "scope": "local" } }
+            {
+              "name": "message",
+              "value": {
+                "type": "text",
+                "text": "§a🌀 ПРИТЯЖЕНИЕ — все враги летят к тебе!",
+                "parsing": "legacy"
+              }
+            }
           ],
-          "operations": [
-            { "action": "set_variable_value", "values": [ { "name": "variable", "value": { "type": "variable", "variable": "cd_sword_%player%", "scope": "save" } }, { "name": "value", "value": { "type": "number", "number": "%math(%var_local(now) + 3000)" } } ] },
-            { "action": "player_launch_forward", "values": [ { "name": "power", "value": { "type": "number", "number": 2.5 } }, { "name": "increment", "value": { "type": "enum", "enum": "FALSE" } }, { "name": "launch_axis", "value": { "type": "enum", "enum": "YAW_AND_PITCH" } } ] },
-            { "action": "player_play_sound", "values": [ { "name": "sound", "value": { "type": "sound", "sound": "minecraft:entity.enderman.teleport", "pitch": 1.4, "volume": 1.0 } }, { "name": "location", "value": { "type": "game_value", "game_value": "location", "selection": "null" } } ] },
-            { "action": "player_send_action_bar", "values": [ { "name": "messages", "value": { "type": "text", "text": "§bРывок сквозь бурю!", "parsing": "legacy" } }, { "name": "merging", "value": { "type": "enum", "enum": "SPACES" } } ] }
-          ]
+          "operations": []
         },
-        { "action": "else", "values": [], "operations": [ { "action": "player_send_action_bar", "values": [ { "name": "messages", "value": { "type": "text", "text": "§7Перезарядка...", "parsing": "legacy" } }, { "name": "merging", "value": { "type": "enum", "enum": "SPACES" } } ] } ] }
+        {
+          "action": "select_all_players",
+          "values": [],
+          "operations": []
+        },
+        {
+          "action": "entity_launch_to_location",
+          "values": [
+            {
+              "name": "location",
+              "value": {
+                "type": "game_value",
+                "game_value": "player_location",
+                "selection": "null"
+              }
+            },
+            {
+              "name": "power",
+              "value": {
+                "type": "number",
+                "number": 2.5
+              }
+            },
+            {
+              "name": "increment",
+              "value": {
+                "type": "enum",
+                "enum": "FALSE"
+              }
+            }
+          ],
+          "operations": []
+        }
       ]
     },
     {
       "type": "function",
-      "name": "w_axe_quake",
-      "position": 1,
+      "position": 4,
+      "name": "ability_sword",
       "values": [
-        { "name": "description", "value": { "type": "array", "values": [ {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {} ] } },
-        { "name": "is_hidden", "value": { "type": "enum", "enum": "FALSE" } },
-        { "name": "icon", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:diamond_axe\",tag:{display:{Name:'{\"italic\":false,\"color\":\"green\",\"text\":\"Топор Землетрясения\"}'}}}" } }
+        {
+          "name": "parameters",
+          "value": {
+            "type": "array",
+            "values": []
+          }
+        }
       ],
       "operations": [
-        { "action": "set_variable_value", "values": [ { "name": "variable", "value": { "type": "variable", "variable": "now", "scope": "local" } }, { "name": "value", "value": { "type": "game_value", "game_value": "timestamp", "selection": "null" } } ] },
-        { "action": "set_variable_value", "values": [ { "name": "variable", "value": { "type": "variable", "variable": "cd", "scope": "local" } }, { "name": "value", "value": { "type": "variable", "variable": "cd_axe_%player%", "scope": "save" } } ] },
         {
-          "action": "if_variable_less",
+          "action": "player_send_action_bar",
           "values": [
-            { "name": "value", "value": { "type": "variable", "variable": "cd", "scope": "local" } },
-            { "name": "compare", "value": { "type": "variable", "variable": "now", "scope": "local" } }
+            {
+              "name": "message",
+              "value": {
+                "type": "text",
+                "text": "§c💨 ВИХРЬ — ты пронёсся вперёд!",
+                "parsing": "legacy"
+              }
+            }
           ],
-          "operations": [
-            { "action": "set_variable_value", "values": [ { "name": "variable", "value": { "type": "variable", "variable": "cd_axe_%player%", "scope": "save" } }, { "name": "value", "value": { "type": "number", "number": "%math(%var_local(now) + 5000)" } } ] },
-            { "action": "select_all_mobs", "values": [] },
-            { "action": "select_filter_by_distance", "values": [ { "name": "location", "value": { "type": "game_value", "game_value": "location", "selection": "null" } }, { "name": "selection_size", "value": { "type": "number", "number": 6 } }, { "name": "ignore_y_axis", "value": { "type": "enum", "enum": "TRUE" } }, { "name": "compare_mode", "value": { "type": "enum", "enum": "NEAREST" } } ] },
-            { "action": "entity_damage", "values": [ { "name": "damage", "value": { "type": "number", "number": 8 } }, { "name": "source", "value": { "type": "text", "text": "quake", "parsing": "plain" } } ] },
-            { "action": "entity_launch_up", "values": [ { "name": "power", "value": { "type": "number", "number": 0.9 } }, { "name": "increment", "value": { "type": "enum", "enum": "FALSE" } } ] },
-            { "action": "player_play_sound", "values": [ { "name": "sound", "value": { "type": "sound", "sound": "minecraft:entity.generic.explode", "pitch": 0.7, "volume": 1.0 } }, { "name": "location", "value": { "type": "game_value", "game_value": "location", "selection": "null" } } ] },
-            { "action": "player_send_action_bar", "values": [ { "name": "messages", "value": { "type": "text", "text": "§cУдар земли!", "parsing": "legacy" } }, { "name": "merging", "value": { "type": "enum", "enum": "SPACES" } } ] }
-          ]
+          "operations": []
         },
-        { "action": "else", "values": [], "operations": [ { "action": "player_send_action_bar", "values": [ { "name": "messages", "value": { "type": "text", "text": "§7Перезарядка...", "parsing": "legacy" } }, { "name": "merging", "value": { "type": "enum", "enum": "SPACES" } } ] } ] }
+        {
+          "action": "player_launch_forward",
+          "values": [
+            {
+              "name": "power",
+              "value": {
+                "type": "number",
+                "number": 2.5
+              }
+            },
+            {
+              "name": "increment",
+              "value": {
+                "type": "enum",
+                "enum": "FALSE"
+              }
+            },
+            {
+              "name": "launch_axis",
+              "value": {
+                "type": "enum",
+                "enum": "YAW_AND_PITCH"
+              }
+            }
+          ],
+          "operations": []
+        },
+        {
+          "action": "player_give_effects",
+          "values": [
+            {
+              "name": "potions",
+              "value": {
+                "type": "potion",
+                "potion": "SPEED",
+                "duration": 100,
+                "amplifier": 2
+              }
+            },
+            {
+              "name": "overwrite",
+              "value": {
+                "type": "enum",
+                "enum": "TRUE"
+              }
+            },
+            {
+              "name": "show_icon",
+              "value": {
+                "type": "enum",
+                "enum": "TRUE"
+              }
+            },
+            {
+              "name": "particle_mode",
+              "value": {
+                "type": "enum",
+                "enum": "AMBIENT"
+              }
+            }
+          ],
+          "operations": []
+        }
       ]
     },
     {
       "type": "function",
-      "name": "w_trident_storm",
-      "position": 2,
+      "position": 5,
+      "name": "ability_axe",
       "values": [
-        { "name": "description", "value": { "type": "array", "values": [ {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {} ] } },
-        { "name": "is_hidden", "value": { "type": "enum", "enum": "FALSE" } },
-        { "name": "icon", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:trident\",tag:{display:{Name:'{\"italic\":false,\"color\":\"dark_aqua\",\"text\":\"Трезубец Грозы\"}'}}}" } }
+        {
+          "name": "parameters",
+          "value": {
+            "type": "array",
+            "values": []
+          }
+        }
       ],
       "operations": [
-        { "action": "set_variable_value", "values": [ { "name": "variable", "value": { "type": "variable", "variable": "now", "scope": "local" } }, { "name": "value", "value": { "type": "game_value", "game_value": "timestamp", "selection": "null" } } ] },
-        { "action": "set_variable_value", "values": [ { "name": "variable", "value": { "type": "variable", "variable": "cd", "scope": "local" } }, { "name": "value", "value": { "type": "variable", "variable": "cd_trident_%player%", "scope": "save" } } ] },
         {
-          "action": "if_variable_less",
+          "action": "player_send_action_bar",
           "values": [
-            { "name": "value", "value": { "type": "variable", "variable": "cd", "scope": "local" } },
-            { "name": "compare", "value": { "type": "variable", "variable": "now", "scope": "local" } }
+            {
+              "name": "message",
+              "value": {
+                "type": "text",
+                "text": "§e💥 ЗЕМЛЯ ДРОЖИТ — все замедлены!",
+                "parsing": "legacy"
+              }
+            }
           ],
-          "operations": [
-            { "action": "set_variable_value", "values": [ { "name": "variable", "value": { "type": "variable", "variable": "cd_trident_%player%", "scope": "save" } }, { "name": "value", "value": { "type": "number", "number": "%math(%var_local(now) + 4000)" } } ] },
-            { "action": "player_launch_projectile", "values": [ { "name": "projectile", "value": { "type": "item", "item": "{Count:1b,id:\"minecraft:trident\"}" } }, { "name": "location", "value": { "type": "game_value", "game_value": "eye_location", "selection": "null" } }, { "name": "name", "value": { "type": "text", "text": "storm_trident_%player%", "parsing": "plain" } }, { "name": "speed", "value": { "type": "number", "number": 2.5 } }, { "name": "inaccuracy", "value": { "type": "number", "number": 1 } }, { "name": "trail", "value": { "type": "particle", "particle_type": "electric_spark", "count": 3, "first_spread": 0, "second_spread": 0, "size": 1 } } ] },
-            { "action": "player_play_sound", "values": [ { "name": "sound", "value": { "type": "sound", "sound": "minecraft:item.trident.throw", "pitch": 1.0, "volume": 1.0 } }, { "name": "location", "value": { "type": "game_value", "game_value": "location", "selection": "null" } } ] },
-            { "action": "player_send_action_bar", "values": [ { "name": "messages", "value": { "type": "text", "text": "§3Гроза брошена!", "parsing": "legacy" } }, { "name": "merging", "value": { "type": "enum", "enum": "SPACES" } } ] }
-          ]
+          "operations": []
         },
-        { "action": "else", "values": [], "operations": [ { "action": "player_send_action_bar", "values": [ { "name": "messages", "value": { "type": "text", "text": "§7Перезарядка...", "parsing": "legacy" } }, { "name": "merging", "value": { "type": "enum", "enum": "SPACES" } } ] } ] }
+        {
+          "action": "select_all_players",
+          "values": [],
+          "operations": []
+        },
+        {
+          "action": "entity_give_potion_effects",
+          "values": [
+            {
+              "name": "potions",
+              "value": {
+                "type": "potion",
+                "potion": "SLOW",
+                "duration": 100,
+                "amplifier": 2
+              }
+            },
+            {
+              "name": "overwrite",
+              "value": {
+                "type": "enum",
+                "enum": "TRUE"
+              }
+            },
+            {
+              "name": "show_icon",
+              "value": {
+                "type": "enum",
+                "enum": "TRUE"
+              }
+            },
+            {
+              "name": "particle_mode",
+              "value": {
+                "type": "enum",
+                "enum": "REGULAR"
+              }
+            }
+          ],
+          "operations": []
+        },
+        {
+          "action": "entity_give_potion_effects",
+          "values": [
+            {
+              "name": "potions",
+              "value": {
+                "type": "potion",
+                "potion": "SLOW_DIGGING",
+                "duration": 100,
+                "amplifier": 1
+              }
+            },
+            {
+              "name": "overwrite",
+              "value": {
+                "type": "enum",
+                "enum": "TRUE"
+              }
+            },
+            {
+              "name": "show_icon",
+              "value": {
+                "type": "enum",
+                "enum": "TRUE"
+              }
+            },
+            {
+              "name": "particle_mode",
+              "value": {
+                "type": "enum",
+                "enum": "REGULAR"
+              }
+            }
+          ],
+          "operations": []
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "position": 6,
+      "name": "ability_trident",
+      "values": [
+        {
+          "name": "parameters",
+          "value": {
+            "type": "array",
+            "values": []
+          }
+        }
+      ],
+      "operations": [
+        {
+          "action": "player_send_action_bar",
+          "values": [
+            {
+              "name": "message",
+              "value": {
+                "type": "text",
+                "text": "§d⚡ МОЛНИЯ — удар с небес!",
+                "parsing": "legacy"
+              }
+            }
+          ],
+          "operations": []
+        },
+        {
+          "action": "game_lightning",
+          "values": [
+            {
+              "name": "location",
+              "value": {
+                "type": "game_value",
+                "game_value": "player_location",
+                "selection": "null"
+              }
+            },
+            {
+              "name": "type",
+              "value": {
+                "type": "enum",
+                "enum": "NORMAL"
+              }
+            }
+          ],
+          "operations": []
+        },
+        {
+          "action": "player_launch_forward",
+          "values": [
+            {
+              "name": "power",
+              "value": {
+                "type": "number",
+                "number": 1.5
+              }
+            },
+            {
+              "name": "increment",
+              "value": {
+                "type": "enum",
+                "enum": "FALSE"
+              }
+            },
+            {
+              "name": "launch_axis",
+              "value": {
+                "type": "enum",
+                "enum": "YAW_AND_PITCH"
+              }
+            }
+          ],
+          "operations": []
+        },
+        {
+          "action": "player_give_effects",
+          "values": [
+            {
+              "name": "potions",
+              "value": {
+                "type": "potion",
+                "potion": "BLINDNESS",
+                "duration": 60,
+                "amplifier": 0
+              }
+            },
+            {
+              "name": "overwrite",
+              "value": {
+                "type": "enum",
+                "enum": "TRUE"
+              }
+            },
+            {
+              "name": "show_icon",
+              "value": {
+                "type": "enum",
+                "enum": "TRUE"
+              }
+            },
+            {
+              "name": "particle_mode",
+              "value": {
+                "type": "enum",
+                "enum": "AMBIENT"
+              }
+            }
+          ],
+          "operations": []
+        }
       ]
     }
   ]
