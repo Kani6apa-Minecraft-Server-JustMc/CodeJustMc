@@ -1,45 +1,40 @@
 {
   "handlers": [
     {
-      "type": "event",
-      "position": 0,
-      "event": "player_join",
-      "operations": [
+      "handler_id": "quake_hammer_slam",
+      "trigger": "player_right_click_item",
+      "conditions": [
         {
-          "action": "player_set_gamemode",
-          "values": [
-            {
-              "name": "game_mode",
-              "value": {
-                "type": "enum",
-                "enum": "SURVIVAL"
-              }
-            }
-          ]
+          "if_item_custom_id": "quake_hammer"
         },
         {
-          "action": "player_send_message",
-          "values": [
-            {
-              "name": "messages",
-              "value": {
-                "type": "array",
-                "values": [
-                  {
-                    "type": "text",
-                    "text": "⚔ Режим выживания активирован!"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "merging",
-              "value": {
-                "type": "enum",
-                "enum": "SEPARATE_LINES"
-              }
-            }
-          ]
+          "if_variable_cooldown_expired": {
+            "variable": "quake_cooldown",
+            "player": "self"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "type": "set_variable_cooldown",
+          "variable": "quake_cooldown",
+          "time": 5
+        },
+        {
+          "type": "entity_radius_action",
+          "radius": 5.0,
+          "action": "launch_up",
+          "power": 1.5
+        },
+        {
+          "type": "play_sound",
+          "sound": "entity.generic.explode",
+          "volume": 1.0,
+          "pitch": 0.8
+        },
+        {
+          "type": "send_actionbar",
+          "message": "§6Сейсмический удар активирован!"
         }
       ]
     }
